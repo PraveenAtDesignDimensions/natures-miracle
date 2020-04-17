@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Tomatoes | Nature's Miracle</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+        <![endif]-->
+
+    <style type="text/css">
+        .process_img {
+            margin: 1em 0em;
+        }
+        
+        .el__preview-cont {
+            display: none;
+        }
+        
+        .el__text {
+            margin-top: 2em;
+            align-self: center;
+        }
+        
+        .el__nemonics {
+            display: flex;
+            margin: 10px 0;
+            text-align: center;
+            justify-content: space-around;
+        }
+        .nemonics-box{
+          padding:5px;
+        }
+        .el__nemonics img {
+            max-width: 90px;
+        }
+        
+        @media only screen and (min-width: 868px) {
+            .el__nemonics {
+                margin-left: 50px;
+                max-width: 150px;
+                align-self: center;
+                flex-wrap: wrap;
+                color: #fff;
+            }
+            .nemonics-box{
+              margin-bottom: 10px;
+            }
+            .process_img {
+                display: none;
+            }
+            #Process .cont {
+                position: relative;
+                overflow: hidden;
+                height: 70vh;
+                max-height: 600px;
+            }
+            .cont__inner {
+                position: relative;
+                height: 100%;
+            }
+            .cont__inner:hover .el__bg:after {
+                opacity: 1;
+            }
+            .el {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 24%;
+                height: 100%;
+                background: #252525;
+                transition: width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s, -webkit-transform 0.6s 0.7s;
+                transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
+                transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s, -webkit-transform 0.6s 0.7s;
+                will-change: transform, width, opacity;
+            }
+            .el:not(.s--active) {
+                cursor: pointer;
+            }
+            .el__overflow {
+                overflow: hidden;
+                position: relative;
+                height: 100%;
+            }
+            .el__inner {
+                overflow: hidden;
+                position: relative;
+                height: 100%;
+                transition: -webkit-transform 1s;
+                transition: transform 1s;
+                transition: transform 1s, -webkit-transform 1s;
+            }
+            #Process .cont.s--inactive .el__inner {
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+            .el__bg {
+                position: relative;
+                width: calc(100vw - 140px);
+                height: 100%;
+                transition: -webkit-transform 0.6s 0.7s;
+                transition: transform 0.6s 0.7s;
+                transition: transform 0.6s 0.7s, -webkit-transform 0.6s 0.7s;
+                will-change: transform;
+            }
+            .el__bg:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -5%;
+                width: 100%;
+                height: 110%;
+                background-size: cover;
+                background-position: center center;
+                transition: -webkit-transform 1s;
+                transition: transform 1s;
+                transition: transform 1s, -webkit-transform 1s;
+                -webkit-transform: translate3d(0, 0, 0) scale(1);
+                transform: translate3d(0, 0, 0) scale(1);
+            }
+            #Process .cont.s--inactive .el__bg:before {
+                -webkit-transform: translate3d(0, -100%, 0) scale(1.2);
+                transform: translate3d(0, -100%, 0) scale(1.2);
+            }
+            .el.s--active .el__bg:before {
+                transition: -webkit-transform 0.8s;
+                transition: transform 0.8s;
+                transition: transform 0.8s, -webkit-transform 0.8s;
+            }
+            .el__bg:after {
+                content: "";
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+                opacity: 0;
+                transition: opacity 0.5s;
+            }
+            .cont.s--el-active .el__bg:after {
+                transition: opacity 0.5s 1.4s;
+                opacity: 1 !important;
+            }
+            .el__preview-cont {
+                background-color: rgb(0, 0, 0, 0.4);
+                z-index: 2;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s 1.2s;
+            }
+            #Process .cont.s--inactive .el__preview-cont {
+                opacity: 0;
+                -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+            }
+            #Process .cont.s--el-active .el__preview-cont {
+                opacity: 0;
+                -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+                transition: all 0.5s;
+            }
+            .el__heading {
+                text-align: center;
+                color: #fff;
+                font-size: 24px;
+                margin-top: 25vh;
+                margin-bottom: 25px;
+            }
+            .el__preview-cont p {
+                border: 1px solid #fff;
+                text-align: center;
+                padding: 6px 10px;
+                WIDTH: 125px;
+                margin: auto;
+                font-size: 12px;
+                color: #fff;
+            }
+            .el__preview-cont img {
+                margin-top: 35%;
+                width: 25%;
+                margin-left: 38%;
+            }
+            .el__content {
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 30px;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.1s;
+                display: flex;
+            }
+            .el.s--active .el__content {
+                z-index: 2;
+                opacity: 1;
+                pointer-events: auto;
+                transition: all 0.5s 1.4s;
+            }
+            .el__text {
+                padding: 2em;
+                color: #fff;
+                margin-top: 0;
+                max-width: 700px;
+            }
+            .el__text h1 {
+                margin-bottom: 30px;
+                font-size: 40px;
+            }
+            .el__text p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            .el__text h5 {
+                margin-bottom: 10px;
+            }
+            .el__text h1,
+            .el__text h2,
+            .el__text h3,
+            .el__text h4,
+            .el__text h5,
+            .el__text h6 {
+                color: #fff;
+            }
+            .el__close-btn {
+                z-index: -1;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0s 0.45s;
+                cursor: pointer;
+            }
+            .el.s--active .el__close-btn {
+                z-index: 5;
+                opacity: 1;
+                pointer-events: auto;
+                transition: all 0s 1.4s;
+            }
+            .el__close-btn:before,
+            .el__close-btn:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 60%;
+                width: 50%;
+                height: 5px;
+                background: #fff;
+                opacity: 0;
+                transition: opacity 0s;
+            }
+            .el.s--active .el__close-btn:before,
+            .el.s--active .el__close-btn:after {
+                opacity: 1;
+            }
+            .el__close-btn:before {
+                -webkit-transform: rotate(45deg) translateX(100%);
+                transform: rotate(45deg) translateX(100%);
+            }
+            .el.s--active .el__close-btn:before {
+                transition: all 0.3s 1.4s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+                -webkit-transform: rotate(45deg) translateX(0);
+                transform: rotate(45deg) translateX(0);
+            }
+            .el__close-btn:after {
+                -webkit-transform: rotate(-45deg) translateX(100%);
+                transform: rotate(-45deg) translateX(100%);
+            }
+            .el.s--active .el__close-btn:after {
+                transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+                -webkit-transform: rotate(-45deg) translateX(0);
+                transform: rotate(-45deg) translateX(0);
+            }
+            .el__index {
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                bottom: -80px;
+                width: 100%;
+                height: 100%;
+                min-height: 250px;
+                text-align: center;
+                font-size: 20vw;
+                line-height: 0.85;
+                font-weight: bold;
+                transition: opacity 0.3s 1.4s, -webkit-transform 0.5s;
+                transition: transform 0.5s, opacity 0.3s 1.4s;
+                transition: transform 0.5s, opacity 0.3s 1.4s, -webkit-transform 0.5s;
+                -webkit-transform: translate3d(0, 1vw, 0);
+                transform: translate3d(0, 1vw, 0);
+            }
+            .el:hover .el__index {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            #Process .cont.s--el-active .el__index {
+                transition: opacity 0.3s, -webkit-transform 0.5s;
+                transition: transform 0.5s, opacity 0.3s;
+                transition: transform 0.5s, opacity 0.3s, -webkit-transform 0.5s;
+                opacity: 0;
+            }
+            .el__index-back,
+            .el__index-front {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+            .el__index-back {
+                color: #2f3840;
+                opacity: 0;
+                transition: opacity 0.25s 0.25s;
+            }
+            .el:hover .el__index-back {
+                transition: opacity 0.25s;
+                opacity: 1;
+            }
+            .el__index-overlay {
+                overflow: hidden;
+                position: relative;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                transition: -webkit-transform 0.5s 0.1s;
+                transition: transform 0.5s 0.1s;
+                transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
+                color: transparent;
+            }
+            .el__index-overlay:before {
+                content: attr(data-index);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                transition: -webkit-transform 0.5s 0.1s;
+                transition: transform 0.5s 0.1s;
+                transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
+            }
+            .el:hover .el__index-overlay {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            .el:hover .el__index-overlay:before {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            .el:nth-child(1) {
+                -webkit-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+            }
+            #Process .cont.s--el-active .el:nth-child(1):not(.s--active) {
+                -webkit-transform: scale(0.5) translate3d(0%, 0, 0);
+                transform: scale(0.5) translate3d(0%, 0, 0);
+                opacity: 0;
+                transition: opacity 0.95s, -webkit-transform 0.95s;
+                transition: transform 0.95s, opacity 0.95s;
+                transition: transform 0.95s, opacity 0.95s, -webkit-transform 0.95s;
+            }
+            .el:nth-child(1) .el__inner {
+                transition-delay: 0s;
+            }
+            .el:nth-child(1) .el__bg {
+                -webkit-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+            }
+            .el:nth-child(1) .el__bg:before {
+                transition-delay: 0s;
+                background-image: url("images/imagebox/bg-tomato-1.jpg");
+            }
+            .el:nth-child(2) {
+                -webkit-transform: translate3d(105.2083333333%, 0, 0);
+                transform: translate3d(105.2083333333%, 0, 0);
+                -webkit-transform-origin: 155.2083333333% 50%;
+                transform-origin: 155.2083333333% 50%;
+            }
+            #Process .cont.s--el-active .el:nth-child(2):not(.s--active) {
+                -webkit-transform: scale(0.5) translate3d(105.2083333333%, 0, 0);
+                transform: scale(0.5) translate3d(105.2083333333%, 0, 0);
+                opacity: 0;
+                transition: opacity 0.95s, -webkit-transform 0.95s;
+                transition: transform 0.95s, opacity 0.95s;
+                transition: transform 0.95s, opacity 0.95s, -webkit-transform 0.95s;
+            }
+            .el:nth-child(2) .el__inner {
+                transition-delay: 0.1s;
+            }
+            .el:nth-child(2) .el__bg {
+                -webkit-transform: translate3d(-19.2%, 0, 0);
+                transform: translate3d(-19.2%, 0, 0);
+            }
+            .el:nth-child(2) .el__bg:before {
+                transition-delay: 0.1s;
+                background-image: url("images/imagebox/bg-tomato-2.jpg");
+            }
+            .el:nth-child(3) {
+                -webkit-transform: translate3d(210.4166666667%, 0, 0);
+                transform: translate3d(210.4166666667%, 0, 0);
+                -webkit-transform-origin: 260.4166666667% 50%;
+                transform-origin: 260.4166666667% 50%;
+            }
+            #Process .cont.s--el-active .el:nth-child(3):not(.s--active) {
+                -webkit-transform: scale(0.5) translate3d(210.4166666667%, 0, 0);
+                transform: scale(0.5) translate3d(210.4166666667%, 0, 0);
+                opacity: 0;
+                transition: opacity 0.95s, -webkit-transform 0.95s;
+                transition: transform 0.95s, opacity 0.95s;
+                transition: transform 0.95s, opacity 0.95s, -webkit-transform 0.95s;
+            }
+            .el:nth-child(3) .el__inner {
+                transition-delay: 0.2s;
+            }
+            .el:nth-child(3) .el__bg {
+                -webkit-transform: translate3d(-38.4%, 0, 0);
+                transform: translate3d(-38.4%, 0, 0);
+            }
+            .el:nth-child(3) .el__bg:before {
+                transition-delay: 0.2s;
+                background-image: url("images/imagebox/bg-tomato-3.jpg");
+            }
+            .el:nth-child(4) {
+                -webkit-transform: translate3d(315.625%, 0, 0);
+                transform: translate3d(315.625%, 0, 0);
+                -webkit-transform-origin: 365.625% 50%;
+                transform-origin: 365.625% 50%;
+            }
+            #Process .cont.s--el-active .el:nth-child(4):not(.s--active) {
+                -webkit-transform: scale(0.5) translate3d(315.625%, 0, 0);
+                transform: scale(0.5) translate3d(315.625%, 0, 0);
+                opacity: 0;
+                transition: opacity 0.95s, -webkit-transform 0.95s;
+                transition: transform 0.95s, opacity 0.95s;
+                transition: transform 0.95s, opacity 0.95s, -webkit-transform 0.95s;
+            }
+            .el:nth-child(4) .el__inner {
+                transition-delay: 0.3s;
+            }
+            .el:nth-child(4) .el__bg {
+                -webkit-transform: translate3d(-57.6%, 0, 0);
+                transform: translate3d(-57.6%, 0, 0);
+            }
+            .el:nth-child(4) .el__bg:before {
+                transition-delay: 0.3s;
+                background-image: url("images/imagebox/bg-tomato-4.jpg");
+            }
+            .el:hover .el__bg:after {
+                opacity: 0;
+            }
+            .el.s--active {
+                z-index: 1;
+                width: 100%;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                transition: width 0.7s 0.7s, z-index 0s, -webkit-transform 0.6s;
+                transition: transform 0.6s, width 0.7s 0.7s, z-index 0s;
+                transition: transform 0.6s, width 0.7s 0.7s, z-index 0s, -webkit-transform 0.6s;
+            }
+            .el.s--active .el__bg {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+                transition: -webkit-transform 0.6s;
+                transition: transform 0.6s;
+                transition: transform 0.6s, -webkit-transform 0.6s;
+            }
+            .el.s--active .el__bg:before {
+                transition-delay: 0.6s;
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+            #Process .icon-link {
+                position: absolute;
+                left: 5px;
+                bottom: 5px;
+                width: 32px;
+            }
+            #Process .icon-link img {
+                width: 100%;
+                vertical-align: top;
+            }
+            #Process .icon-link--twitter {
+                left: auto;
+                right: 5px;
+            }
+        }
+        /*  ---  ---  my tabs  ---  ---  */
+        
+        #mixedSlider3 .MS-controls .MS-left img,
+        #mixedSlider3 .MS-controls .MS-right img {
+            width: 35px;
+        }
+        #mixedSlider3 {
+            position: relative;
+        }
+        #mixedSlider3 .MS-content {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 5%;
+        }
+        #mixedSlider3 .MS-content .item {
+            display: inline-block;
+            width: 25%;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            white-space: normal;
+            padding: 0 10px;
+        }
+        #mixedSlider3 .MS-content .item .imgTitle .itemTitle {
+            font-size: 16px;
+        }
+        #mixedSlider3 .MS-controls button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            outline: 0;
+            font-size: 50px;
+            top: 40%;
+            color: rgba(0, 0, 0, 0.4);
+            transition: 0.15s linear;
+        }
+        #mixedSlider3 .MS-controls .MS-left {
+            left: 0px;
+        }
+        #mixedSlider3 .MS-controls .MS-right {
+            right: 0px;
+        }
+        .mnemonics-color{
+                display: none;
+            }
+        @media (max-width: 767px) {
+            #mixedSlider3 .MS-content .item {
+                width: 50%;
+            }
+            .nemonics-box img{
+                display: none;
+            }
+            .mnemonics-color{
+                display: block !important;
+                margin: auto;
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body class="">
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
+
+    <!-- Meta Info -->
+
+    <div class="home-delivery">
+        <a href="mailto:feedback@naturesmiracle.in">
+            <span class="fa fa-envelope" aria-hidden="true"></span> feedback@naturesmiracle.in</a>
+
+        <a href="tel:18001211929">
+            <span class="fa fa-phone" aria-hidden="true"></span> 1800-121-1929 (Toll-Free)</a>
+
+        <a href="contact-us.html">
+            <span class="fa fa-map-marker" aria-hidden="true"></span> Find Store</a>
+
+        <a href="https://www.marcheretail.com/home-delivery" target="_blank" class="svg-d">
+
+            <span class="fa fa-truck" aria-hidden="true"></span> Home Delivery
+            <br> <span class="onlyin" style="font-size:80%;">(Delhi/NCR Only)</span></a>
+
+    </div>
+
+    <div class="box">
+        <header id="header" class="header clearfix">
+            <div class="header-wrap clearfix">
+                <div class="container-myheader">
+
+                    <div class="btn-menu">
+                        <span></span>
+                    </div>
+
+                    <div class="my-logo">
+                        <a href="home.html">
+                            <img src="images/logo.png" alt="image">
+                        </a>
+                    </div>
+
+                    <nav id="mainnav" class="mainnav">
+                        <ul class="menu">
+                            <li>
+                                <a href="home.html">Home  
+                                    </a>
+                            </li>
+                            <li class="has-sub">
+                                <a href="about-us.html">About Us  
+                      <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                                <ul class="submenu right-sub-menu ">
+                                    <li><a href="about-us.html#company">Company</a></li>
+                                    <li><a href="about-us.html#how-we-grow">How We Grow</a></li>
+                                    <li><a href="key-differentiators.html">Key Differentiators</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="products.html">Products
+                                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                                    </a>
+                                <ul class="submenu right-sub-menu ">
+                                    <li><a href="tomatoes.html">Tomatoes</a></li>
+                                    <li><a href="cucumbers.html">Cucumbers</a></li>
+                                    <li><a href="peppers.html">Peppers</a></li>
+                                    <li><a href="strawberries.html">Strawberries</a></li>
+                                    <li><a href="wheatgrass.html">Wheatgrass</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li class="hide-small">
+                                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            </li>
+                            <li>
+                                <a href="recipes.html">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <!--/.menu -->
+                    </nav>
+                    <!--/.mainnav -->
+                </div>
+                <!--/.container -->
+            </div>
+            <!--/.header-wrap -->
+        </header>
+        <!--/.header -->
+
+        <div class="flag">
+            <ul>
+                <li class="bb">
+                    <img src="images/home/sprout.svg">
+                    <h5>Go Soil Free</h5>
+                    <p>Replacing Soil with Cocopeat</p>
+                </li>
+                <li class="bb">
+                    <img src="images/home/save-water.svg">
+                    <h5>Environment Friendly</h5>
+                    <p>90% Less Water Consumption</p>
+                </li>
+                <li>
+                    <img src="images/home/harvest.svg">
+                    <h5>Eat Raw</h5>
+                    <p>Perfect for Raw Snacking</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Page Title -->
+        <div class="page-title parallax flat_strech parallax-tomatoes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title-heading">
+                            <h1 class="title">Tomatoes</h1>
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li> <a href="home.html">Home </a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="#">Tomatoes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.page-title-captions -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+
+        <!-- Flat Our Story -->
+        <section class="flat-row about-1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="title-section style2 padle-0px ">
+                            <h1 class="title">From snackable little munchiesto king size!</h1>
+                        </div>
+
+                        <p>Fresh greenhouse tomatoes are extremely versatile and can be utilized in a wide array of dishes, from conventional to experimental. Ideal for grilling, roasting, sautéing, or as a perfect on-the-go snack!</p>
+                        <br>
+
+                        <p>Eat them fresh from the pack, grilled, mixed, puréed or whichever way you want because they add delight in every bite. Packed with vitamins and nutrients for all your cooking, these tomatoes excite your imagination and spoil your taste buds. Bite into their succulence for your daily health fix or throw a feast at your table-they are suited to every requirement.</p>
+
+                    </div>
+                    <!--col-md-6-->
+
+                    <div class="col-md-6">
+                        <div class="img-our">
+                            <img src="images/imagebox/tt.png" alt="images">
+                        </div>
+                    </div>
+                    <!--col-md-6-->
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="col-md-10">
+
+                        <div class="flat-divider d10px"></div>
+
+                        <h5>Nutritional value and health benefits</h5>
+
+                        <ul class="iconlist">
+                            <li><i class="fa fa-circle-o"></i>High in lycopene, vitamin A and C, antioxidants and fibre. Cholesterol free. It reduces the risk of cardiovascular diseases and blood related disorders.</li>
+                        </ul>
+
+                        <div class="flat-divider margb-27px"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--container -->
+        </section>
+
+        <div class="title-section style1 ">
+            <h1 class="title">Variants</h1>
+        </div>
+        <div class="flat-divider d42px hide-sm"></div>
+
+        <section>
+
+            <div class="container background" id="Process">
+
+                <div class="cont s--inactive">
+                    <!-- cont inner start -->
+                    <div class="cont__inner">
+                        <!-- el start -->
+                        <div class="el">
+                            <div class="el__overflow">
+                                <div class="el__inner">
+                                    <div class="el__bg"></div>
+                                    <div class="el__preview-cont">
+                                        <h2 class="el__heading">Candy Tomatoes</h2>
+                                        <p>KNOW MORE</p>
+                                    </div>
+                                    <div class="el__content">
+                                        <div class="el__text">
+                                            <h1>Candy Tomatoes</h1>
+                                            <img src="images/imagebox/bg-tomato-1.jpg" class="process_img">
+                                            <p>Our succulent candy tomatoes are a treat for kids and adults alike. Enjoy candy like sweetness packed with nutritious benefits. Enjoy the, taste of nature at her best anytime, anywhere.</p>
+                                            <p>Stew them. Paste them. Sauce them. Use them to thicken other sauces and soups. Get adventurous! Oven-roasting or drying will intensify the taste, making a punchy tomato pesto or excellent bruschetta topping.</p>
+                                            <p>Candy tomatoes are hand planted & picked to ensure maximum quality and flavour. Bursts of sweetness with the perfect amount of crunch, this tomato is ideal for snacking.</p>
+                                        </div>
+                                        <div class="el__nemonics">
+                                            <div class="nemonics-box">
+                                                <img src="icon/mnemonics/Sweet Like Candies.svg">
+                                                <img src="icon/mnemonics/Sweet Like Candies color.svg" class="mnemonics-color">
+                                                <p>Sweet Like Candies</p>
+                                            </div>
+                                            <div class="nemonics-box">
+                                                <img src="icon/mnemonics/Packed with Vitamins and Minerals.svg">
+                                                <img src="icon/mnemonics/Packed with Vitamins and Minerals color.svg" class="mnemonics-color">
+                                                <p>Packed with Vitamins and Minerals</p>
+                                            </div>
+                                            <div class="nemonics-box">
+                                                <img src="icon/mnemonics/Pop-in Ready.svg">
+                                                <img src="icon/mnemonics/Pop-in Ready color.svg" class="mnemonics-color">
+                                                <p>Pop-in Ready</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="el__close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- el end -->
+                        <!-- el start -->
+                        <div class="el">
+                            <div class="el__overflow">
+                                <div class="el__inner">
+                                    <div class="el__bg"></div>
+                                    <div class="el__preview-cont">
+                                        <h2 class="el__heading">Snack Cherry Tomatoes</h2>
+                                        <p>KNOW MORE</p>
+                                    </div>
+                                    <div class="el__content">
+                                        <div class="el__text">
+                                            <h1>Snack Cherry Tomatoes</h1>
+                                            <img src="images/imagebox/bg-tomato-2.jpg" class="process_img">
+                                            <p>You will be wowed every time you pop in a cherry tomato! With no chemical residue; our beautiful, firm and nutritious cherry tomatoes are perfect for tossed salads, pastas or just snacking away those hunger pangs between meals.</p>
+
+                                            <p>The snack cherry tomato is an impressively versatile tomato – eat raw, cooked, grilled, sauced, dried, in salads or as a snack. Makes an ideal lunch companion! A salad and cooking mainstay, Nature’s Miracle snack cherry tomatoes are layered little delights. Savor the flavour that takes you through a subtle sweet, tangy, to candy burst. Fall in love with the healthy way of life.</p>
+
+                                        </div>
+                                        <div class="el__nemonics">
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Sweet & Sour.svg">
+                                            <img src="icon/mnemonics/Sweet & Sour color.svg" class="mnemonics-color">
+                                              <p>Sweet & Sour</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Juicy and Tasty.svg">
+                                            <img src="icon/mnemonics/Juicy and Tasty color.svg" class="mnemonics-color">
+                                              <p>Juicy and Tasty</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Packed with Lycopene.svg">
+                                            <img src="icon/mnemonics/Packed with Lycopene color.svg" class="mnemonics-color">
+                                              <p>Packed with Lycopene</p>
+                                          </div>
+
+                                      </div>
+                                        <div class="el__close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- el end -->
+                        <!-- el start -->
+                        <div class="el">
+                            <div class="el__overflow">
+                                <div class="el__inner">
+                                    <div class="el__bg"></div>
+                                    <div class="el__preview-cont">
+                                        <h2 class="el__heading">Cherry on Vine</h2>
+                                        <p>KNOW MORE</p>
+                                    </div>
+                                    <div class="el__content">
+                                        <div class="el__text">
+                                            <h1>Cherry on Vine</h1>
+                                            <img src="images/imagebox/bg-tomato-3.jpg" class="process_img">
+                                            <p>Enjoy a cherry that turned tomato but couldn’t leave the vine. We bring not only the fruit but the vine to your table for you to pluck and have them fresh. These pollution-protected cherry vines are grown in our glass encased greenhouse to give you the best of health.</p>
+
+                                            <p>These should be called ‘tomato soup on the vine.’ Cook for 15 minutes and you will have the finest tomato soup you have ever tasted. But no, you won't stop there. You will want to try these red vine tomatoes in sauces, jams, and salads – baked, grilled or raw. The possibilities are endless!</p>
+                                        </div>
+                                        <div class="el__nemonics">
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Packed with Lycopene.svg">
+                                            <img src="icon/mnemonics/Packed with Lycopene color.svg" class="mnemonics-color">
+                                              <p>Enriched Salad Companion</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Packed with Lycopene.svg">
+                                            <img src="icon/mnemonics/Packed with Lycopene color.svg" class="mnemonics-color">
+                                              <p>Packed with Natural Freshness</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                            <img src="icon/mnemonics/Packed with Lycopene.svg">
+                                            <img src="icon/mnemonics/Packed with Lycopene color.svg" class="mnemonics-color">
+                                              <p>Your Delicious Curry’s Best friend</p>
+                                          </div>
+
+                                      </div>
+                                        <div class="el__close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- el end -->
+                        <!-- el start -->
+                        <div class="el">
+                            <div class="el__overflow">
+                                <div class="el__inner">
+                                    <div class="el__bg"></div>
+                                    <div class="el__preview-cont">
+                                        <h2 class="el__heading">King Tomatoes</h2>
+                                        <p>KNOW MORE</p>
+                                    </div>
+                                    <div class="el__content">
+                                        <div class="el__text">
+                                            <h1>King Tomatoes</h1>
+                                            <img src="images/imagebox/bg-tomato-4.jpg" class="process_img">
+                                            <p>Revel in the textbook perfection of our king tomatoes. Get these big and luscious plump tomatoes to enhance the texture and flavour of your gravies, salsas, burger patties, sauces, juices, soups, stuffed sandwiches etc. Dice them or mash them, these king tomatoes act as a perfect foundation for any dish.</p>
+
+                                            <p>This garden-fresh beauty is the ultimate salsa tomato and will surprise you on the grill as a thick-sliced patty substitute. King tomatoes are the ideal crushing tomato with lots of juice and make a lovely base for cold sauces and dips.</p>
+
+                                        </div>
+                                        <div class="el__nemonics">
+                                          <div class="nemonics-box">
+                                              <img src="images/home/basket.svg">
+                                              <p>Packed with lycopene</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                              <img src="images/home/nature.svg">
+                                              <p>Your salad and dressing companion</p>
+                                          </div>
+                                          <div class="nemonics-box">
+                                              <img src="images/home/curry.svg">
+                                              <p>Juicy and Tasty with Roughage</p>
+                                          </div>
+
+                                      </div>
+                                        <div class="el__close-btn"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- el end -->
+
+                    </div>
+                    <!-- cont inner end -->
+                </div>
+
+            </div>
+            <div class="flat-divider d42px"></div>
+        </section>
+
+        <div class="container" id="my-slide">
+            <div class="title-section style2 ">
+                <h1 class="title">Explore the Range</h1>
+            </div>
+
+            <div id="mixedSlider3">
+                <div class="MS-content">
+
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/3.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Candy Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="imgTitle">
+                            <img src="images/varients/5.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Circus Mix</strong>
+                                <br>400gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/6.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Circus Mega Mix</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/7.png" alt="" />
+                            <p class="itemTitle text-center"><strong>King Tomatoes</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/9.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Cherry Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/10.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Candy Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="MS-controls">
+                    <button class="MS-left"><img src="images/varients/prev.svg"></button>
+                    <button class="MS-right"><img src="images/varients/next.svg"></button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="foo">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="widget widget_text">
+                                    <h3 class="widget-title">About Us</h3>
+                                    <div class="textwidget">
+                                        <p>The First Large-Scale Automated and Soilless Greenhouse in the Country!</p>
+                                        <ul class="footer-info">
+                                            <li class="address">GM-09 to GM-12, Gaur Mulberry Mansions,
+                                                <br> Plot No. FH-02, Sector Agricultural Greens,
+                                                <br> Greater Noida-201308, U.P., India</li>
+
+                                            <li class="phone"><a href="tel:1800-121-1929">1800-121-1929</a></li>
+
+                                            <li class="email"><a href="mailto:feedback@naturesmiracle.in">feedback@naturesmiracle.in</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-3 -->
+
+                            <div class="col-md-2 col-sm-6 col-6">
+                                <div class="widget widget-link clearfix">
+                                    <h3 class="widget-title">Navigate </h3>
+
+                                    <ul class="links">
+                                        <li><a href="home.html.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a>
+                                            <span class="fa fa-caret-down" aria-hidden="true" data-toggle="collapse" data-target="#demo1"></span>
+                                            <ul id="demo1" class="collapse">
+                                                <li><a href="company.html">Company</a></li>
+                                                <li><a href="how-we-grow.html">How We Grow</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="products.html">Products
+                            </a>
+                                            <span class="fa fa-caret-down" aria-hidden="true" data-toggle="collapse" data-target="#demo2"></span>
+                                            <ul id="demo2" class="collapse">
+                                                <li><a href="tomatoes.html">Tomatoes</a></li>
+                                                <li><a href="cucumbers.html">Cucumbers</a></li>
+                                                <li><a href="peppers.html">Peppers</a></li>
+                                                <li><a href="strawberries.html">Strawberries</a></li>
+                                                <li><a href="wheatgrass.html">Wheatgrass</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="events.html">Events</a></li>
+                                        <li><a href="recipes.html">Recipes</a></li>
+                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.col-md-3 -->
+
+                            <div class="col-md-2 col-sm-6 col-6">
+                                <div class="widget widget-link">
+                                    <h3 class="widget-title">Follow Us </h3>
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/mynaturesmiracle/" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</a>
+                                        <a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+                                        <a href="https://twitter.com/_NaturesMiracle" target="_blank"><i class="fa fa-twitter-square"></i>Twitter</a>
+                                        <a href="https://www.youtube.com/channel/UCF169_lpfIxVTUKJlkKpvZQ" target="_blank"><i class="fa fa-youtube-play"></i>Youtube</a>
+                                        <a href="https://www.linkedin.com/in/nature-s-miracle-llp-492376142/" target="_blank"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="widget widget_instagram">
+                                    <h3 class="widget-title">Instagram</h3>
+
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="https://www.instagram.com/p/Byey-N2lb81/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i1.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/p/ByUVfK_lgFt/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i2.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/BySmCXvl0nv/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i3.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bx9nf41lIj9/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i4.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bx32ph5FgUz/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i5.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bxzmg5sJC4s/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i6.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- /.widget_instagram -->
+                            </div>
+                            <!-- /.col-md-3 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.foo -->
+            </div>
+            <!-- /.footer-widgets -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <div class="copyright-content">
+                                    Copyright © 2020 <a href="http://naturesmiracle.in/" target="_blank">Nature's Miracle</a > All Rights reserved.</div>
+                     </div>
+                     <!-- Go Top -->
+                     <a class="go-top-v1"> <i class="fa fa-arrow-up"></i>  &nbsp;Back to Top</a>
+                                </div>
+                                <!-- /.col-md-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.footer-content -->
+        </footer>
+
+        </div>
+        <!--box -->
+
+        <!-- Javascript -->
+
+        <script type="text/javascript" src="javascript/3.1.1-jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+        <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+        <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+        <script type="text/javascript" src="javascript/parallax.js"></script>
+        <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+        <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+        <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+        <script type="text/javascript" src="javascript/countdown.js"></script>
+        <!-- <script type="text/javascript" src="javascript/switcher.js"></script> -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvV0EE3yFozGhjmUv3BgoyviVdXzCwHlk"></script>
+        <script type="text/javascript" src="javascript/gmap3.min.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+
+        <!-- Revolution Slider -->
+        <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="javascript/slider.js"></script>
+
+        <script src="javascript/multislider.min.js"></script>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            document.getElementById("defaultOpen").click();
+
+            function showthis() {
+                document.getElementById("mega-slide").style.display = "block";
+            }
+
+            function hidethis() {
+                document.getElementById("mega-slide").style.display = "none";
+            }
+        </script>
+
+        <script>
+            var $cont = document.querySelector('.cont');
+            var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+            var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+
+            setTimeout(function() {
+                $cont.classList.remove('s--inactive');
+            }, 200);
+
+            $elsArr.forEach(function($el) {
+                $el.addEventListener('click', function() {
+                    if (this.classList.contains('s--active')) return;
+                    $cont.classList.add('s--el-active');
+                    this.classList.add('s--active');
+                });
+            });
+
+            $closeBtnsArr.forEach(function($btn) {
+                $btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    $cont.classList.remove('s--el-active');
+                    document.querySelector('.el.s--active').classList.remove('s--active');
+                });
+            });
+
+            /* slider */
+
+            $('#mixedSlider3').multislider({
+                duration: 750,
+                interval: 2000
+            });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  <link>
+<title>Home</title>
+    <url>home.html</url>
+  </link>
+  <link>
+<title>Events</title>
+    <url>home.html#gallery</url>
+  </link>
+  <link>
+<title>Lates News</title>
+    <url>home.html#lates-news</url>
+  </link>
+  <link>
+    <title>Company</title>
+    <url>company.html</url>
+  </link>
+  <link>
+    <title>About</title>
+    <url>company.html</url>
+  </link>
+  <link>
+    <title>How We Grow</title>
+    <url>how-we-grow.html</url>
+  </link>
+  <link>
+    <title>Products</title>
+    <url>products.html</url>
+  </link>
+  <link>
+    <title>Recipes</title>
+    <url>recipes.html</url>
+  </link>
+  <link>
+    <title>The Flavours of Nature!</title>
+    <url>recipes.html</url>
+  </link>
+  <link>
+    <title>Blog - Natures Miracle</title>
+    <url>blog.html</url>
+  </link>
+  <link>
+    <title>Contact Us - Natures Miracle</title>
+    <url>contact-us.html</url>
+  </link>
+  <link>
+    <title>FAQs - Natures Miracle</title>
+    <url>faqs.html</url>
+  </link>
+   <link>
+    <title>All About Hydroponics – A Nature’s Miracle</title>
+    <url>all-about-hydroponics-a-natures-miracle.html</url>
+  </link>
+   <link>
+    <title>Nature’s Miracle Launches Fruits And Vegetables</title>
+    <url>natures-miracle-launches-fruits-and-vegetables.html</url>
+  </link>
+   <link>
+    <title>A Low-Down on Hydroponics</title>
+    <url>a-low-down-on-hydroponics.html</url>
+  </link>
+   <link>
+    <title>Great taste at your Doorstep</title>
+    <url>great-taste-at-your-doorstep.html</url>
+  </link>
+   <link>
+    <title>A soil-free success</title>
+    <url>a-soil-free-success.html</url>
+  </link>
+   <link>
+    <title>Futuristic farming, a predicted alternative</title>
+    <url>futuristic-farming-a-predicted-alternative.html</url>
+  </link>
+  <link>
+    <title>A Gourmet Experience With Chef Manish Mehrotra</title>
+    <url>a-gourmet-experience-with-chef-manish-mehrotra.html</url>
+  </link>
+  <link>
+    <title>Growing a Miracle</title>
+    <url>growing-a-miracle.html</url>
+  </link>
+   <link>
+    <title>Chef's Special: Vicky Ratnani</title>
+    <url>chef-special.html</url>
+  </link>
+  <link>
+    <title>Soothing Spaghetti</title>
+    <url>recipe-vicky-1.html</url>
+  </link>
+  <link>
+    <title>Snack Attack</title>
+    <url>recipe-vicky-2.html</url>
+  </link>
+  <link>
+    <title>Lasagna Bolognese</title>
+    <url>recipe-vicky-3.html</url>
+  </link>
+  <link>
+    <title>Overnight Miracle</title>
+    <url>recipe-vicky-4.html</url>
+  </link>
+  <link>
+    <title>Kukes &amp; Dukkah</title>
+    <url>recipe-vicky-5.html</url>
+  </link>
+  <link>
+    <title>Chilli Con</title>
+    <url>recipe-vicky-6.html</url>
+  </link>
+  <link>
+    <title>Refreshing Caprese</title>
+    <url>recipe-vicky-7.html</url>
+  </link>
+  <link>
+    <title>Glasshouse ka Panna</title>
+    <url>recipe-vicky-8.html</url>
+  </link>
+  <link>
+    <title>Channa Chaat</title>
+    <url>recipe-vicky-9.html</url>
+  </link>
+  <link>
+    <title>Spiced-up Pepperonata</title>
+    <url>recipe-vicky-10.html</url>
+  </link>
+  <link>
+    <title>Fritter Miracle</title>
+    <url>recipe-vicky-11.html</url>
+  </link>
+  <link>
+    <title>Black Rice Khichdi</title>
+    <url>recipe-vicky-12.html</url>
+  </link>
+  <link>
+    <title>Tempting Tomatoes</title>
+    <url>recipe-tomatoes.html</url>
+  </link>
+  <link>
+    <title>Cherry Tomato Sauce Pasta</title>
+    <url>recipe-tomato-1.html</url>
+  </link>
+  <link>
+    <title>Summer Corn and Tomato Pasta</title>
+    <url>recipe-tomato-2.html</url>
+  </link>
+  <link>
+    <title>Tomato &amp; Basil Bruschetta</title>
+    <url>recipe-tomato-3.html</url>
+  </link>
+  <link>
+    <title>Blistered Cherry Tomatoes</title>
+    <url>recipe-tomato-4.html</url>
+  </link>
+  <link>
+    <title>Fried King Tomatoes</title>
+    <url>recipe-tomato-5.html</url>
+  </link>
+  <link>
+    <title>Burst Tomato-Tarragon Dipping Sauce</title>
+    <url>recipe-tomato-6.html</url>
+  </link>
+  <link>
+    <title>Greek Salad</title>
+    <url>recipe-tomato-7.html</url>
+  </link>
+  <link>
+    <title>Salad Caprese</title>
+    <url>recipe-tomato-8.html</url>
+  </link>
+  <link>
+    <title>Palatable Peppers</title>
+    <url>recipe-peppers.html</url>
+  </link>
+  <link>
+    <title>Red Pepper Soup</title>
+    <url>recipe-pepper-1.html</url>
+  </link>
+  <link>
+    <title>Stuffed Peppers</title>
+    <url>recipe-pepper-2.html</url>
+  </link>
+  <link>
+    <title>Chicken &amp; Rice Stuffed Bell Peppers</title>
+    <url>recipe-pepper-3.html</url>
+  </link>
+  <link>
+    <title>Zesty Pepper Salsa</title>
+    <url>recipe-pepper-4.html</url>
+  </link>
+  <link>
+    <title>Ratatouille</title>
+    <url>recipe-pepper-5.html</url>
+  </link>
+  <link>
+    <title>Crunchy Cucumbers</title>
+    <url>recipe-cucumbers.html</url>
+  </link>
+  <link>
+    <title>Tarator – Bulgarian Cold Cucumber Soup</title>
+    <url>recipe-cucumber-1.html</url>
+  </link>
+  <link>
+    <title>Tzatziki</title>
+    <url>recipe-cucumber-2.html</url>
+  </link>
+  <link>
+    <title>Cucumber Gazpacho</title>
+    <url>recipe-cucumber-3.html</url>
+  </link>
+  <link>
+    <title>Creamy Cucumber Salad</title>
+    <url>recipe-cucumber-4.html</url>
+  </link>
+  <link>
+    <title>Cucumber &amp; Sesame Salad</title>
+    <url>recipe-cucumber-5.html</url>
+  </link>
+  <link>
+    <title>Virgin Cucumber Cooler</title>
+    <url>recipe-cucumber-6.html</url>
+  </link>
+  <link>
+    <title>Sweet Strawberries</title>
+    <url>recipe-strawberries.html</url>
+  </link>
+  <link>
+    <title>Chocolate Covered Strawberries</title>
+    <url>recipe-strawberry-1.html</url>
+  </link>
+  <link>
+    <title>Strawberry Frozen Yogurt</title>
+    <url>recipe-strawberry-2.html</url>
+  </link>
+  <link>
+    <title>Strawberry Roll up</title>
+    <url>recipe-strawberry-3.html</url>
+  </link>
+  <link>
+    <title>Strawberry Coulis</title>
+    <url>recipe-strawberry-4.html</url>
+  </link>
+  <link>
+    <title>Strawberry Avocado Salad</title>
+    <url>recipe-strawberry-5.html</url>
+  </link>
+
+</pages>

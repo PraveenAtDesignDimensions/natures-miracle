@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<style>
+  #instafeed{
+    position: relative;
+    padding-top: 2em;
+  }
+  .insta-link{
+    position: fixed;
+    padding: 10px 5px;
+    background-color: #fff;
+    width: 100%;
+    top: 0px;
+    margin: 0px;
+  }
+  .insta-link a{
+    font-family: sans-serif;
+    color: #222;
+    text-decoration: none;
+  }
+img{
+  margin-bottom: 1em;
+  width: 100%;
+}
+</style>
+
+    <title>Instagram feed</title>
+  </head>
+  <body>
+
+    <div id="instafeed" class="row gallery">
+      <p class="insta-link"><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank">@Mynaturesmiracle</a></p>
+      <div class="widget widget_instagram">
+        <h3 class="widget-title">Instagram</h3>
+
+        <!-- Dummy Images for Now -->
+
+                <a href="https://www.instagram.com/p/Byey-N2lb81/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <img src="images/home/instagram/i1.jpg" alt="image"  class="img-fluid">
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/p/ByUVfK_lgFt/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <span><img src="images/home/instagram/i2.jpg" alt="image"  class="img-fluid"></span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/p/BySmCXvl0nv/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <img src="images/home/instagram/i3.jpg" alt="image"  class="img-fluid">
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/p/Bx9nf41lIj9/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <span><img src="images/home/instagram/i4.jpg" alt="image"  class="img-fluid"></span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/p/Bx32ph5FgUz/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <span><img src="images/home/instagram/i5.jpg" alt="image"  class="img-fluid"></span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/p/Bxzmg5sJC4s/" target="_blank">
+                    <div class="col-lg-3 instaimg">
+                        <span><img src="images/home/instagram/i6.jpg" alt="image"  class="img-fluid"></span>
+                    </div>
+                </a>
+
+ <!-- Dummy Images for Now -->
+    </div>
+    </div>
+
+  <script type="text/javascript" src="javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/instafeed.min.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+
+// userId : https://codeofaninja.com/tools/find-instagram-user-id
+// accessToken :https://instagram.pixelunion.net/
+
+var userFeed = new Instafeed({
+    get: 'user',
+    userId: '1599614548',
+    limit: 12,
+    resolution: 'standard_resolution',
+    accessToken: '1599614548.1677ed0.37dac5c87974482085829253dcecbbce',
+    sortBy: 'most-recent',
+    template: '<div class="col-lg-3 instaimg"><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+});
+
+userFeed.run();
+
+});
+  </script>
+
+  </body>
+</html>

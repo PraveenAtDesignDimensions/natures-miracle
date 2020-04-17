@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Home | Nature's Miracle</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/jquery.datetimepicker.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon" sizes="48x48">
+    <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+        #welcome {
+            background-color: #fff;
+            position: fixed;
+            top: 0px;
+            z-index: 99999;
+            background-image: url("images/1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+        }
+        
+        .over {
+            padding: 3% 2em;
+            background-color: rgba(0, 0, 0, .5);
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        #video {
+            width: 50%;
+            margin: auto;
+            padding: 1em;
+        }
+        
+        .welcome-logo {
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+        
+        #welcome h2 {
+            font-family: 'Roboto Slab', serif;
+            margin-top: .5em;
+            color: #fff;
+            font-weight: 100;
+        }
+        
+        #skip {
+            color: #fff;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            width: 100px;
+            display: block;
+            margin: auto;
+            margin-top: .5em;
+            text-decoration: none;
+        }
+        
+        #skip:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        #skip:hover #skip span {
+            padding-left: 10px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .over {
+                padding: 4em 1em;
+            }
+            #video {
+                width: 100%;
+                margin: auto;
+                padding: 1em 0;
+            }
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .hide-small {
+                display: none;
+            }
+        }
+        
+        .Benefits {
+            background-image: url(images/home/bg-banner.jpg);
+            background-color: #e54c2a;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-bottom: 70px;
+        }
+        
+        .single-product img {
+            width: 100%;
+            transition: all 0.8s ease;
+            cursor: pointer;
+            transform: scale(.5);
+        }
+        
+        .opacity-layer {
+            background-color: rgba(255, 203, 179, 0.0);
+            height: 100%;
+        }
+        
+        .my-center {
+            text-align: center !important;
+        }
+        
+        .single-product p {
+            color: #000;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        
+        .link_underline:hover {
+            text-decoration: underline;
+        }
+        
+        .flat-latest-new .blog-shortcode {
+            margin-top: 80px;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .Benefits {
+                height: 1400px;
+                margin-bottom: 0px;
+            }
+            .single-product {
+                text-align: center;
+            }
+            .single-product img {
+                width: 100%;
+                transition: all 0.8s ease;
+                cursor: pointer;
+                max-width: 200px;
+                margin: auto;
+                transform: scale(.4);
+            }
+            .flat-imagebox .item {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+            .featured-post img{
+                width:100%;
+            }
+            .flat-latest-new .blog-shortcode {
+                margin-top: 0px;
+            }
+            .title-section.style4 {
+                padding-top: 20px;
+            }
+            .flat-testimonial {
+                padding-bottom: 0px !important;
+            }
+            .flat-video-fancybox{
+                margin-bottom: 15px;
+            }
+        }
+        
+        @media only screen and (max-width: 1285px) {
+            .flat-projects-portfolio {
+                max-height: 630px;
+            }
+        }
+        
+        @media only screen and (max-width: 992px) {
+            .flat-projects-portfolio {
+                max-height: 525px;
+            }
+        }
+        
+        @media only screen and (max-width: 868px) {
+            .flat-projects-portfolio {
+                max-height: 515px;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .flat-projects-portfolio {
+                max-height: 470px;
+            }
+            .wrap-content-story {
+                padding-left: 0px;
+            }
+        }
+        
+        @media only screen and (max-width: 678px) {
+            .flat-projects-portfolio {
+                max-height: 470px;
+            }
+        }
+        
+        @media only screen and (max-width: 578px) {
+            .flat-projects-portfolio {
+                max-height: 430px;
+            }
+        }
+        
+        @media only screen and (max-width: 478px) {
+            .flat-projects-portfolio {
+                max-height: 1680px;
+            }
+        }
+        
+        @media only screen and (max-width: 478px) {
+            .flat-projects-portfolio {
+                max-height: 2130px;
+            }
+        }
+        
+        @media only screen and (max-width: 375px) {
+            .flat-projects-portfolio {
+                max-height: 1680px;
+            }
+        }
+        
+        @media only screen and (max-width: 320px) {
+            .flat-projects-portfolio {
+                max-height: 1680px;
+            }
+        }
+        
+        .iconlist li i {
+            color: transparent;
+            font-size: 20px;
+        }
+        
+        .fa-circle-o:before {
+            background-image: url(images/home/tomato2.png);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .color-div {
+            border: 5px solid #e44c2a;
+            padding: 2.5em 1em 2.5em 0;
+            margin-top: 35px;
+            border-radius: 0 2rem;
+        }
+        
+        .slide-btn {
+            padding: 1em 0em !important;
+        }
+        
+        .slide-btn a {
+            padding: .4em .8em;
+            color: #fff;
+            border: 1px solid #fff;
+            font-size: 18px;
+            border-radius: 1px;
+            text-transform: uppercase;
+        }
+        
+        .slide-btn a:hover {
+            color: #e44c2a;
+            background-color: #fff;
+            box-shadow: 2px 0px 5px rgba(255, 255, 255, 0.1)
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .slide-btn a {
+                font-size: calc(7px + 1vw);
+                padding: .2em .5em;
+            }
+            .slide-btn {
+                padding: 1em 0em !important;
+            }
+            .tp-caption.desc-slide {
+                display: none;
+            }
+            .flat-sliders-container {
+                margin-bottom: 100px;
+            }
+        }
+        
+        .blog-shortcode .col-md-6 {
+            padding: 0px !important;
+        }
+    </style>
+
+</head>
+
+<body class="">
+
+    <!-- Meta Info -->
+
+    <div class="home-delivery">
+        <a href="mailto:feedback@naturesmiracle.in">
+            <span class="fa fa-envelope" aria-hidden="true"></span> feedback@naturesmiracle.in</a>
+
+        <a href="tel:18001211929">
+            <span class="fa fa-phone" aria-hidden="true"></span> 1800-121-1929 (Toll-Free)</a>
+
+        <a href="contact-us.html">
+            <span class="fa fa-map-marker" aria-hidden="true"></span> Find Store</a>
+
+        <a href="https://www.marcheretail.com/home-delivery" target="_blank" class="svg-d">
+
+            <span class="fa fa-truck" aria-hidden="true"></span> Home Delivery
+            <br> <span class="onlyin" style="font-size:80%;">(Delhi/NCR Only)</span></a>
+
+    </div>
+
+    <!-- Meta Info -->
+
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
+
+    <div class="box">
+        <header id="header" class="header clearfix">
+            <div class="header-wrap clearfix">
+                <div class="container-myheader">
+
+                    <div class="btn-menu">
+                        <span></span>
+                    </div>
+
+                    <div class="my-logo">
+                        <a href="home.html">
+                            <img src="images/logo.png" alt="image">
+                        </a>
+                    </div>
+
+                    <nav id="mainnav" class="mainnav">
+                        <ul class="menu">
+                            <li>
+                                <a href="home.html">Home  
+                                    </a>
+                            </li>
+                            <li class="has-sub">
+                                <a href="about-us.html">About Us  
+                                        <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                                <ul class="submenu right-sub-menu ">
+                                    <li><a href="about-us.html#company">Company</a></li>
+                                    <li><a href="about-us.html#how-we-grow">How We Grow</a></li>
+                                    <li><a href="key-differentiators.html">How We Are Different</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-sub">
+                                <a href="products.html">Products
+                                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                                    </a>
+                                <ul class="submenu right-sub-menu ">
+                                    <li><a href="tomatoes.html">Tomatoes</a></li>
+                                    <li><a href="cucumbers.html">Cucumbers</a></li>
+                                    <li><a href="peppers.html">Peppers</a></li>
+                                    <li><a href="strawberries.html">Strawberries</a></li>
+                                    <li><a href="wheatgrass.html">Wheatgrass</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li class="hide-small">
+                                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            </li>
+                            <li>
+                                <a href="recipes.html">Recipes</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <!--/.menu -->
+                    </nav>
+                    <!--/.mainnav -->
+                </div>
+                <!--/.container -->
+            </div>
+            <!--/.header-wrap -->
+        </header>
+        <!--/.header -->
+
+        <div class="flag">
+            <ul>
+                <li class="bb">
+                    <img src="images/home/sprout.svg">
+                    <h5>Go Soil Free</h5>
+                    <p>Replacing Soil with Cocopeat</p>
+                </li>
+                <li class="bb">
+                    <img src="images/home/save-water.svg">
+                    <h5>Environment Friendly</h5>
+                    <p>90% Less Water Consumption</p>
+                </li>
+                <li>
+                    <img src="images/home/harvest.svg">
+                    <h5>Eat Raw</h5>
+                    <p>Perfect for Raw Snacking</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slider -->
+        <div class="flat-sliders-container">
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/1.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="100" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Health and Happiness in
+                                <br> every bite
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="100" data-y="450" data-speed="500" data-start="1500" data-easing="Power3.easeInOut"><a href="products.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/2.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="100" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Six different climates at
+                                <br>any given time in one
+                                <br>greenhouseLooks like
+                                <br>a Miracle
+
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="100" data-y="500" data-speed="1200" data-start="1500" data-easing="Power3.easeInOut"><a href="tomatoes.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/3.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="100" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Sweeter Crunchier Health
+                                <br>on the Go!
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="100" data-y="450" data-speed="1200" data-start="1500" data-easing="Power3.easeInOut"><a href="cucumbers.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/4.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="100" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Dutch Hydroponics,
+                                <br>First time in India!
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="100" data-y="450" data-speed="1200" data-start="1500" data-easing="Power3.easeInOut"><a href="peppers.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/5.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="100" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Hydroponic strawberries
+                                <br> you’ll fall in love with!
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="100" data-y="450" data-speed="1200" data-start="1500" data-easing="Power3.easeInOut"><a href="strawberries.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                        <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                            <img src="images/slides/6.jpg" alt="slider-image" />
+                            <div class="tp-caption sfl title-slide style6" data-x="120" data-y="230" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Nature's
+                                <br>Miracle</div>
+                            <div class="tp-caption sfr description-slider style1" data-x="120" data-y="350" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">Hydroponic Tomatoes
+                                <br> you’ll fall in love with!
+                            </div>
+                            <div class="slide-btn tp-caption" data-x="120" data-y="450" data-speed="1200" data-start="1500" data-easing="Power3.easeInOut"><a href="wheatgrass.html">Know More</a></div>
+                            <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="200" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                                <a href="about-us.html#how-we-grow"><span>What is<br><br>Hydroponics? </span></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="flat-vertical social-links">
+                <a href="https://www.youtube.com/channel/UCF169_lpfIxVTUKJlkKpvZQ" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/mynaturesmiracle/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/_NaturesMiracle" target="_blank"><i class="fa fa-twitter"></i></a>
+
+                <span>FOLLOW US</span>
+            </div>
+
+        </div>
+
+        <section class="flat-row flat-our">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 about-img">
+                        <img src="images/imagebox/11.jpg" alt="images">
+                    </div>
+                    <!--col-md-6-->
+
+                    <div class="col-md-6">
+                        <!--<div class="color-div"> -->
+                        <div class="flat-divider d35px"></div>
+                        <div class="wrap-content-story">
+                            <div class="title-section style2 ">
+                                <h1 class="title">About Us</h1>
+                            </div>
+                            <p class="content-story">We at Nature’s Miracle, are committed to produce fruits & vegetables matching the highest standards of quality prevailing in the international market. With the glocalization of consumer information and their quality expectations from products and services, our team is fully committed to developing all round capabilities in bringing high-quality fruits and vegetables to consumers across India. Ours is a first of its kind Glass Greenhouse of this scale in India. We are Global GAP Certified Growers and follow protocols that match the international standards. </p>
+                            <ul class="iconlist">
+                                <li><i class="fa fa-circle-o"></i> Grown in high porosity mediums like coco peat, instead of regular soil. </li>
+                                <li><i class="fa fa-circle-o"></i> Use of zero GMO seeds. </li>
+                                <li><i class="fa fa-circle-o"></i> All year round farming, without using any artificial means to enhance growth. </li>
+                                <li><i class="fa fa-circle-o"></i> Save up to 90% more water than regular farming. </li>
+                            </ul>
+                            <div class="know-home">
+                                <a href="about-us.html">Know More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.col-md-6-->
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container -->
+        </section>
+
+    </div>
+    <!--/.box -->
+
+    <section id="Benefits">
+        <div class="Benefits">
+            <div class="opacity-layer">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flat-divider d96px"></div>
+                            <div>
+                                <div class="title-section my-center">
+                                    <h1 class="text-center">First Time in India!</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 col-sm-1"></div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="single-product">
+                                <img src="images/home/1.svg">
+                                <p class="text-center">Hydroponic</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="single-product">
+                                <img src="images/home/2.svg">
+                                <p class="text-center">Handpicked</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="single-product">
+                                <img src="images/home/3.svg">
+                                <p class="text-center">Low Calories</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="single-product">
+                                <img src="images/home/4.svg">
+                                <p class="text-center">Nutritious</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="single-product">
+                                <img src="images/home/5.svg">
+                                <p class="text-center">Hygienically Grown</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1  col-sm-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="box" style="padding-top:0px;">
+        <!--.box -->
+        <section class="flat-row products" style="padding-top:0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section style2 ">
+                            <div class="top-section">
+                                <p>Explore</p>
+                            </div>
+                            <h1 class="title">Health & Happiness in every bite! </h1>
+                        </div>
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+                <div class="product-row">
+                    <div class="product-box">
+                        <div class="product effect1">
+                            <div class="box-wrap">
+                                <div class="box-image">
+                                    <a href="tomatoes.html"><img src="images/imagebox/Tomatoes.jpg" alt="images"></a>
+                                </div>
+                                <div class="box-content">
+                                    <h6>TOMATOES</h6>
+                                    <p>Packed with vitamins & nutrients for all your dishes, excite your imagination as to how you could enjoy them! </p>
+                                    <ul>
+                                        <li><a href="tomatoes.html">Know more</a></li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="product effect1">
+                            <div class="box-wrap">
+                                <div class="box-image">
+                                    <a href="cucumbers.html"><img src="images/imagebox/Cucumbers.jpg" alt="images"></a>
+                                </div>
+                                <div class="box-content">
+                                    <h6>CUCUMBERS</h6>
+                                    <p>Now enjoy crunching away to better health with our tasty cucumbers, which are not ‘bitter’ by nature!</p>
+                                    <ul>
+                                        <li><a href="cucumbers.html">Know more</a></li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="product effect1">
+                            <div class="box-wrap">
+                                <div class="box-image">
+                                    <a href="peppers.html"><img src="images/imagebox/Peppers.jpg" alt="images"></a>
+                                </div>
+                                <div class="box-content">
+                                    <h6>PEPPERS</h6>
+                                    <p>Sweet and crunchy, our peppers pack a glossy healthy sheen with a colorful source of vitamins!
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <ul>
+                                        <li><a href="peppers.html">Know more</a></li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="product effect1">
+                            <div class="box-wrap">
+                                <div class="box-image">
+                                    <a href="strawberries.html"><img src="images/imagebox/Strawberries.jpg" alt="images"></a>
+                                </div>
+                                <div class="box-content">
+                                    <h6>STRAWBERRIES</h6>
+                                    <p>With beauty on the outside and the nutrient-packed goodness on the inside, enjoy them fresh!
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <ul>
+                                        <li><a href="strawberries.html">Know more</a></li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-box">
+                        <div class="product effect1">
+                            <div class="box-wrap">
+                                <div class="box-image">
+                                    <a href="wheatgrass.html"><img src="images/imagebox/Wheatgrass.jpg" alt="images"></a>
+                                </div>
+                                <div class="box-content">
+                                    <h6>WHEATGRASS</h6>
+                                    <p>Packed with vitamins & nutrients for all your dishes, excite your imagination as to how you could enjoy them! </p>
+                                    <ul>
+                                        <li><a href="wheatgrass.html">Know more</a></li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--row-->
+            </div>
+            <!--container -->
+        </section>
+
+        <!-- Flat projects portfolio -->
+        <section class="flat-row flat-gallery" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section style1 ">
+                            <div class="top-section">
+                                <p>Experience</p>
+                            </div>
+                            <h1 class="title">Events</h1>
+                        </div>
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="flat-projects-portfolio ">
+                        <ul class="portfolio-filter">
+                            <li class="active"><a data-filter=".event1" href="#">Greenhouse Event</a></li>
+                            <li class=""><a data-filter=".event2" href="#">Le'Marche Branding</a></li>
+                            <li class=""><a data-filter=".event3" href="#">Fresh Produce India</a></li>
+                            <li class=""><a data-filter=".event4" href="#">IHE</a></li>
+                            <li class=""><a data-filter=".event5" href="#">German Embassy Event</a></li>
+                            <li class=""><a data-filter=".event6" href="#">Asia Fruit Logistics</a></li>
+                        </ul>
+                        <!-- /.project-filter -->
+
+                        <div class="projects-portfolio clearfix">
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e01.jpg" alt="image"></a>
+                                    </div>
+                                </div>
+                                <!-- /.item -->
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e02.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e03.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e04.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e05.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event1">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e06.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event2">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e1.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event2">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e2.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event2">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e3.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event2">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e4.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event3">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e11.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event3">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e12.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event3">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e13.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event3">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e14.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event4">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e21.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event4">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e22.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event4">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e23.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event4">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e24.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event5">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e31.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event5">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e32.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event5">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e33.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event5">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e34.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event6">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e41.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event6">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e42.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                            <div class="projects-portfolio-wrap event6">
+                                <div class="item">
+                                    <div class="portfolio-img flat-hover-images">
+                                        <a href="gallery-list.html"><img src="images/home/e43.jpg" alt="image"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.projects-portfolio-wrap -->
+
+                        </div>
+                        <!-- /.projects-portfolio -->
+
+                    </div>
+
+                    <div class="know-home" style="margin: auto;margin-top: 30px;width:fit-content;">
+                        <a href="events.html">GO TO EVENT PAGE</a>
+                    </div>
+
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container -->
+        </section>
+
+        <!-- Flat latest new -->
+        <section class="flat-row flat-latest-new" id="lates-news">
+            <div class="container">
+                <div class="row">
+                    <div class="blog-shortcode blog-slist">
+
+                        <article class="post col-md-6 clearfix">
+                            <div class="title-section style4">
+                                <h1 class="title">Latest <span>News</span> </h1>
+                            </div>
+
+                            <div class="content-post">
+                                <div class="entry-meta">2 Feb, 2019</div>
+
+                                <h3 class="title-post"><a href="https://www.youtube.com/channel/UCF169_lpfIxVTUKJlkKpvZQ" target="_blank">Fruits and veggies are getting delicious! </a></h3>
+
+                                <div class="entry-post excerpt">
+                                    <p>A Dutch hydroponic technology has come to change the way we know veggies and fruits.</p>
+                                    <div class="read-more">
+                                        <a href="https://www.youtube.com/channel/UCF169_lpfIxVTUKJlkKpvZQ" target="_blank">See The Videos                                          
+                                </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+
+                        <article class="post col-md-6 col-xs-12 clearfix bg_white">
+                            <div class="flat-video-fancybox">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Boh0_PYm8vc?mute=1"></iframe>
+                                </div>
+
+                            </div>
+                        </article>
+
+                        <article class="post col-md-6 clearfix bg_white">
+                            <div class="featured-post">
+                                <a href="a-gourmet-experience-with-chef-manish-mehrotra.html"><img src="images/blog/sh1.jpg" alt="image"></a>
+                            </div>
+
+                            <div class="content-post bgffff">
+                                <div class="entry-meta">9 March 2019</div>
+
+                                <h3 class="title-post"><a href="a-gourmet-experience-with-chef-manish-mehrotra.html">A Gourmet Experience</a></h3>
+
+                                <div class="entry-post excerpt">
+                                    <p>To provide farm to table experience, Celebrity Chef Manish Mehrotra played host... </p>
+                                    <div class="read-more">
+                                        <a href="a-gourmet-experience-with-chef-manish-mehrotra.html">Read more                                          
+                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+
+                        <article class="post col-md-6 clearfix bg_white">
+                            <div class="featured-post">
+                                <a href="growing-a-miracle.html"><img src="images/blog/sh2.jpg" alt="image"></a>
+                            </div>
+
+                            <div class="content-post bgffff">
+                                <div class="entry-meta">9 March 2019</div>
+
+                                <h3 class="title-post"><a href="growing-a-miracle.html">Growing a Miracle</a></h3>
+
+                                <div class="entry-post excerpt">
+                                    <p>An organic food revolution by introducing hydroponic technology to India...</p>
+                                    <div class="read-more">
+                                        <a href="growing-a-miracle.html">Read more                                          
+                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.content-post -->
+                        </article>
+
+                    </div>
+                </div>
+                <!--row-->
+            </div>
+            <!--container -->
+        </section>
+
+        <!-- Flat testimonial -->
+        <section class="flat-row flat-testimonial about-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-section margb-27px">
+                            <h1 class="title">Our Customers Say</h1>
+                        </div>
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="flat-carousel">
+                            <div class="owl-carousel-services">
+
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "I am always looking to do my part as an environmentally conscious person. So, when I heard about this new technology brought to India by Nature's Miracle, I was bound to try it. Not only is the quality good, but it's also great for the environment. So I would totally recommend this to all the people who care to make a change for the planet."
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title-post"><a>Akshay Malhotra  </a></h6>
+                                        <p>Businessman</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "I came across these products at Le Marche and was instantly drawn to them. They looked fresher and more juicy than the average vegetables one finds in summer. The tomatoes were juicy and stayed fresh for much longer than I expected!"
+
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title"><a>Nidhi Singh</a></h6>
+                                        <p> Homemaker</p>
+                                    </div>
+                                </div>
+
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "For me, health is of utmost importance, and these vegetables have won my heart. Not only are they delicious, but due to no harm done by the fertilisers and the various other chemicals used these days, they are much healthier. And not to forget, better for Earth's health too!"
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title-post"><a>Rishabh Nagpal  </a></h6>
+                                        <p>Yoga Instructor</p>
+                                    </div>
+                                </div>
+
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "Thanks to Nature’s Miracle vegetables, I am assured that my son is getting the best nutrients required for his good health. He loves the fresh taste of the dishes prepared and has started enjoying bell peppers which he never used to eat earlier. "
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title-post"><a>Laxmi Kumar</a></h6>
+                                        <p>Doctor</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "It was difficult to get organic vegetables throughout the year and therefore we were forced to use the frozen vegetables. But with the help of Nature’s Miracle it is much easier to get bell peppers through the year. The quality is far better than what I used to purchase from the local vegetable seller."
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title-post"><a>Shivani Grover </a></h6>
+                                        <p>IT Professional</p>
+                                    </div>
+                                </div>
+
+                                <div class="item-owl">
+                                    <div class="blockquote-testimo">
+                                        <p> "I love the fact that they have so many varieties of tomatoes. I have started eating more salad due to my new found love of grape and cherry tomatoes by Nature’s Miracle."
+                                        </p>
+                                    </div>
+
+                                    <div class="title-testimonial">
+                                        <h6 class="title-post"><a>Radhika Agarwal</a></h6>
+                                        <p>Student</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--/.owl-carousel-services-v2-->
+                        </div>
+                        <!--/.flat-carousel-v2-->
+                    </div>
+                    <!--/.col-md-12-->
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container -->
+        </section>
+
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="foo">
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="widget widget_text">
+                                    <h3 class="widget-title">About Us</h3>
+                                    <div class="textwidget">
+                                        <p>The First Large-Scale Automated and Soilless Greenhouse in the Country!</p>
+                                        <ul class="footer-info">
+                                            <li class="address">GM-09 to GM-12, Gaur Mulberry Mansions,
+                                                <br> Plot No. FH-02, Sector Agricultural Greens,
+                                                <br> Greater Noida-201308, U.P., India</li>
+
+                                            <li class="phone"><a href="tel:1800-121-1929">1800-121-1929</a></li>
+
+                                            <li class="email"><a href="mailto:feedback@naturesmiracle.in">feedback@naturesmiracle.in</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.col-md-3 -->
+
+                            <div class="col-md-2 col-sm-6 col-6">
+                                <div class="widget widget-link clearfix">
+                                    <h3 class="widget-title">Navigate </h3>
+
+                                    <ul class="links">
+                                        <li><a href="home.html.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a>
+                                            <span class="fa fa-caret-down" aria-hidden="true" data-toggle="collapse" data-target="#demo1"></span>
+                                            <ul id="demo1" class="collapse">
+                                                <li><a href="company.html">Company</a></li>
+                                                <li><a href="how-we-grow.html">How We Grow</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li><a href="products.html">Products
+                            </a>
+                                            <span class="fa fa-caret-down" aria-hidden="true" data-toggle="collapse" data-target="#demo2"></span>
+                                            <ul id="demo2" class="collapse">
+                                                <li><a href="tomatoes.html">Tomatoes</a></li>
+                                                <li><a href="cucumbers.html">Cucumbers</a></li>
+                                                <li><a href="peppers.html">Peppers</a></li>
+                                                <li><a href="strawberries.html">Strawberries</a></li>
+                                                <li><a href="wheatgrass.html">Wheatgrass</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="events.html">Events</a></li>
+                                        <li><a href="recipes.html">Recipes</a></li>
+                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.col-md-3 -->
+
+                            <div class="col-md-2 col-sm-6 col-6">
+                                <div class="widget widget-link">
+                                    <h3 class="widget-title">Follow Us </h3>
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/mynaturesmiracle/" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</a>
+                                        <a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+                                        <a href="https://twitter.com/_NaturesMiracle" target="_blank"><i class="fa fa-twitter-square"></i>Twitter</a>
+                                        <a href="https://www.youtube.com/channel/UCF169_lpfIxVTUKJlkKpvZQ" target="_blank"><i class="fa fa-youtube-play"></i>Youtube</a>
+                                        <a href="https://www.linkedin.com/in/nature-s-miracle-llp-492376142/" target="_blank"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 col-xs-12">
+                                <div class="widget widget_instagram">
+                                    <h3 class="widget-title">Instagram</h3>
+
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="https://www.instagram.com/p/Byey-N2lb81/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i1.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/p/ByUVfK_lgFt/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i2.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/BySmCXvl0nv/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i3.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bx9nf41lIj9/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i4.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bx32ph5FgUz/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i5.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="last">
+                                            <a href="https://www.instagram.com/p/Bxzmg5sJC4s/" target="_blank">
+                                                <div class="thumb images-hover flat-hover-images">
+                                                    <span><img src="images/home/instagram/i6.jpg" alt="image"></span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- /.widget_instagram -->
+                            </div>
+                            <!-- /.col-md-3 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.foo -->
+            </div>
+            <!-- /.footer-widgets -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <div class="copyright-content">
+                                    Copyright © 2020 <a href="http://naturesmiracle.in/" target="_blank">Nature's Miracle</a > All Rights reserved.</div>
+                     </div>
+                     <!-- Go Top -->
+                     <a class="go-top-v1"> <i class="fa fa-arrow-up"></i>  &nbsp;Back to Top</a>
+                                </div>
+                                <!-- /.col-md-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.footer-content -->
+        </footer>
+
+        </div>
+        <!--box -->
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.datetimepicker.full.min.js"></script>
+        <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.easing.js"></script>
+        <script type="text/javascript" src="javascript/imagesloaded.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery-waypoints.js"></script>
+        <script type="text/javascript" src="javascript/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
+        <script type="text/javascript" src="javascript/parallax.js"></script>
+        <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+        <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="javascript/owl.carousel.js"></script>
+        <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+        <!-- <script type="text/javascript" src="javascript/switcher.js"></script> -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvV0EE3yFozGhjmUv3BgoyviVdXzCwHlk"></script>
+        <script type="text/javascript" src="javascript/gmap3.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+
+        <!-- Revolution Slider -->
+        <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="javascript/slider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var shown = localStorage.getItem('isshowd');
+                if (shown != "t") {
+                    $('#welcome').show();
+                    localStorage.setItem('isshowd', "t");
+                }
+
+                $("#skip").click(function() {
+
+                    $("#welcome").remove();
+
+                });
+
+            });
+        </script>
+
+</body>
+
+</html>
