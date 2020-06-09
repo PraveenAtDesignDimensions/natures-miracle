@@ -8,7 +8,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Strawberry Recipes | Nature's Miracle</title>
+    <title>Blueberries | Nature's Miracle</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -39,6 +39,330 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
         <![endif]-->
+
+    <style type="text/css">
+        .flat-row.about-1 {
+            padding-bottom: 50px;
+        }
+        
+        .el__nemonics {
+            display: flex;
+            margin: 10px 0;
+            text-align: center;
+            justify-content: space-around;
+        }
+        
+        .el__nemonics img {
+            max-width: 90px;
+        }
+        
+        .nemonics-box {
+            padding: 5px 10px;
+        }
+        
+        figure {
+            box-sizing: border-box;
+            user-select: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* ELEMENT */
+        
+        .card-flip {
+            margin: 20px auto;
+            cursor: pointer;
+            perspective: 1000px;
+            width: 300px;
+            height: 450px;
+            padding: 0 10px;
+        }
+        
+        .card-flip__flipper {
+            transition: .3s ease;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        
+        .card-flip__content {
+            width: 100%;
+            backface-visibility: hidden;
+            position: absolute;
+            overflow: hidden;
+        }
+        
+        .fancy-hover__image {
+            display: block;
+            width: 100%;
+            transition: filter .15s linear .15s;
+        }
+        
+        .fancy-hover__fancy {
+            position: absolute;
+            top: 0;
+            background-color: rgba(55, 66, 78, 0);
+            width: 100%;
+            height: 100%;
+            transition: background .15s linear .15s
+        }
+        
+        .fancy-hover__fancy:after {
+            content: '';
+            background: white;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            transition: left .15s ease-in-out, right .15s ease-in-out;
+        }
+        
+        .fancy-hover__text {
+            font-family: "Poppins", sans-serif;
+            width: 100%;
+            color: #000;
+        }
+        
+        .fancy-hover__element {
+            width: 100%;
+            position: absolute;
+            padding: 16px;
+        }
+        
+        .fancy-hover__element--title {
+            background: rgba(255, 255, 255, .5);
+            bottom: 0;
+            font-size: 20px;
+            font-weight: 100;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            transition: bottom .15s ease-in-out .15s, background .15s linear .15s;
+        }
+        
+        .fancy-hover__element--subtitle {
+            top: 100%;
+            font-family: sans-serif;
+            transition: top .15s ease-out;
+        }
+        
+        .fancy-hover:hover .fancy-hover__fancy {
+            background: rgba(239, 239, 239, .5);
+            transition-delay: 0s;
+        }
+        
+        .fancy-hover:hover .fancy-hover__element--title {
+            top: 10%;
+            background: rgba(255, 255, 255, 0);
+            transition-delay: 0s;
+        }
+        
+        .fancy-hover:hover .fancy-hover__element--subtitle {
+            top: 25%;
+            transition: top .15s ease-in .15s;
+        }
+        
+        .card-flip__content--front {
+            transform: rotateY(0deg);
+            z-index: 2;
+        }
+        
+        .card-flip__content--back {
+            background: #fff;
+            font-family: sans-serif;
+            color: #565656;
+            text-align: center;
+            padding: 16px;
+            height: 420px;
+            transform: rotateY(180deg);
+        }
+        
+        .card-flip.clicked .card-flip__flipper {
+            transform: rotateY(180deg);
+        }
+        
+        #mixedSlider3 .MS-controls .MS-left img {
+            width: 35px;
+        }
+        
+        #mixedSlider3 .MS-controls .MS-right img {
+            width: 35px;
+        }
+        
+        #mixedSlider3 {
+            position: relative;
+        }
+        
+        #mixedSlider3 .MS-content {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 5%;
+        }
+        
+        #mixedSlider3 .MS-content .item {
+            display: inline-block;
+            width: 25%;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            height: 340px;
+            white-space: normal;
+            padding: 0 10px;
+        }
+        
+        #mixedSlider3 .MS-content .item .imgTitle .itemTitle {
+            margin: 0;
+            position: absolute;
+            width: 90%;
+            bottom: 10px;
+            /* padding: 0 0 2px 10px; */
+            font-size: 16px;
+        }
+        
+        #mixedSlider3 .MS-content .item .imgTitle img {
+            height: auto;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        #mixedSlider3 .MS-controls button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            outline: 0;
+            font-size: 50px;
+            top: 40%;
+            color: rgba(0, 0, 0, 0.4);
+            transition: 0.15s linear;
+        }
+        
+        #mixedSlider3 .MS-controls button:hover {
+            color: rgba(0, 0, 0, 0.8);
+        }
+        
+        @media (max-width: 1024px) {
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 20%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 240px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+            #mixedSlider3 .MS-controls button {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            #mixedSlider3 .MS-controls button {
+                font-size: 30px;
+            }
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 20%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 240px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            #mixedSlider3 .MS-content .item {
+                width: 50%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 32%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 260px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            #mixedSlider3 .MS-content .item {
+                width: 100%;
+            }
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 32%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 260px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+            #mixedSlider3 .MS-controls button {
+                font-size: 20px;
+            }
+            #mixedSlider3 .MS-controls .MS-left {
+                left: -10px;
+            }
+            #mixedSlider3 .MS-controls .MS-right {
+                right: -10px;
+            }
+        }
+        
+        #mixedSlider3 .MS-controls .MS-left {
+            left: 0px;
+        }
+        
+        #mixedSlider3 .MS-controls .MS-right {
+            right: 0px;
+        }
+        
+        @media (max-width: 500px) {
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 100%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 440px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 375px) {
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 100%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 400px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            #mixedSlider3 .MS-content .item {
+                display: inline-block;
+                width: 100%;
+                position: relative;
+                vertical-align: top;
+                overflow: hidden;
+                height: 320px;
+                white-space: normal;
+                padding: 0 10px;
+            }
+        }
+        
+    </style>
+
 </head>
 
 <body class="">
@@ -161,16 +485,17 @@
         </div>
 
         <!-- Page Title -->
-        <div class="page-title flat_strech parallax parallax-strawberries">
+        <div class="page-title parallax flat_strech parallax-blueberries">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-title-heading">
-                            <h1 class="title">Strawberry Frozen Yogurt</h1>
+                            <h1 class="title">Blueberries</h1>
                             <div class="breadcrumbs">
                                 <ul>
-                                    <li> <a href="recipes.html">Recipes </a></li>
-                                    <li><a href="recipe-strawberries.html">Strawberries</a></li>
+                                    <li> <a href="home.html">Home </a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="#">Blueberries</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -183,110 +508,186 @@
             <!-- /.container -->
         </div>
 
-        <div class="main-content blog-single">
+        <!-- Flat Our Story -->
+        <section class="flat-row about-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="content-wrap">
-                            <article class="post">
-                                <div class="header-post">
-                                    <h2 class="title-post">Strawberry Frozen Yogurt</h2>
-                                    <p>This no-churn frozen yogurt is what dreams are made of.</p>
-                                    <!-- <p class="time-post">On 13 Nov 2015 <a href="#">3 comments</a></p> -->
-                                </div>
-                                <!-- /.header-post -->
 
-                                <div class="feature-post">
-                                    <a><img src="images/recipes/s2.jpg" alt="image"></a>
-                                </div>
-                                <!-- /.feature-post -->
-
-                                <p><strong>YIELD:</strong> 8 servings </p>
-                                <p><strong>PREP TIME:</strong> 10 minutes </p>
-                                <p><strong>COOKING TIME:</strong> 8 hours 10 minutes</p>
-
-                                <div class="content-post">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h5 class="custom-title-1">INGREDIENTS</h5>
-
-                                            <ul class="iconlist">
-                                                <li><i class="fa fa-circle-o"></i>2 1/4 cups strawberries (divided)</li>
-                                                <li><i class="fa fa-circle-o"></i>2 c. plain, unsweetened Greek yogurt</li>
-                                                <li><i class="fa fa-circle-o"></i>1 14-oz. can sweet condensed milk</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h5 class="custom-title-1">PREPARATION</h5>
-                                            <p>Coarsely chop 2 cups of strawberries. Put in blender. Add yogurt and condensed milk. Blend until smooth and evenly combined.</p>
-                                            <p>Pour mixture into a 9-x-5" loaf pan. Smooth the top with a spatula.</p>
-                                            <p>Top with strawberry slices and freeze 6 hours, or until firm.</p>
-                                            <p>When ready to serve, remove from freezer to let soften for 20 minutes, or until soft enough to scoop.</p>
-                                            <p>Top scoops with more strawberries and wafers if desired.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- /.content-post -->
-
-                                <div class="direction clearfix">
-                                    <ul class="tags">
-                                        <li>Tags: </li>
-                                        <li><a href="recipes.html">Recipes,</a></li>
-                                        <li><a href="recipe-strawberries.html">Strawberries</a></li>
-
-                                    </ul>
-
-                                </div>
-                     
-
-                            </article>
+                    <div class="col-md-6">
+                        
+                        <div class="title-section style2 padle-0px ">
+                            <h1 class="title">Power-packed Superfood!</h1>
                         </div>
-                        <!-- /.content-post -->
+                        <div class="img-our">
+                            <img src="images/imagebox/bl.png" alt="images">
+                        </div>
+                        
+
+                        
+
                     </div>
-                    <!-- /.col-md-9 -->
+                    <!--col-md-6-->
 
-                    <div class="col-md-4">
-                        <div class="sidebars">
-                            <div class="sidebars-wrap">
-                                <div class="sidebar">
-                                    <div class="widget widget_search">
-                                        <h3 class="widget-title">Search</h3>
-                                        <form class="search-form">
-                                            <input type="search" class="search-field" placeholder="Search blogs here..." onkeyup="showResult(this.value)">
-                                            <!--  <input type="submit" class="search-submit"> -->
-                                            <div id="livesearch"></div>
-                                        </form>
-                                    </div>
-                                    <!-- /.widget_search -->
-
-                                    <div class="widget widget_categories">
-                                        <h3 class="widget-title">Categories</h3>
-                                        <ul>
-                                            <li><a href="chef-special.html">Chef's Special- Vicky Ratnani</a></li>
-                                            <li><a href="recipe-tomatoes.html">Tempting Tomatoes!</a></li>
-                                            <li><a href="recipe-peppers.html">Palatable Peppers!</a></li>
-                                            <li><a href="recipe-cucumbers.html">Crunchy Cucumbers!</a></li>
-                                            <li><a href="recipe-strawberries.html">Sweet Strawberries!</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.widget_categories -->
-
-                                </div>
-                                <!-- .sidebar -->
+                    <div class="col-md-6">
+                        <div class="el__nemonics">
+                            <div class="nemonics-box">
+                                <img src="icon/mnemonics/100 Natural.svg">
+                                <p>King of Antioxidant</p>
                             </div>
-                            <!-- /.sidebars-wrap -->
+                            <div class="nemonics-box">
+                                <img src="icon/mnemonics/Superfood.svg">
+                                <p>Superfood</p>
+                            </div>
+                            <div class="nemonics-box">
+                                <img src="icon/mnemonics/Keeps you fit.svg">
+                                <p>Low Calories, High Nutrients</p>
+                            </div>
+
                         </div>
-                        <!-- /.sidebars -->
+
+                        <p>Nature’s Miracle brings you a daily dose of antioxidants in these blueberries. Blueberries are paced with phytoflavinoids and high in vitamin C and potassium. Remember, the darker the colour the higher the antioxidants present in the berry. Adding blueberries to your diet brings a host of benefits which reinforce the fact that they are incredibly healthy and nutritious.</p>
+                        
                     </div>
-                    <!-- /.col-md-3 -->
+                    <!--col-md-6-->
                 </div>
-                <!-- /.row -->
+                <!--row-->
+
+                <div class="flat-divider d42px"></div>
+
+                <div class="row">
+
+                    <div class="col-md-10">
+
+                        <h5>Nutritional and Health Benefits</h5>
+                        <ul class="iconlist">
+                            <li><i class="fa fa-circle-o"></i>Wheatgrass is said to be a superfood and a source of complete nutrition since it contains iron, calcium, magnesium, phytonutrients, amino acids, proteins and Vitamins A,C,E,K and B as well as chlorophyll.</li>
+                            <li><i class="fa fa-circle-o"></i>It is known for its anti-inflammatory, antioxidant, weight loss and digestion promoting properties. It is excellent for flushing out the body’s toxins.</li>
+
+                        </ul>
+
+                        <div class="flat-divider d10px"></div>
+                    </div>
+                </div>
+
             </div>
-            <!-- /.container -->
+            <!--container -->
+        </section>
+
+        <div class="container" id="my-slide">
+            <div class="title-section style2 ">
+                <h1 class="title">Explore the Range</h1>
+            </div>
+
+            <div id="mixedSlider3">
+                <div class="MS-content">
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/1.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Snack Cucumbers </strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/2.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Snack Peppers</strong>
+                                <br>150gm
+                                <p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/3.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Candy Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/4.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Love Bites</strong>
+                                <br>200gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+                            <img src="images/varients/5.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Circus Mix</strong>
+                                <br>400gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/6.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Circus Mega Mix</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/7.png" alt="" />
+                            <p class="itemTitle text-center"><strong>King Tomatoes</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/8.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Bell Peppers</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/9.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Cherry Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/10.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Candy Tomatoes</strong>
+                                <br>250gm</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="imgTitle">
+
+                            <img src="images/varients/11.png" alt="" />
+                            <p class="itemTitle text-center"><strong>Mid-Long Cucumbers</strong>
+                                <br>500gm</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="MS-controls">
+                    <button class="MS-left"><img src="images/varients/prev.svg"></button>
+                    <button class="MS-right"><img src="images/varients/next.svg"></button>
+                </div>
+            </div>
         </div>
-        <!--main-content -->
 
         <footer class="footer">
             <div class="footer-widgets">
@@ -457,6 +858,7 @@
         <!--box -->
 
         <!-- Javascript -->
+        <script type="text/javascript" src="javascript/3.1.1-jquery.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
@@ -470,17 +872,54 @@
         <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
         <script type="text/javascript" src="javascript/owl.carousel.js"></script>
         <script type="text/javascript" src="javascript/jquery-validate.js"></script>
+        <script type="text/javascript" src="javascript/countdown.js"></script>
+        <!-- <script type="text/javascript" src="javascript/switcher.js"></script> -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvV0EE3yFozGhjmUv3BgoyviVdXzCwHlk"></script>
         <script type="text/javascript" src="javascript/gmap3.min.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
-
-        <!-- search -->
-        <script type="text/javascript" src="search/search.js"></script>
 
         <!-- Revolution Slider -->
         <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="javascript/slider.js"></script>
+
+        <script src="javascript/multislider.min.js"></script>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            document.getElementById("defaultOpen").click();
+
+            function showthis() {
+                document.getElementById("mega-slide").style.display = "block";
+            }
+
+            function hidethis() {
+                document.getElementById("mega-slide").style.display = "none";
+            }
+        </script>
+
+        <script>
+
+            /* slider */
+
+            $('#mixedSlider3').multislider({
+                duration: 750,
+                interval: 2000
+            });
+        </script>
 
 </body>
 
