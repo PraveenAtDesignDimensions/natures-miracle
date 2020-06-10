@@ -731,7 +731,7 @@
 }
 
 .blog-shortcode article.post .content-post {
-    padding: 49px 6px 45px 32.5px;
+    padding: 49px 25px 45px 30px;
     position: relative;
     overflow: hidden;
 }
@@ -741,7 +741,7 @@
     float: right;
     overflow: visible;
     padding-left: 30px;
-    padding-right: 0px;
+    padding-right: 25px;
     height: 100%;
 }
 
