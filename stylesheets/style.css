@@ -2135,11 +2135,11 @@ p.entry-content {
 	/* background-color:#fff; */
 }
 .my-logo{
-	position:absolute;
-	top:50px;
-	left:45%;
-	z-index:9999;
-	width: 10%;
+	position: absolute;
+    top: 50px;
+    left: calc(50% - 50px);
+    z-index: 9999;
+    width: 130px;
     text-align: center;
 }
 .logo-side{
