@@ -530,7 +530,7 @@
 }
 
 .tp-caption a:hover {
-    color: #00bac9;
+    /* color: #00bac9; */
 }
 
 .tp-caption.thinheadline_dark {
@@ -1648,10 +1648,10 @@ img.tp-slider-alternative-image {
 }
 
 .tparrows.hidearrows {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -moz-opacity: 0;
     -khtml-opacity: 0;
-    opacity: 0;
+    opacity: 0; */
 }
 
 .tp-leftarrow {
@@ -3505,7 +3505,8 @@ img.tp-slider-alternative-image {
 /* Text slider */
 
 .tp-caption.title-slide {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Anyelir Script";
     font-size: 80px;
     color: rgb(0, 0, 0);
     transition: none;

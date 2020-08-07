@@ -289,6 +289,8 @@
 -------------------------------------------------------------- */
 .iconlist li {
     margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
 
 }
 
@@ -296,6 +298,9 @@
     color: #e44c2a;
     font-size: 9px;
     margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    top: 8px;
 }
 
 /*style2*/
@@ -1140,7 +1145,7 @@ ul.flat-socials li a {
     cursor: pointer;
     font-weight: 700;
     color: #333;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .flat-accordion .flat-toggle h4.toggle-title span {
