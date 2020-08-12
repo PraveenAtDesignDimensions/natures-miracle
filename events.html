@@ -30,6 +30,10 @@
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 
+    <!-- Core CSS file -->
+<link rel="stylesheet" href="stylesheets/photoswipe.css"> 
+<link rel="stylesheet" href="stylesheets/default-skin.css"> 
+
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
@@ -60,25 +64,30 @@
         }
         
         .event-box a {
-            margin-right: 45px;
+            /* margin-right: 45px;
             color: #e44c2a;
             font-weight: 500;
             padding: .2em 1em;
             border: 1px solid #e44c2a;
             border-radius: 2px;
             margin-top: 10px;
-            display: inline-block;
+            display: inline-block; */
         }
         
         .event-box a:hover {
-            background-color: #e44c2a;
-            color: #fff;
+            /* background-color: #e44c2a;
+            color: #fff; */
         }
         
         @media only screen and (min-width: 768px) {
             .p-75 {
                 /* width: 75%; */
             }
+        }
+        .event-box img{
+            width: 100%;
+            height: 275px;
+            object-fit: cover;
         }
     </style>
 
@@ -152,6 +161,7 @@
                                     <li><a href="strawberries.html">Strawberries</a></li>
                                     <li><a href="wheatgrass.html">Wheatgrass</a></li>
                                     <li><a href="blueberries.html">Blueberries</a></li>
+                                    <li><a href="avocado.html">Avocado</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -240,97 +250,694 @@
 
                 <div class="row" style="display: flex;flex-wrap: wrap;">
 
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/Vitality-Hours.jpg" class="img-fluid">
-                            <h3>Vitality Hours</h3>
-                            <h5>8-9 February 2020</h5>
-                            <p>Tying Up with Le Marche and other food store chains Marche Branding Event. When we started thinking about premium food stores to tie up with, Le Marche was the obvious choice.</p>
-                            <a href="vitality-hours.html">Know More</a>
+                    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="pswp__bg"></div>
+                        <div class="pswp__scroll-wrap">
+                           <div class="pswp__container">
+                              <div class="pswp__item"></div>
+                              <div class="pswp__item"></div>
+                              <div class="pswp__item"></div>
+                           </div>
+                           <div class="pswp__ui pswp__ui--hidden">
+                              <div class="pswp__top-bar">
+                                 <div class="pswp__counter"></div>
+                                 <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                                 <button class="pswp__button pswp__button--share" title="Share"></button>
+                                 <!-- <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> -->
+                                 <!-- <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button> -->
+                                 <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                       <div class="pswp__preloader__cut">
+                                          <div class="pswp__preloader__donut"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+                              <!-- <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                 <div class="pswp__share-tooltip">
+                                    <a href="#" class="pswp__share--facebook"></a>
+                                       <a href="#" class="pswp__share--twitter"></a>
+                                       <a href="#" class="pswp__share--pinterest"></a>
+                                       <a href="#" download class="pswp__share--download"></a>
+                                 </div>
+                              </div> -->
+                              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                              <div class="pswp__caption">
+                                 <div class="pswp__caption__center">
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
+                     </div>
+
                     <div class="col-md-4">
                         <div class="event-box">
-                            <img src="images/All-Events/EVENT3.jpg" class="img-fluid">
-                            <h3>Le Marche Branding Event</h3>
-                            <h5>28 December 2017</h5>
-                            <p>Tying Up with Le Marche and other food store chains'Marche Branding Event. When we started thinking about premium food stores to tie up with, Le Marche was the obvious choice.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT1.jpg" class="img-fluid">
-                            <h3>Delhi Vegan Fest</h3>
-                            <h5>29 October 2017</h5>
-                            <p>Delhi Vegan Fest in Haus Khas targeted the premier section of clientele, expats and diplomats who are more familiar with the idea of food as medicine. It also educated customers about Hydroponics.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT2.jpg" class="img-fluid">
-                            <h3>WFI</h3>
-                            <h5>03 November 2017</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT4.jpg" class="img-fluid">
-                            <h3>Hindu College Fest</h3>
-                            <h5>15 March 2018 </h5>
-                            <p>A stall at the Hindu College Annual Festival, Mecca. We met with a very positive response from the new generation, which is realizing the toll that junk foods take on their health and looking for healthy snack options on the go.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT5.jpg" class="img-fluid">
-                            <h3>Fresh Produce India</h3>
-                            <h5>26 April 2018</h5>
-                            <p>Fresh Produce India- An event held at the Trident Hotel,Mumbai introduced the brand to possible linkages for business development and expanded client base.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT6.jpg" class="img-fluid">
-                            <h3>Society Premier League </h3>
-                            <h5>05 April 2018</h5>
-                            <p>Society Premier League in April and May 2018 saw a number of stalls put up at Delhi NCRs premium residential societies in collaboration with the RWAs. Not only did this create awareness about the brand and the technology.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT7.jpg" class="img-fluid">
-                            <h3>German Embassy Event</h3>
-                            <h5>05 May 2018</h5>
-                            <p>The German School Mela, targeted children and their parents, introducing them to healthy snack vegetables.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT8.jpg" class="img-fluid">
-                            <h3>International Hospitality Exhibition</h3>
-                            <h5>05 August 2018 </h5>
-                            <p>International Hospitality Exhibition educated the food and hospitality industry experts about the brand.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="event-box">
-                            <img src="images/All-Events/EVENT9.jpg" class="img-fluid">
-                            <h3>Asia Fruit Logistics HK</h3>
-                            <h5>05 Septmber 2018</h5>
-                            <p>Asia Fruits Logistica Exhibition in Hong Kong introduced the brand to new business opportunities.</p>
-                            <a href="Le-Marche-Branding-Event.html">Know More</a>
+                            <div id="demo-test-gallery" class="demo-gallery event1">
+              
+                                <a href="images/event/01/01.jpg" data-size="960x1280" data-med="images/event/01/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/01/01.jpg" alt="" />
+                                  <figure>Grub Fest</figure>
+                                </a>
+
+                                <a href="images/event/01/02.jpg" data-size="960x1280" data-med="images/event/01/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/01/02.jpg" alt="" />
+                                    <figure>Grub Fest</figure>
+                                  </a>
+
+                                  <a href="images/event/01/03.jpg" data-size="960x1280" data-med="images/event/01/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/01/03.jpg" alt="" />
+                                    <figure>Grub Fest</figure>
+                                  </a>
+
+                                  <a href="images/event/01/04.jpg" data-size="960x1280" data-med="images/event/01/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/01/04.jpg" alt="" />
+                                    <figure>Grub Fest</figure>
+                                  </a>
+                            
+                              </div>
+
+                            <h3>Grub Fest</h3>
+                            <h5>March 17th to 19th 2017 | JLN Stadium, Delhi</h5>
+                            
                         </div>
                     </div>
 
+                    <div class="col-md-4">
+                        <div class="event-box">
+                            <div id="demo-test-gallery" class="demo-gallery event2">
+              
+                                <a href="images/event/02/01.jpg" data-size="960x1280" data-med="images/event/vitality-hours/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/02/01.jpg" alt="" />
+                                  <figure>Delhi Vegan Fest</figure>
+                                </a>
+
+                                <a href="images/event/02/02.jpg" data-size="960x1280" data-med="images/event/02/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/02/02.jpg" alt="" />
+                                    <figure>Delhi Vegan Fest</figure>
+                                  </a>
+
+                                  <a href="images/event/02/03.jpg" data-size="960x1280" data-med="images/event/vitality-hours/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/02/03.jpg" alt="" />
+                                    <figure>Delhi Vegan Fest</figure>
+                                  </a>
+
+                                  <a href="images/event/02/04.jpg" data-size="960x1280" data-med="images/event/02/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/02/04.jpg" alt="" />
+                                    <figure>Delhi Vegan Fest</figure>
+                                  </a>
+                            
+                              </div>
+
+                            <h3>Delhi Vegan Fest</h3>
+                            <h5>Oct 29th, 2017 | Delhi</h5>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="event-box">
+                            <div id="demo-test-gallery" class="demo-gallery event3">
+              
+                                <a href="images/event/03/01.jpg" data-size="1280x959" data-med="images/event/03/01.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/03/01.jpg" alt="" />
+                                  <figure>World Food India</figure>
+                                </a>
+
+                                <a href="images/event/03/02.jpg" data-size="1280x959" data-med="images/event/03/02.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/03/02.jpg" alt="" />
+                                    <figure>World Food India</figure>
+                                  </a>
+
+                                  <a href="images/event/03/03.jpg" data-size="1280x959" data-med="images/event/03/03.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/03/03.jpg" alt="" />
+                                    <figure>World Food India</figure>
+                                  </a>
+
+                                  <a href="images/event/03/04.jpg" data-size="1280x959" data-med="images/event/03/04.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/03/04.jpg" alt="" />
+                                    <figure>World Food India</figure>
+                                  </a>
+
+                                  <a href="images/event/03/05.jpg" data-size="1280x959" data-med="images/event/03/05.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/03/05.jpg" alt="" />
+                                    <figure>World Food India</figure>
+                                  </a>
+
+                                  <a href="images/event/03/06.jpg" data-size="1280x959" data-med="images/event/03/06.jpg" data-med-size="1280x959" data-author="" class="demo-gallery__img--main">
+                                    <img src="images/event/03/06.jpg" alt="" />
+                                    <figure>World Food India</figure>
+                                  </a>
+                            
+                              </div>
+
+                            <h3>World Food India</h3>
+                            <h5>Nov 5th, 2017 | Delhi</h5>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="event-box">
+                          <div id="demo-test-gallery" class="demo-gallery event4">
+            
+                              <a href="images/event/04/01.jpg" data-size="1280x960" data-med="images/event/04/01.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/04/01.jpg" alt="" />
+                                <figure>Society Premier League</figure>
+                              </a>
+
+                              <a href="images/event/04/02.jpg" data-size="1280x960" data-med="images/event/04/02.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/04/02.jpg" alt="" />
+                                  <figure>Society Premier League</figure>
+                                </a>
+
+                                <a href="images/event/04/03.jpg" data-size="1280x960" data-med="images/event/04/03.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/04/03.jpg" alt="" />
+                                  <figure>Society Premier League</figure>
+                                </a>
+
+                                <a href="images/event/04/04.jpg" data-size="1280x960" data-med="images/event/04/04.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/04/04.jpg" alt="" />
+                                  <figure>Society Premier League</figure>
+                                </a>
+
+                                <a href="images/event/04/05.jpg" data-size="1280x960" data-med="images/event/04/05.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/04/05.jpg" alt="" />
+                                  <figure>Society Premier League</figure>
+                                </a>
+
+                                <a href="images/event/04/06.jpg" data-size="720x1280" data-med="images/event/04/06.jpg" data-med-size="720x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/04/06.jpg" alt="" />
+                                  <figure>Society Premier League</figure>
+                                </a>
+                          
+                            </div>
+
+                          <h3>Society Premier League</h3>
+                          <h5>April - May, 2018 | Delhi NCR</h5>
+                          
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                      <div class="event-box">
+                          <div id="demo-test-gallery" class="demo-gallery event5">
+            
+                              <a href="images/event/05/01.jpg" data-size="1500x900" data-med="images/event/05/01.jpg" data-med-size="1500x900" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/05/01.jpg" alt="" />
+                                <figure>Fresh Produce India</figure>
+                              </a>
+
+                              <a href="images/event/05/02.jpg" data-size="1500x900" data-med="images/event/05/02.jpg" data-med-size="1500x900" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/05/02.jpg" alt="" />
+                                  <figure>Fresh Produce India</figure>
+                                </a>
+
+                                <a href="images/event/05/03.jpg" data-size="500x750" data-med="images/event/05/03.jpg" data-med-size="500x750" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/05/03.jpg" alt="" />
+                                  <figure>Fresh Produce India</figure>
+                                </a>
+
+                                <a href="images/event/05/04.jpg" data-size="500x750" data-med="images/event/05/04.jpg" data-med-size="500x750" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/05/04.jpg" alt="" />
+                                  <figure>Fresh Produce India</figure>
+                                </a>
+                          
+                            </div>
+
+                          <h3>Fresh Produce India</h3>
+                          <h5>26th and 27th April, 2018 | Mumbai</h5>
+                          
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                      <div class="event-box">
+                          <div id="demo-test-gallery" class="demo-gallery event6">
+            
+                              <a href="images/event/06/01.jpg" data-size="1280x960" data-med="images/event/06/01.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/06/01.jpg" alt="" />
+                                <figure>German School Event</figure>
+                              </a>
+
+                              <a href="images/event/06/02.jpg" data-size="960x1280" data-med="images/event/06/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/02.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/03.jpg" data-size="960x1280" data-med="images/event/06/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/03.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/04.jpg" data-size="960x1280" data-med="images/event/06/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/04.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/05.jpg" data-size="960x1280" data-med="images/event/06/05.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/05.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/06.jpg" data-size="960x1280" data-med="images/event/06/06.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/06.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/07.jpg" data-size="960x1280" data-med="images/event/06/07.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/07.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/08.jpg" data-size="960x1280" data-med="images/event/06/08.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/08.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/09.jpg" data-size="960x1280" data-med="images/event/06/09.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/09.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/10.jpg" data-size="960x1280" data-med="images/event/06/10.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/10.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/11.jpg" data-size="648x1152" data-med="images/event/06/11.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/11.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/12.jpg" data-size="648x1152" data-med="images/event/06/12.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/12.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/13.jpg" data-size="648x1152" data-med="images/event/06/13.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/13.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/14.jpg" data-size="648x1152" data-med="images/event/06/14.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/14.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/15.jpg" data-size="648x1152" data-med="images/event/06/15.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/15.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/16.jpg" data-size="648x1152" data-med="images/event/06/16.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/16.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/17.jpg" data-size="648x1152" data-med="images/event/06/17.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/17.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/18.jpg" data-size="648x1152" data-med="images/event/06/18.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/18.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/19.jpg" data-size="648x1152" data-med="images/event/06/19.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/19.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/20.jpg" data-size="648x1152" data-med="images/event/06/20.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/20.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/21.jpg" data-size="648x1152" data-med="images/event/06/21.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/21.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+
+                                <a href="images/event/06/22.jpg" data-size="648x1152" data-med="images/event/06/22.jpg" data-med-size="648x1152" data-author="" class="demo-gallery__img--main">
+                                  <img src="images/event/06/22.jpg" alt="" />
+                                  <figure>German School Event</figure>
+                                </a>
+                          
+                            </div>
+
+                          <h3>German School Event</h3>
+                          <h5>May 5th, 2018 | Delhi</h5>
+                          
+                      </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="event-box">
+                        <div id="demo-test-gallery" class="demo-gallery event7">
+          
+                            <a href="images/event/07/01.jpg" data-size="1280x960" data-med="images/event/07/01.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/07/01.jpg" alt="" />
+                              <figure>International Hospitality Expo</figure>
+                            </a>
+
+                            <a href="images/event/07/02.jpg" data-size="1280x960" data-med="images/event/07/02.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/02.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/03.jpg" data-size="1280x960" data-med="images/event/07/03.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/03.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/04.jpg" data-size="1280x960" data-med="images/event/07/04.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/04.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/05.jpg" data-size="1280x960" data-med="images/event/07/05.jpg" data-med-size="1280x960" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/05.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/06.jpg" data-size="1280x720" data-med="images/event/07/06.jpg" data-med-size="1280x720" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/06.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/07.jpg" data-size="1280x720" data-med="images/event/07/07.jpg" data-med-size="1280x720" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/07.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/08.jpg" data-size="750x1000" data-med="images/event/07/08.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/08.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/09.jpg" data-size="750x1000" data-med="images/event/07/09.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/09.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/10.jpg" data-size="750x1000" data-med="images/event/07/10.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/10.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/11.jpg" data-size="750x1000" data-med="images/event/07/11.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/11.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/12.jpg" data-size="750x1000" data-med="images/event/07/12.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/12.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/13.jpg" data-size="750x1000" data-med="images/event/07/13.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/13.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/14.jpg" data-size="750x1000" data-med="images/event/07/14.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/14.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/15.jpg" data-size="750x1000" data-med="images/event/07/15.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/15.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/16.jpg" data-size="750x1000" data-med="images/event/07/16.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/16.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/17.jpg" data-size="750x1000" data-med="images/event/07/17.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/17.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/18.jpg" data-size="750x1000" data-med="images/event/07/18.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/18.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/19.jpg" data-size="750x1000" data-med="images/event/07/19.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/08.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/20.jpg" data-size="750x1000" data-med="images/event/07/20.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/20.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/21.jpg" data-size="750x1000" data-med="images/event/07/21.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/21.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/22.jpg" data-size="750x1000" data-med="images/event/07/22.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/22.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/23.jpg" data-size="750x1000" data-med="images/event/07/23.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/23.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/24.jpg" data-size="750x1000" data-med="images/event/07/24.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/24.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/25.jpg" data-size="750x1000" data-med="images/event/07/25.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/25.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/26.jpg" data-size="750x1000" data-med="images/event/07/26.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/26.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/27.jpg" data-size="750x1000" data-med="images/event/07/27.jpg" data-med-size="750x1000" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/27.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/28.jpg" data-size="720x1280" data-med="images/event/07/28.jpg" data-med-size="720x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/28.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                              <a href="images/event/07/29.jpg" data-size="720x1280" data-med="images/event/07/29.jpg" data-med-size="720x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/07/29.jpg" alt="" />
+                                <figure>International Hospitality Expo</figure>
+                              </a>
+
+                          </div>
+
+                        <h3>International Hospitality Expo</h3>
+                        <h5>August 5th to 8th, 2018 | Greater Noida</h5>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="event-box">
+                        <div id="demo-test-gallery" class="demo-gallery event8">
+          
+                            <a href="images/event/08/01.jpg" data-size="960x1280" data-med="images/event/08/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/08/01.jpg" alt="" />
+                              <figure>Asia Fruit Logistica</figure>
+                            </a>
+
+                            <a href="images/event/08/02.jpg" data-size="960x1280" data-med="images/event/08/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/08/02.jpg" alt="" />
+                                <figure>Asia Fruit Logistica</figure>
+                              </a>
+
+                              <a href="images/event/08/03.jpg" data-size="960x1280" data-med="images/event/08/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/08/03.jpg" alt="" />
+                                <figure>Asia Fruit Logistica</figure>
+                              </a>
+
+                          </div>
+
+                        <h3>Asia Fruit Logistica</h3>
+                        <h5>Sep 5th, 2018 | Honk Kong</h5>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="event-box">
+                        <div id="demo-test-gallery" class="demo-gallery event9">
+          
+                            <a href="images/event/09/01.jpg" data-size="960x1280" data-med="images/event/09/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/09/01.jpg" alt="" />
+                              <figure>PVR Activation</figure>
+                            </a>
+
+                            <a href="images/event/09/02.jpg" data-size="960x1280" data-med="images/event/09/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/09/02.jpg" alt="" />
+                                <figure>PVR Activation</figure>
+                              </a>
+
+                              <a href="images/event/09/03.jpg" data-size="960x1280" data-med="images/event/09/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/09/03.jpg" alt="" />
+                                <figure>PVR Activation</figure>
+                              </a>
+
+                              <a href="images/event/09/04.jpg" data-size="960x1280" data-med="images/event/09/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                                <img src="images/event/09/04.jpg" alt="" />
+                                <figure>PVR Activation</figure>
+                              </a>
+                        
+                          </div>
+
+                        <h3>PVR Activation</h3>
+                        <h5>Nov 2018- Feb 2019 | Delhi NCR</h5>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="event-box">
+                      <div id="demo-test-gallery" class="demo-gallery event10">
+        
+                          <a href="images/event/10/01.jpg" data-size="960x1280" data-med="images/event/10/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                            <img src="images/event/10/01.jpg" alt="" />
+                            <figure>Natures Miracle Brand Launch Event</figure>
+                          </a>
+
+                          <a href="images/event/10/02.jpg" data-size="960x1280" data-med="images/event/10/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/10/02.jpg" alt="" />
+                              <figure>Natures Miracle Brand Launch Event</figure>
+                            </a>
+
+                            <a href="images/event/10/03.jpg" data-size="960x1280" data-med="images/event/10/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/10/03.jpg" alt="" />
+                              <figure>Natures Miracle Brand Launch Event</figure>
+                            </a>
+
+                            <a href="images/event/10/04.jpg" data-size="960x1280" data-med="images/event/10/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/10/04.jpg" alt="" />
+                              <figure>Natures Miracle Brand Launch Event</figure>
+                            </a>
+                      
+                        </div>
+
+                      <h3>Natures Miracle Brand Launch Event</h3>
+                      <h5>March 2019 | NM Greenhouse</h5>
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="event-box">
+                      <div id="demo-test-gallery" class="demo-gallery event11">
+        
+                          <a href="images/event/11/01.jpg" data-size="960x1280" data-med="images/event/11/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                            <img src="images/event/11/01.jpg" alt="" />
+                            <figure>ATS Event</figure>
+                          </a>
+
+                          <a href="images/event/11/02.jpg" data-size="960x1280" data-med="images/event/11/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/11/02.jpg" alt="" />
+                              <figure>ATS Event</figure>
+                            </a>
+
+                            <a href="images/event/11/03.jpg" data-size="960x1280" data-med="images/event/11/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/11/03.jpg" alt="" />
+                              <figure>ATS Event</figure>
+                            </a>
+
+                            <a href="images/event/11/04.jpg" data-size="960x1280" data-med="images/event/11/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                              <img src="images/event/11/04.jpg" alt="" />
+                              <figure>ATS Event</figure>
+                            </a>
+                      
+                        </div>
+
+                      <h3>ATS Event</h3>
+                      <h5>March 2019 | Noida</h5>
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="event-box">
+                    <div id="demo-test-gallery" class="demo-gallery event12">
+      
+                        <a href="images/event/12/01.jpg" data-size="960x1280" data-med="images/event/12/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                          <img src="images/event/12/01.jpg" alt="" />
+                          <figure>FICCI Flo Bazaar</figure>
+                        </a>
+
+                        <a href="images/event/12/02.jpg" data-size="960x1280" data-med="images/event/12/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                            <img src="images/event/12/02.jpg" alt="" />
+                            <figure>FICCI Flo Bazaar</figure>
+                          </a>
+
+                          <a href="images/event/12/03.jpg" data-size="960x1280" data-med="images/event/12/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                            <img src="images/event/12/03.jpg" alt="" />
+                            <figure>FICCI Flo Bazaar</figure>
+                          </a>
+
+                          <a href="images/event/12/04.jpg" data-size="960x1280" data-med="images/event/12/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                            <img src="images/event/12/04.jpg" alt="" />
+                            <figure>FICCI Flo Bazaar</figure>
+                          </a>
+                    
+                      </div>
+
+                    <h3>FICCI Flo Bazaar</h3>
+                    <h5>July 2019 | Kanpur</h5>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="event-box">
+                  <div id="demo-test-gallery" class="demo-gallery event13">
+    
+                      <a href="images/event/13/01.jpg" data-size="960x1280" data-med="images/event/13/01.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                        <img src="images/event/13/01.jpg" alt="" />
+                        <figure>Masterclass with Chef Vicky Ratnani</figure>
+                      </a>
+
+                      <a href="images/event/13/02.jpg" data-size="960x1280" data-med="images/event/13/02.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                          <img src="images/event/13/02.jpg" alt="" />
+                          <figure>Masterclass with Chef Vicky Ratnani</figure>
+                        </a>
+
+                        <a href="images/event/13/03.jpg" data-size="960x1280" data-med="images/event/13/03.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                          <img src="images/event/13/03.jpg" alt="" />
+                          <figure>Masterclass with Chef Vicky Ratnani</figure>
+                        </a>
+
+                        <a href="images/event/13/04.jpg" data-size="960x1280" data-med="images/event/13/04.jpg" data-med-size="960x1280" data-author="" class="demo-gallery__img--main">
+                          <img src="images/event/13/04.jpg" alt="" />
+                          <figure>Masterclass with Chef Vicky Ratnani</figure>
+                        </a>
+                  
+                    </div>
+
+                  <h3>Masterclass with Chef Vicky Ratnani</h3>
+                  <h5>November 2019 | Noida</h5>
+                  
+              </div>
+          </div>
+                  
                 </div>
                 <div class="flat-divider d35px"></div>
 
@@ -395,6 +1002,7 @@
                                     <li><a href="strawberries.html">Strawberries</a></li>
                                     <li><a href="wheatgrass.html">Wheatgrass</a></li>
                                     <li><a href="blueberries.html">Blueberries</a></li>
+                                    <li><a href="avocado.html">Avocado</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="events.html">Events</a></li>
@@ -531,6 +1139,323 @@
         <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="javascript/slider.js"></script>
+
+        <!-- Core JS file -->
+<script src="javascript/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="javascript/photoswipe-ui-default.min.js"></script> 
+
+<script>
+try{Typekit.load();}catch(e){} 
+
+(function() {
+
+   var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+     var parseThumbnailElements = function(el) {
+       var thumbElements = el.childNodes,
+         numNodes = thumbElements.length,
+         items = [],
+         el,
+         childElements,
+         thumbnailEl,
+         size,
+         item;
+
+       for (var i = 0; i < numNodes; i++) {
+         el = thumbElements[i];
+
+         // include only element nodes 
+         if (el.nodeType !== 1) {
+           continue;
+         }
+
+         childElements = el.children;
+
+         size = el.getAttribute('data-size').split('x');
+
+         // create slide object
+         item = {
+           src: el.getAttribute('href'),
+           w: parseInt(size[0], 10),
+           h: parseInt(size[1], 10),
+           author: el.getAttribute('data-author')
+         };
+
+         item.el = el; // save link to element for getThumbBoundsFn
+
+         if (childElements.length > 0) {
+           item.msrc = childElements[0].getAttribute('src'); // thumbnail url
+           if (childElements.length > 1) {
+             item.title = childElements[1].innerHTML; // caption (contents of figure)
+           }
+         }
+
+         var mediumSrc = el.getAttribute('data-med');
+         if (mediumSrc) {
+           size = el.getAttribute('data-med-size').split('x');
+           // "medium-sized" image
+           item.m = {
+             src: mediumSrc,
+             w: parseInt(size[0], 10),
+             h: parseInt(size[1], 10)
+           };
+         }
+         // original image
+         item.o = {
+           src: item.src,
+           w: item.w,
+           h: item.h
+         };
+
+         items.push(item);
+       }
+
+       return items;
+     };
+
+     // find nearest parent element
+     var closest = function closest(el, fn) {
+       return el && (fn(el) ? el : closest(el.parentNode, fn));
+     };
+
+     var onThumbnailsClick = function(e) {
+       e = e || window.event;
+       e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+       var eTarget = e.target || e.srcElement;
+
+       var clickedListItem = closest(eTarget, function(el) {
+         return el.tagName === 'A';
+       });
+
+       if (!clickedListItem) {
+         return;
+       }
+
+       var clickedGallery = clickedListItem.parentNode;
+
+       var childNodes = clickedListItem.parentNode.childNodes,
+         numChildNodes = childNodes.length,
+         nodeIndex = 0,
+         index;
+
+       for (var i = 0; i < numChildNodes; i++) {
+         if (childNodes[i].nodeType !== 1) {
+           continue;
+         }
+
+         if (childNodes[i] === clickedListItem) {
+           index = nodeIndex;
+           break;
+         }
+         nodeIndex++;
+       }
+
+       if (index >= 0) {
+         openPhotoSwipe(index, clickedGallery);
+       }
+       return false;
+     };
+
+     var photoswipeParseHash = function() {
+       var hash = window.location.hash.substring(1),
+         params = {};
+
+       if (hash.length < 5) { // pid=1
+         return params;
+       }
+
+       var vars = hash.split('&');
+       for (var i = 0; i < vars.length; i++) {
+         if (!vars[i]) {
+           continue;
+         }
+         var pair = vars[i].split('=');
+         if (pair.length < 2) {
+           continue;
+         }
+         params[pair[0]] = pair[1];
+       }
+
+       if (params.gid) {
+         params.gid = parseInt(params.gid, 10);
+       }
+
+       return params;
+     };
+
+     var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+       var pswpElement = document.querySelectorAll('.pswp')[0],
+         gallery,
+         options,
+         items;
+
+       items = parseThumbnailElements(galleryElement);
+
+       // define options (if needed)
+       options = {
+
+         galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+         getThumbBoundsFn: function(index) {
+           // See Options->getThumbBoundsFn section of docs for more info
+           var thumbnail = items[index].el.children[0],
+             pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+             rect = thumbnail.getBoundingClientRect();
+
+           return {
+             x: rect.left,
+             y: rect.top + pageYScroll,
+             w: rect.width
+           };
+         },
+
+         addCaptionHTMLFn: function(item, captionEl, isFake) {
+           if (!item.title) {
+             captionEl.children[0].innerText = '';
+             return false;
+           }
+           captionEl.children[0].innerHTML = item.title + '<br/><small>Photo: ' + item.author + '</small>';
+           return true;
+         },
+
+       };
+
+       if (fromURL) {
+         if (options.galleryPIDs) {
+           // parse real index when custom PIDs are used 
+           // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+           for (var j = 0; j < items.length; j++) {
+             if (items[j].pid == index) {
+               options.index = j;
+               break;
+             }
+           }
+         } else {
+           options.index = parseInt(index, 10) - 1;
+         }
+       } else {
+         options.index = parseInt(index, 10);
+       }
+
+       // exit if index not found
+       if (isNaN(options.index)) {
+         return;
+       }
+
+       var radios = document.getElementsByName('gallery-style');
+       for (var i = 0, length = radios.length; i < length; i++) {
+         if (radios[i].checked) {
+           if (radios[i].id == 'radio-all-controls') {
+
+           } else if (radios[i].id == 'radio-minimal-black') {
+             options.mainClass = 'pswp--minimal--dark';
+             options.barsSize = {
+               top: 0,
+               bottom: 0
+             };
+             options.captionEl = false;
+             options.fullscreenEl = false;
+             options.shareEl = false;
+             options.bgOpacity = 0.85;
+             options.tapToClose = true;
+             options.tapToToggleControls = false;
+           }
+           break;
+         }
+       }
+
+       if (disableAnimation) {
+         options.showAnimationDuration = 0;
+       }
+
+       // Pass data to PhotoSwipe and initialize it
+       gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+       // see: http://photoswipe.com/documentation/responsive-images.html
+       var realViewportWidth,
+         useLargeImages = false,
+         firstResize = true,
+         imageSrcWillChange;
+
+       gallery.listen('beforeResize', function() {
+
+         var dpiRatio = window.devicePixelRatio ? window.devicePixelRatio : 1;
+         dpiRatio = Math.min(dpiRatio, 2.5);
+         realViewportWidth = gallery.viewportSize.x * dpiRatio;
+
+         if (realViewportWidth >= 1200 || (!gallery.likelyTouchDevice && realViewportWidth > 800) || screen.width > 1200) {
+           if (!useLargeImages) {
+             useLargeImages = true;
+             imageSrcWillChange = true;
+           }
+
+         } else {
+           if (useLargeImages) {
+             useLargeImages = false;
+             imageSrcWillChange = true;
+           }
+         }
+
+         if (imageSrcWillChange && !firstResize) {
+           gallery.invalidateCurrItems();
+         }
+
+         if (firstResize) {
+           firstResize = false;
+         }
+
+         imageSrcWillChange = false;
+
+       });
+
+       gallery.listen('gettingData', function(index, item) {
+         if (useLargeImages) {
+           item.src = item.o.src;
+           item.w = item.o.w;
+           item.h = item.o.h;
+         } else {
+           item.src = item.m.src;
+           item.w = item.m.w;
+           item.h = item.m.h;
+         }
+       });
+
+       gallery.init();
+     };
+
+     // select all gallery elements
+     var galleryElements = document.querySelectorAll(gallerySelector);
+     for (var i = 0, l = galleryElements.length; i < l; i++) {
+       galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+       galleryElements[i].onclick = onThumbnailsClick;
+     }
+
+     // Parse URL and open gallery if it contains #&pid=3&gid=1
+     var hashData = photoswipeParseHash();
+     if (hashData.pid && hashData.gid) {
+       openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+     }
+   };
+
+   initPhotoSwipeFromDOM('.event1');
+   initPhotoSwipeFromDOM('.event2');
+   initPhotoSwipeFromDOM('.event3');
+   initPhotoSwipeFromDOM('.event4');
+   initPhotoSwipeFromDOM('.event5');
+   initPhotoSwipeFromDOM('.event6');
+   initPhotoSwipeFromDOM('.event7');
+   initPhotoSwipeFromDOM('.event8');
+   initPhotoSwipeFromDOM('.event9');
+   initPhotoSwipeFromDOM('.event10');
+   initPhotoSwipeFromDOM('.event11');
+   initPhotoSwipeFromDOM('.event12');
+   initPhotoSwipeFromDOM('.event13');
+
+ })();
+</script>
 
 </body>
 
