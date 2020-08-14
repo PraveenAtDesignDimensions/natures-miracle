@@ -8,7 +8,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Avocado | Nature's Miracle</title>
+    <title>Avocados Recipes | Nature's Miracle</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -39,332 +39,6 @@
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
         <![endif]-->
-
-    <style type="text/css">
-        .flat-row.about-1 {
-            padding-bottom: 50px;
-        }
-        
-        .el__nemonics {
-            display: flex;
-            margin: 10px 0;
-            text-align: center;
-            justify-content: space-around;
-        }
-        
-        .el__nemonics img {
-            max-width: 90px;
-        }
-        
-        .nemonics-box {
-            padding: 5px 10px;
-        }
-        
-        figure {
-            box-sizing: border-box;
-            user-select: none;
-            margin: 0;
-            padding: 0;
-        }
-        /* ELEMENT */
-        
-        .card-flip {
-            margin: 20px auto;
-            cursor: pointer;
-            perspective: 1000px;
-            width: 300px;
-            height: 450px;
-            padding: 0 10px;
-        }
-        
-        .card-flip__flipper {
-            transition: .3s ease;
-            transform-style: preserve-3d;
-            position: relative;
-        }
-        
-        .card-flip__content {
-            width: 100%;
-            backface-visibility: hidden;
-            position: absolute;
-            overflow: hidden;
-        }
-        
-        .fancy-hover__image {
-            display: block;
-            width: 100%;
-            transition: filter .15s linear .15s;
-        }
-        
-        .fancy-hover__fancy {
-            position: absolute;
-            top: 0;
-            background-color: rgba(55, 66, 78, 0);
-            width: 100%;
-            height: 100%;
-            transition: background .15s linear .15s
-        }
-        
-        .fancy-hover__fancy:after {
-            content: '';
-            background: white;
-            height: 1px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            right: 50%;
-            transition: left .15s ease-in-out, right .15s ease-in-out;
-        }
-        
-        .fancy-hover__text {
-            font-family: "Poppins", sans-serif;
-            width: 100%;
-            color: #000;
-        }
-        
-        .fancy-hover__element {
-            width: 100%;
-            position: absolute;
-            padding: 16px;
-        }
-        
-        .fancy-hover__element--title {
-            background: rgba(255, 255, 255, .5);
-            bottom: 0;
-            font-size: 20px;
-            font-weight: 100;
-            text-transform: uppercase;
-            font-family: sans-serif;
-            transition: bottom .15s ease-in-out .15s, background .15s linear .15s;
-        }
-        
-        .fancy-hover__element--subtitle {
-            top: 100%;
-            font-family: sans-serif;
-            transition: top .15s ease-out;
-        }
-        
-        .fancy-hover:hover .fancy-hover__fancy {
-            background: rgba(239, 239, 239, .5);
-            transition-delay: 0s;
-        }
-        
-        .fancy-hover:hover .fancy-hover__element--title {
-            top: 10%;
-            background: rgba(255, 255, 255, 0);
-            transition-delay: 0s;
-        }
-        
-        .fancy-hover:hover .fancy-hover__element--subtitle {
-            top: 25%;
-            transition: top .15s ease-in .15s;
-        }
-        
-        .card-flip__content--front {
-            transform: rotateY(0deg);
-            z-index: 2;
-        }
-        
-        .card-flip__content--back {
-            background: #fff;
-            font-family: sans-serif;
-            color: #565656;
-            text-align: center;
-            padding: 16px;
-            height: 420px;
-            transform: rotateY(180deg);
-        }
-        
-        .card-flip.clicked .card-flip__flipper {
-            transform: rotateY(180deg);
-        }
-        
-        #mixedSlider3 .MS-controls .MS-left img {
-            width: 35px;
-        }
-        
-        #mixedSlider3 .MS-controls .MS-right img {
-            width: 35px;
-        }
-        
-        #mixedSlider3 {
-            position: relative;
-        }
-        
-        #mixedSlider3 .MS-content {
-            white-space: nowrap;
-            overflow: hidden;
-            margin: 0 5%;
-        }
-        
-        #mixedSlider3 .MS-content .item {
-            display: inline-block;
-            width: 25%;
-            position: relative;
-            vertical-align: top;
-            overflow: hidden;
-            height: 340px;
-            white-space: normal;
-            padding: 0 10px;
-        }
-        
-        #mixedSlider3 .MS-content .item .imgTitle .itemTitle {
-            margin: 0;
-            position: absolute;
-            width: 90%;
-            bottom: 10px;
-            /* padding: 0 0 2px 10px; */
-            font-size: 16px;
-        }
-        
-        #mixedSlider3 .MS-content .item .imgTitle img {
-            height: auto;
-            width: 100%;
-            padding: 20px;
-        }
-        .MS-controls{
-            display: none;
-        }
-        #mixedSlider3 .MS-controls button {
-            position: absolute;
-            border: none;
-            background-color: transparent;
-            outline: 0;
-            font-size: 50px;
-            top: 40%;
-            color: rgba(0, 0, 0, 0.4);
-            transition: 0.15s linear;
-        }
-        
-        #mixedSlider3 .MS-controls button:hover {
-            color: rgba(0, 0, 0, 0.8);
-        }
-        
-        @media (max-width: 1024px) {
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 20%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 240px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-            #mixedSlider3 .MS-controls button {
-                font-size: 30px;
-            }
-        }
-        
-        @media (max-width: 992px) {
-            #mixedSlider3 .MS-controls button {
-                font-size: 30px;
-            }
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 20%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 240px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-        }
-        
-        @media (max-width: 991px) {
-            #mixedSlider3 .MS-content .item {
-                width: 50%;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 32%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 260px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-        }
-        
-        @media (max-width: 767px) {
-            #mixedSlider3 .MS-content .item {
-                width: 100%;
-            }
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 32%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 260px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-            #mixedSlider3 .MS-controls button {
-                font-size: 20px;
-            }
-            #mixedSlider3 .MS-controls .MS-left {
-                left: -10px;
-            }
-            #mixedSlider3 .MS-controls .MS-right {
-                right: -10px;
-            }
-        }
-        
-        #mixedSlider3 .MS-controls .MS-left {
-            left: 0px;
-        }
-        
-        #mixedSlider3 .MS-controls .MS-right {
-            right: 0px;
-        }
-        
-        @media (max-width: 500px) {
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 100%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 440px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-        }
-        
-        @media (max-width: 375px) {
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 100%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 400px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-        }
-        
-        @media (max-width: 320px) {
-            #mixedSlider3 .MS-content .item {
-                display: inline-block;
-                width: 100%;
-                position: relative;
-                vertical-align: top;
-                overflow: hidden;
-                height: 320px;
-                white-space: normal;
-                padding: 0 10px;
-            }
-        }
-        
-    </style>
-
 </head>
 
 <body class="">
@@ -381,7 +55,7 @@
         <a href="contact-us.html#find_store">
         <span class="fa fa-map-marker" aria-hidden="true"></span><span class="hide-text"> Find Store</span></a
            >
-
+  
         <a
            href="javascript:void(0)"
            class="svg-d"
@@ -457,7 +131,7 @@
                                     <li><a href="strawberries.html">Strawberries</a></li>
                                     <li><a href="wheatgrass.html">Wheatgrass</a></li>
                                     <li><a href="blueberries.html">Blueberries</a></li>
-                                    <li><a href="avocado.html">Avocado</a></li>
+                                    <li><a href="avocados.html">Avocados</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -511,17 +185,16 @@
         </div>
 
         <!-- Page Title -->
-        <div class="page-title parallax flat_strech parallax-avocado">
+        <div class="page-title flat_strech parallax parallax-avocado">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-title-heading">
-                            <h1 class="title">Avocado</h1>
+                            <h1 class="title">Crispy Baked Avocado Fries</h1>
                             <div class="breadcrumbs">
                                 <ul>
-                                    <li> <a href="home.html">Home </a></li>
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="#">Avocado</a></li>
+                                    <li> <a href="recipes.html">Recipes </a></li>
+                                    <li><a href="recipe-avocado.html">Avocados</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -534,127 +207,112 @@
             <!-- /.container -->
         </div>
 
-        <!-- Flat Our Story -->
-        <section class="flat-row about-1 font-large text-justify">
+        <div class="main-content blog-single">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-8">
+                        <div class="content-wrap">
+                            <article class="post">
+                                <div class="header-post">
+                                    <h2 class="title-post">Crispy Baked Avocado Fries</h2>
+                                    <p>These crispy baked avocado fries call for just 5 ingredients!</p>
+                                    <!-- <p class="time-post">On 13 Nov 2015 <a href="#">3 comments</a></p> -->
+                                </div>
+                                <!-- /.header-post -->
+                            
+                                <div class="feature-post">
+                                    <a><img src="images/recipes/Avocado2.jpg" alt="image"></a>
+                                </div>
+                                <!-- /.feature-post -->
+                            
+                                <p><strong>YIELD:</strong> 2-3 servings </p>
+                                <p><strong>TOTAL TIME:</strong> 15 minutes </p>
+                                <!-- <p><strong>COOKING TIME:</strong> 10 minutes</p> -->
+                            
+                                <div class="content-post">
 
-                    <div class="col-md-6">
-                        
-                        <div class="title-section style2 padle-0px ">
-                            <h1 class="title">The miracle for both sweet and savoury dishes</h1>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5 class="custom-title-1">INGREDIENTS</h5>
+                            
+                                            <ul class="iconlist">
+                                                <li><i class="fa fa-circle-o"></i>2 large or 4 small avocados, peeled and sliced</li>
+                                                <li><i class="fa fa-circle-o"></i>1/4 tsp garlic powder</li>
+                                                <li><i class="fa fa-circle-o"></i>1/4 tsp salt</li>
+                                                <li><i class="fa fa-circle-o"></i>1/4 cup flour, such as garbanzo flour
+                                                </li>
+                                                <li><i class="fa fa-circle-o"></i>1/2 cup milk of choice</li>
+                                                <li><i class="fa fa-circle-o"></i>1 cup breadcrumbs, gf if desired (Or make your own by processing toasted bread in a food processor) (40g)</li>
+                                            </ul>
+                                    
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="custom-title-1">PREPARATION</h5>
+                                    <p>For a larger batch, feel free to double the recipe! Preheat oven to 420 F. Grease a baking sheet, and set aside. Combine the garlic, salt, and flour in a shallow dish. </p>
+                                    <p> Add the milk to a separate shallow dish. Coat each avocado slice in flour, then dip in the milk. Sprinkle breadcrumbs over each slice, pressing down lightly until the crumbs stick. </p>
+                                    <p> Place on the baking tray. Bake 15-18 minutes, or until golden. Store leftovers in the fridge 2-3 days. </p>
+                                        </div>
+                                    </div>
+             
+                            
+                                </div>
+                                <!-- /.content-post -->
+                            
+                                <div class="direction clearfix">
+                                    <ul class="tags">
+                                        <li>Tags: </li>
+                                        <li><a href="recipes.html">Recipes,</a></li>
+                                        <li><a href="recipe-avocado.html">Avocado</a></li>
+                            
+                                    </ul>
+                            
+                                </div>
+
+                                <div class="back-btn">
+                                    <button class="basic-btn" onclick="goBack()"><i class="fa fa-arrow-left"></i> Back</button>
+                                </div>
+
+                                <!-- /.direction -->
+                            
+                            </article>
                         </div>
-                        <div class="img-our">
-                            <img src="images/imagebox/aa.png" alt="images">
-                        </div>
-                        
-
-                        
-
+                        <!-- /.content-post -->
                     </div>
-                    <!--col-md-6-->
+                    <!-- /.col-md-9 -->
 
-                    <div class="col-md-6">
-                        <div class="el__nemonics">
-                            <div class="nemonics-box">
-                                <img src="icon/mnemonics/Easy to Incorporate in Diet.svg">
-                                <p>Easy to Incorporate in Diet</p>
+                    <div class="col-md-4">
+                        <div class="sidebars">
+                            <div class="sidebars-wrap">
+                                <div class="sidebar">
+
+                                    <div class="widget widget_categories">
+                                        <h3 class="widget-title">Categories</h3>
+                                        <ul>
+                                            <li><a href="chef-special.html">Chef's Special- Vicky Ratnani</a></li>
+                                            <li><a href="recipe-tomatoes.html">Tempting Tomatoes!</a></li>
+                                            <li><a href="recipe-peppers.html">Palatable Peppers!</a></li>
+                                            <li><a href="recipe-cucumbers.html">Crunchy Cucumbers!</a></li>
+                                            <li><a href="recipe-strawberries.html">Sweet Strawberries!</a></li>
+                                            <li><a href="recipe-blueberries.html">Brilliant Blueberries!</a></li>
+                                            <li><a href="recipe-avocado.html">Amazing Avocados!</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.widget_categories -->
+
+                                </div>
+                                <!-- .sidebar -->
                             </div>
-                            <div class="nemonics-box">
-                                <img src="icon/mnemonics/Loaded with Fiber.svg">
-                                <p>Loaded with Fiber</p>
-                            </div>
-                            <div class="nemonics-box">
-                                <img src="icon/mnemonics/Packed with Vitamins and Minerals color.svg">
-                                <p>Packed with Antioxidants</p>
-                            </div>
-
+                            <!-- /.sidebars-wrap -->
                         </div>
-
-                        <p>Avocados are such rich sources of good fatty acids, beneficial carbs, minerals, riboflavin, beta carotene, magnesium and folate. All of the above are excellent contributors to getting that lithe body, glossy flowing hair and glowing skin, top it off with nothing-can-get-me-down mood all the time. Now all you have to do is slice up a Nature’s Miracle Avocado or guacamole it to your heart’s desire.</p>
-                        
+                        <!-- /.sidebars -->
                     </div>
-                    <!--col-md-6-->
+                    <!-- /.col-md-3 -->
                 </div>
-                <!--row-->
-
-
-                <div class="flat-divider d42px"></div>
-
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                        <h5>Nutritional and Health Benefits</h5>
-
-                        <img src="images/imagebox/Ripening_Cycle.png">
-                        
-
-
-                    </div>
-                </div>
-
-
-                <div class="flat-divider d42px"></div>
-
-                <div class="row">
-
-                    <div class="col-md-10">
-
-                        <h5>Nutritional and Health Benefits</h5>
-                        <ul class="iconlist">
-                            <li><i class="fa fa-circle-o"></i>With abundance of Omega 3, vitamins, minerals, fibers and more, Avocados are now made available, brought all the way from Peru and Latin America by Nature’s Miracle. Grown in hygienically using traditional farming techniques, these Avocados are nothing short of a miracle for your health and taste. Try incorporating this nutritious miracle in your breakfast or salads and dips, for a creamy taste of health.</li>
-
-                        </ul>
-
-                        <div class="flat-divider d10px"></div>
-
-                        <h5>Usage as raw and as an ingredient</h5>
-                        <ul class="iconlist">
-                            <li><i class="fa fa-circle-o"></i>Try it with toast</li>
-                            <li><i class="fa fa-circle-o"></i>Blend a guacamole & nachos snacks</li>
-                            <li><i class="fa fa-circle-o"></i>Dice up with salad</li>
-                            <li><i class="fa fa-circle-o"></i>Stir up a healthy buttermilk avocado smoothie</li>
-                            <li><i class="fa fa-circle-o"></i>Add to the pesto sauce pasta</li>
-                            <li><i class="fa fa-circle-o"></i>Soup it up</li>
-
-                        </ul>
-
-                        <div class="flat-divider d10px"></div>
-
-                    </div>
-                </div>
-
+                <!-- /.row -->
             </div>
-            <!--container -->
-        </section>
-
-        <div class="container" id="my-slide">
-            <div class="title-section style2 ">
-                <h1 class="title">Explore the Range</h1>
-            </div>
-
-            <div id="mixedSlider3">
-                <div class="MS-content">
-                    <div class="item">
-                        <div class="imgTitle">
-
-                            <img src="images/varients/12.png" alt="" />
-                            <p class="itemTitle text-center"><strong>Avocado </strong>
-                                <br>&nbsp;</p>
-
-                        </div>
-                    </div>
-                    
-
-                </div>
-
-                <div class="MS-controls">
-                    <button class="MS-left"><img src="images/varients/prev.svg"></button>
-                    <button class="MS-right"><img src="images/varients/next.svg"></button>
-                </div>
-            </div>
+            <!-- /.container -->
         </div>
+        <!--main-content -->
 
         <footer class="footer">
             <div class="footer-widgets">
@@ -712,7 +370,7 @@
                                     <li><a href="strawberries.html">Strawberries</a></li>
                                     <li><a href="wheatgrass.html">Wheatgrass</a></li>
                                     <li><a href="blueberries.html">Blueberries</a></li>
-                                    <li><a href="avocado.html">Avocado</a></li>
+                                    <li><a href="avocados.html">Avocados</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="events.html">Events</a></li>
@@ -724,7 +382,7 @@
                                 </div>
                             </div>
                             <!-- /.col-md-3 -->
-
+                            
                             <div class="col-md-2 col-sm-6 col-6">
                                 <div class="widget widget-link">
                                     <h3 class="widget-title">Follow Us </h3>
@@ -826,7 +484,6 @@
         <!--box -->
 
         <!-- Javascript -->
-        <script type="text/javascript" src="javascript/3.1.1-jquery.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.min.js"></script>
         <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.easing.js"></script>
@@ -840,54 +497,17 @@
         <script type="text/javascript" src="javascript/jquery.flexslider-min.js"></script>
         <script type="text/javascript" src="javascript/owl.carousel.js"></script>
         <script type="text/javascript" src="javascript/jquery-validate.js"></script>
-        <script type="text/javascript" src="javascript/countdown.js"></script>
-        <!-- <script type="text/javascript" src="javascript/switcher.js"></script> -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvV0EE3yFozGhjmUv3BgoyviVdXzCwHlk"></script>
         <script type="text/javascript" src="javascript/gmap3.min.js"></script>
         <script type="text/javascript" src="javascript/main.js"></script>
+
+        <!-- search -->
+        <script type="text/javascript" src="search/search.js"></script>
 
         <!-- Revolution Slider -->
         <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="javascript/slider.js"></script>
-
-        <script src="javascript/multislider.min.js"></script>
-
-        <script>
-            function openCity(evt, cityName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-                document.getElementById(cityName).style.display = "block";
-                evt.currentTarget.className += " active";
-            }
-
-            document.getElementById("defaultOpen").click();
-
-            function showthis() {
-                document.getElementById("mega-slide").style.display = "block";
-            }
-
-            function hidethis() {
-                document.getElementById("mega-slide").style.display = "none";
-            }
-        </script>
-
-        <script>
-
-            /* slider */
-
-            // $('#mixedSlider3').multislider({
-            //     duration: 750,
-            //     interval: 2000
-            // });
-        </script>
 
 </body>
 

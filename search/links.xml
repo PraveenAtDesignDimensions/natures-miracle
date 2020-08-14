@@ -77,6 +77,10 @@
     <url>blueberries.html</url>
   </link>
    <link>
+    <title>Avocados</title>
+    <url>avocados.html</url>
+  </link>
+   <link>
     <title>A novel way of food production</title>
     <url>a-novel-way-of-food-production.html</url>
   </link>
@@ -279,6 +283,58 @@
   <link>
     <title>Strawberry Avocado Salad</title>
     <url>recipe-strawberry-5.html</url>
+  </link>
+  <link>
+    <title>Brilliant Blueberries</title>
+    <url>blueberries.html</url>
+  </link>
+  <link>
+    <title>Blueberry Breakfast Quinoa</title>
+    <url>recipe-blueberry-1.html</url>
+  </link>
+  <link>
+    <title>Blueberry Peach Crisp</title>
+    <url>recipe-blueberry-2.html</url>
+  </link>
+  <link>
+    <title>Healthy Blueberry Muffins</title>
+    <url>recipe-blueberry-3.html</url>
+  </link>
+  <link>
+    <title>Vegan Blueberry Coconut Popsicles</title>
+    <url>recipe-blueberry-4.html</url>
+  </link>
+  <link>
+    <title>Frozen Blueberry Margaritas</title>
+    <url>recipe-blueberry-5.html</url>
+  </link>
+  <link>
+    <title>The Ultimate Healthy Blueberry Crumble</title>
+    <url>recipe-blueberry-6.html</url>
+  </link>
+    <link>
+    <title>Amazing Avocados</title>
+    <url>avocados.html</url>
+  </link>
+  <link>
+    <title>Strawberry Avocado Salad</title>
+    <url>recipe-avocado-1.html</url>
+  </link>
+  <link>
+    <title>Crispy Baked Avocado Fries</title>
+    <url>recipe-avocado-2.html</url>
+  </link>
+  <link>
+    <title>Magical Chocolate Dragon Bars</title>
+    <url>recipe-avocado-3.html</url>
+  </link>
+  <link>
+    <title>Keto Chocolate Avocado Pudding</title>
+    <url>recipe-avocado-4.html</url>
+  </link>
+  <link>
+    <title>Strawberry Avocado Keto Smoothie Recipe with Almond Milk</title>
+    <url>recipe-avocado-5.html</url>
   </link>
 
 </pages>
