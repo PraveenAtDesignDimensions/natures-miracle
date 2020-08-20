@@ -1,4 +1,21 @@
-var Store_Data = [ 
+var Store_Data = [
+    {
+        "Id": "0",
+        "State":"Madhya Pradesh",
+        "City":"Bhopal",
+        "Store":"Big Bazaar",
+        "Address":"ON KHASRA 1511, D B MALL, ARERA HILLS, Zone-I, Maharana Pratap Nagar, Bhopal, Madhya Pradesh 462011",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.292088563423!2d77.42792651542574!3d23.232455814280094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4316a2437147%3A0xefddfacb963c29c7!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576476561973!5m2!1sen!2sin"
+    }, 
+
+	{
+        "Id": "1",
+        "State":"Chandigarh",
+        "City":"Chandigarh",
+        "Store":"Big Bazaar",
+        "Address":"Elante Mall, 178 & 178a, Purv Marg, Industrial Area Phase I, Chandigarh, 160002",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.4813881092973!2d76.79969441552653!3d30.70486459402547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec8ceaaaaacd%3A0xa8cd93978629bd00!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576476820774!5m2!1sen!2sin"
+    },	
 
    {
         "Id": "2",
@@ -8,6 +25,15 @@ var Store_Data = [
         "Address":"Booth 2,3 & 6, 9D, Sector 9, Chandigarh, 160009",
 		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.0324798381785!2d76.78938641552723!3d30.745589142063054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed5624bb5aaf%3A0x7034580d7ce35e8b!2sMyFresh!5e0!3m2!1sen!2sin!4v1576476087260!5m2!1sen!2sin"
     },  
+
+    {
+        "Id": "3",
+        "State":"Uttarakhand",
+        "City":"Dehradun",
+        "Store":"Big Bazaar",
+        "Address":"NO.284,15-A, Kapoor Tower, 1st Floor, Rajpur Rd, Dehradun, Uttarakhand 248001",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.8480510621407!2d78.0420073155207!3d30.326839612130804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909298da8e6cb47%3A0x83c89216672968bc!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576476986537!5m2!1sen!2sin"
+    }, 
 
     {
         "Id": "4",
@@ -43,6 +69,15 @@ var Store_Data = [
         "Store":"Allied Fruit & Florists (P) Ltd",
         "Address":"Shop : 53 A, Khan Market, New Delhi, Delhi 110003",
 		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.9795369209464!2d77.22516931549472!3d28.60039069228502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2e9dccf4513%3A0x708ed6bacddf12ee!2sAllied%20Fruit%20%26%20Florists%20(P)%20Ltd!5e0!3m2!1sen!2sin!4v1576494988155!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "8",
+        "State":"Delhi",
+        "City":"South West Delhi",
+        "Store":"Big Bazaar",
+        "Address":"Ground & Lower Ground Ambience Mall, Nelson Mandela Marg, Vasant Kunj II, New Delhi, Delhi 110070",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.957451383765!2d77.15229961549392!3d28.540998594967768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d170872069d%3A0x2f9d2b6e0804ec5c!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576495086535!5m2!1sen!2sin"
     },
 
     {
@@ -245,6 +280,15 @@ var Store_Data = [
     },
 
 	{
+        "Id": "31",
+        "State":"Uttar Pradesh",
+        "City":"Greater Noida",
+        "Store":"Big Bazaar",
+        "Address":"The Grand Venice Mall, Site No. 4, Sh 3, Near Pari Chowk, Greater Noida, Uttar Pradesh 201308",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.881163373133!2d77.52382311549269!3d28.452998498933823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1d6f9b99789%3A0x3613d6dd4f3f7a71!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576500607029!5m2!1sen!2sin"
+    },
+
+	{
         "Id": "32",
         "State":"Uttar Pradesh",
         "City":"Greater Noida",
@@ -287,6 +331,15 @@ var Store_Data = [
         "Store":"ASIANA FOOD  - SOUTH POINT MALL",
         "Address":"WEMBLEY ESTATE, J-704, ROSEWOOD CITY, SECTOR-49,,GURGAON,HARYANA,122018",
 		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.057022732961!2d77.09724441549258!3d28.447697399172398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18b459eb56e5%3A0xd42794f4cac301d5!2sSouth%20Point%20Mall!5e0!3m2!1sen!2sin!4v1576502116960!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "37",
+        "State":"Haryana",
+        "City":"Gurugram",
+        "Store":"Big Bazaar",
+        "Address":"Nh - 8, Ambience Island, Nathupur, Gurugram, Haryana 122001",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.195791030822!2d77.09517081549335!3d28.503756496647533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194c1a3e3a23%3A0xd8a22e8898463e00!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576502184269!5m2!1sen!2sin"
     },
 
 	{
@@ -344,6 +397,51 @@ var Store_Data = [
     },
 
     {
+        "Id": "44",
+        "State":"Uttarakhand",
+        "City":"Haldwani",
+        "Store":"Big Bazaar",
+        "Address":"Durga City Center Market Land No.260,block E Bhotia Parao, Haldwani, Uttarakhand 263141",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.816631936299!2d79.52818861550402!3d29.22894766358671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09af1a4f2037d%3A0x425ccaa01a13e67!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576504943183!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "45",
+        "State":"Madhya Pradesh",
+        "City":"Indore",
+        "Store":"Big Bazaar",
+        "Address":"Big Bazaar in Indore",
+		"Map":"https://www.google.com/maps/d/embed?mid=1qo0MWtv58sotMRYwBoR22-YzXaRE35JZ"
+    },
+
+    {
+        "Id": "46",
+        "State":"Punjab",
+        "City":"Jalandhar",
+        "Store":"Big Bazaar",
+        "Address":"Vasal Mall, Ladowali Rd, Opposite Hotel President, Police Line, Jalandhar, Punjab 144002",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.5346848993154!2d75.58945931553627!3d31.316603564307975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a4ead58e671%3A0x8ab20f871ef1bf81!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576505301716!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "47",
+        "State":"Uttar Pradesh",
+        "City":"Kanpur",
+        "Store":"Big Bazaar",
+        "Address":"16/113, Z- Square Mall, Bada Chauraha, Mahatma Gandhi Rd, Kanpur, Uttar Pradesh 208001",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.4539893036417!2d80.3504218154653!3d26.47332368523906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c38bdcf686177%3A0xe05f4f3d65c43db5!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576505456799!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "48",
+        "State":"Uttar Pradesh",
+        "City":"Lucknow",
+        "Store":"Big Bazaar",
+        "Address":"Big Bazaar in Lucknow",
+		"Map":"https://www.google.com/maps/d/embed?mid=1IALdeXFtBdz2K61D0_gngqlLe0mMvoNF"
+    },
+
+    {
         "Id": "49",
         "State":"Uttar Pradesh",
         "City":"Lucknow",
@@ -353,12 +451,39 @@ var Store_Data = [
     },
 
     {
+        "Id": "50",
+        "State":"Maharashtra",
+        "City":"Mumbai",
+        "Store":"Big Bazaar",
+        "Address":"Big Bazaar in Mumbai",
+		"Map":"https://www.google.com/maps/d/embed?mid=1B0AKuuVaFoKGZgV65_JDNzb6glqWNqrw"
+    },
+
+    {
         "Id": "51",
         "State":"Maharashtra",
         "City":"Mumbai",
         "Store":"HyperCITY",
         "Address":"HyperCITY in Mumbai",
 		"Map":"https://www.google.com/maps/d/embed?mid=19Tpuf_JsSLeOaoeUwT9shHLiXDWSIK83"
+    },
+
+    {
+        "Id": "52",
+        "State":"Maharashtra",
+        "City":"Mumbai",
+        "Store":"Big Bazaar Gen Nxt",
+        "Address":"Big Bazaar Gen Nxt in Mumbai",
+		"Map":"https://www.google.com/maps/d/embed?mid=1bdQIDXMFgcAhmxf4_GjUjznFEsyM_LJU"
+    },
+
+    {
+        "Id": "53",
+        "State":"Uttar Pradesh",
+        "City":"Noida",
+        "Store":"Big Bazaar",
+        "Address":"Big Bazaar in Noida",
+		"Map":"https://www.google.com/maps/d/embed?mid=1CiiHh-1A4qADfeDFD_po-0P-Fwta-Kgd"
     },
 
     {
@@ -431,6 +556,15 @@ var Store_Data = [
         "Store":"VM TRADERS",
         "Address":"Gejha Rd, Gejha, Sector 93, Noida, Uttar Pradesh 201304",
 		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56058.534215405205!2d77.33095933808261!3d28.5800191229576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce977ee474e75%3A0x73a430b60408add7!2sVM%20TRADERS!5e0!3m2!1sen!2sin!4v1576651004661!5m2!1sen!2sin"
+    },
+
+    {
+        "Id": "62",
+        "State":"Punjab",
+        "City":"Zirakpur",
+        "Store":"Big Bazaar",
+        "Address":"Paras Down Town Square Mall, Panchkula Crossing, NH 28 Delhi, Ambala Highway, Zirakpur, Punjab 140603",
+		"Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13729.46347249006!2d76.82207338908016!3d30.65182436634296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb4bc5eef249%3A0x8fb3e83d1765620e!2sBig%20Bazaar!5e0!3m2!1sen!2sin!4v1576651092752!5m2!1sen!2sin"
     },
 
 

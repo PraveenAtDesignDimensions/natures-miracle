@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 2em;
+        }
+    </style>
+<body class="p2">
+
+<p>Setting a default value to a function parameter.</p>
+
+<p id="demo1" onclick="test(1)">1</p>
+<p id="demo2" onclick="test(2)">2</p>
+<p id="demo3" onclick="test(3)">3</p>
+
+<p id="test1"></p>
+<p id="test2"></p>
+<p id="test3"></p>
+
+
+<script>
+function test(x){
+    function myFunction(){  
+  return x * 1;
+}
+document.getElementById("test"+x).innerHTML = myFunction(x);
+}
+</script>
+
+</body>
+</html>

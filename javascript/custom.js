@@ -57,3 +57,7 @@ function Get_store(){
     document.getElementById("store-address").innerHTML = Store_Data[Key].Address;
      }, 1000);
 }
+
+/// --- --- email check --- --- /// --- ---  email check --- --- ///
+
+

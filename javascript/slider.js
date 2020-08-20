@@ -4,7 +4,7 @@ $(document).ready(function() {
         dottedOverlay:"none",
         delay:3000,
         startwidth:1170,
-        startheight:pp,
+        startheight:pp-130,
         hideThumbs:200,
 
         thumbWidth:100,

@@ -499,9 +499,9 @@
                                     <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone" data-error="Phone number field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="form-email1">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email1" data-error="Subject field is required" required="" onclick="startEmailTest(1)">
-                                    <span id="email-message1" class="massage_email" title="Suggested Email"></span>
+                                    <label for="form-email">Your email</label>
+                                    <input type="email" class="form-control" name="email" id="form-email" data-error="Subject field is required" required="">
+                                    <span id="email-message" class="massage_email" title="Suggested Email"></span>
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-subject">Subject</label>
@@ -548,8 +548,7 @@
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-email2">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email2" data-error="Subject field is required" required="" onclick="startEmailTest(2)">
-                                    <span id="email-message2" class="massage_email" title="Suggested Email"></span>
+                                    <input type="email" class="form-control" name="email" id="form-email2" data-error="Subject field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-subject2">Subject</label>
@@ -591,41 +590,40 @@
                               </div>
                               <form action="contact/contact-process3.php" method="post">
                                  <div class="reservation-page-input-box">
-                                    <label for="form-name3">Your name</label>
-                                    <input type="text" class="form-control" name="name" id="form-name3" data-error="Subject field is required" required="">
+                                    <label>Your name</label>
+                                    <input type="text" class="form-control" name="name" id="form-name" data-error="Subject field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="company-name3">Company Name</label>
-                                    <input type="text" class="form-control rt-date" name="company" id="company-name3" data-error="Company Name field is required" required="">
+                                    <label>Company Name</label>
+                                    <input type="text" class="form-control rt-date" name="company" id="company-name1" data-error="Company Name field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="company-address3">Address</label>
-                                    <input type="text" class="form-control rt-date" name="address" id="company-address3" data-error="Address field is required" required="">
+                                    <label>Address</label>
+                                    <input type="text" class="form-control rt-date" name="address" id="company-address1" data-error="Address field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="form-phone3">Phone number</label>
-                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone3" data-error="Phone number field is required" required="">
+                                    <label>Phone number</label>
+                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone" data-error="Phone number field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="landline3">Landline</label>
-                                    <input type="text" class="form-control" name="landline" id="landline3" data-error="Landline field is required" required="">
+                                    <label>Landline</label>
+                                    <input type="text" class="form-control" name="landline" id="landline" data-error="Landline field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="form-email3">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email3" data-error="Subject field is required" required="" onclick="startEmailTest(3)">
-                                    <span id="email-message3" class="massage_email" title="Suggested Email"></span>
+                                    <label>Your email</label>
+                                    <input type="email" class="form-control" name="email" id="form-email" data-error="Subject field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="form-subjects3">Subject</label>
-                                    <input type="text" class="form-control rt-date" name="subject" id="form-subjects3" data-error="Subject field is required" required="">
+                                    <label>Subject</label>
+                                    <input type="text" class="form-control rt-date" name="subject" id="form-subjects" data-error="Subject field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
-                                    <label for="form-type-of-business3">Type of Business</label>
-                                    <input type="text" class="form-control rt-date" name="business" id="form-type-of-business3" data-error="Type of Business field is required" required="">
+                                    <label>Type of Business</label>
+                                    <input type="text" class="form-control rt-date" name="business" id="form-type-of-business" data-error="Type of Business field is required" required="">
                                  </div>
                                  <div class="reservation-page-textarea">
-                                    <label for="form-requirement3">Requirement</label>
-                                    <textarea class="form-control your-message" name="requirement" id="form-requirement3"></textarea>
+                                    <label>Requirement</label>
+                                    <textarea class="form-control your-message" name="requirement" id="form-requirement"></textarea>
                                  </div>
                                  <div class="g-recaptcha" data-sitekey="6Lf6BqoUAAAAAGxGUW9hmQYtc25_x74EwKhohXel"></div>
                                  <div class="reservation-page-input-box submit1">
@@ -825,10 +823,6 @@
          <script src='javascript/custom.js'></script>
 
          <script>
-
-function startEmailTest(myValue){
-      
-
             function checkForCloseMatch(longString, shortString) {
     // too many false positives with very short strings
     if (shortString.length < 3) return '';
@@ -935,9 +929,9 @@ function startEmailTest(myValue){
   
   const getEl = selector => document.querySelector(selector);
   
-    const emailEl = getEl('#form-email'+ myValue);
-    const messageEl = getEl('#email-message'+ myValue);
-    const checkButtonEl = getEl('#form-email'+ myValue);
+    const emailEl = getEl('[name="email"]');
+    const messageEl = getEl('#email-message');
+    const checkButtonEl = getEl('#form-email');
   
   let suggestedEmail = '';
   
@@ -962,9 +956,6 @@ function startEmailTest(myValue){
     emailEl.focus();
     gatherDataAndCheck();
   });
-
-}
-
          </script>
 
       </body>

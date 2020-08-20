@@ -177,7 +177,8 @@ body {
 .font-large {
 	font-size: 14.5px;
 }
-.text-justify{
+.text-justify,
+.text-justify p{
 	text-align: justify;
 }
 
@@ -1864,7 +1865,8 @@ input[type="color"],
 /* Revolution Slider
 --------------------------------------------  */
 .tp-banner-container{
-    max-height: calc(100vh - 130px)!important;
+	/* max-height: calc(100vh - 130px)!important; */
+	/* height: calc(100vh - 130px)!important; */
     width: 100% !important;
     position: relative;
     overflow: hidden !important;
@@ -2643,4 +2645,12 @@ display: block;
 		left: 38.5%;
 	}
 }
+
+.tp-bgimg{
+	background-position:center center !important;
+	transition:none;
+	background-size: cover !important;
+}
+
+
 	
