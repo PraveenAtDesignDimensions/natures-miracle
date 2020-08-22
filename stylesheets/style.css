@@ -2646,10 +2646,29 @@ display: block;
 	}
 }
 
+@media (max-width: 765px) {
+	.flat-row.about, .flat-row.blog, footer, .page-title, .main-content {
+		margin-top: 65px !important;
+	}
+	.btn-menu {
+		margin: 25px 12px 0px 10px;
+	}
+	.home-delivery{
+		padding-top: 10px;
+	}
+	#mainnav-mobi {
+		top: 65px;
+	}
+}
+
+
 .tp-bgimg{
 	background-position:center center !important;
 	transition:none;
 	background-size: cover !important;
+}
+.nemonics-box p{
+text-align: center !important;
 }
 
 
