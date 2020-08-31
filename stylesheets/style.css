@@ -1444,7 +1444,9 @@ input[type="color"],
 	padding-top: 0;
 	padding-bottom: 9px;
 }
-
+.widget.widget_categories ul li:last-child {
+    border-bottom:none;
+}
 .widget.widget_categories ul li:after {
 	position: absolute;
     font-family: 'FontAwesome';
@@ -2500,6 +2502,7 @@ h1 {
     border: 1px solid #e44c2a;
 	border-radius: 2px;
 	background-color: transparent;
+	font-size: 12px;
 }
 .basic-btn:hover{
 	color: #fff;
@@ -2637,7 +2640,7 @@ display: block;
 	}
 	.flat-vertical {
 		left: 3%;
-		top: 53.8%;
+		top: 100px;
 	}
 	.my-logo {
 		top: 10px;
@@ -2669,6 +2672,14 @@ display: block;
 }
 .nemonics-box p{
 text-align: center !important;
+}
+.event-description p{
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 14.5px;
+}
+.demo-gallery{
+	margin: 2em 0;
 }
 
 
