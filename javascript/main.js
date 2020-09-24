@@ -866,7 +866,7 @@ function goBack() {
 document.getElementById("home_delivery").addEventListener("click", goToLeMarche);
 
 function goToLeMarche() {
-    if (confirm("Do you want to continue to this webpage?")) {
+    if (confirm("You will be taken to our associate Le Marche’s website for placing the order.")) {
         window.location.href = "https://www.marcheretail.com/home-delivery";
     } else {
         //
