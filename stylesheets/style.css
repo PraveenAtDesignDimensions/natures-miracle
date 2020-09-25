@@ -1662,7 +1662,7 @@ input[type="color"],
 	font-family: 'FontAwesome';
 	content: "\f105";
 	position: absolute;
-	top: -2px;
+	top: -0px;
 	left: 0;
 	color: #666666;
 	font-size: 15px;
@@ -2678,6 +2678,22 @@ text-align: center !important;
 	text-align: justify;
 	font-size: 14.5px;
 }
+.event-box{
+	position: relative;
+}
+.event-box:before {
+	font-family: 'FontAwesome';
+	content: "\f00e";
+	position: absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 15px);
+	color: #ffffff;
+	font-size: 30px;
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	pointer-events: none;
+}
+
 .demo-gallery{
 	margin: 2em 0;
 }
