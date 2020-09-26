@@ -2700,6 +2700,21 @@ text-align: center !important;
 .demo-gallery{
 	margin: 2em 0;
 }
-
+.recipe-form{
+	display: inline;
+}
+.recipe-form input{
+	height: 0px;
+    width: 0px;
+    visibility: hidden;
+    margin-bottom: 0;
+    padding: 0px;
+}
+.recipe-form button{
+    font-weight: 500;
+    padding: 1em 1.5em;
+    border-radius: 2px;
+    font-size: 12px;
+}
 
 	

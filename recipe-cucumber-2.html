@@ -221,7 +221,7 @@
                                 <!-- /.header-post -->
 
                                 <div class="feature-post">
-                                    <a><img src="images/recipes/c2.jpg" alt="image"></a>
+                                    <img src="images/recipes/c2.jpg" alt="image" class="recipe-image">
                                 </div>
                                 <!-- /.feature-post -->
 
@@ -266,6 +266,17 @@
 
                                 <div class="back-btn">
                                     <button class="basic-btn" onclick="goBack()"><i class="fa fa-arrow-left"></i> Back</button>
+
+                                    <!-- recipe-form -->
+                                    <form action="print-recipe/" method="post" class="recipe-form">
+                                        <input type="text" id="tempalte" name="tempalte" value="tempalte">
+                                        <input type="text" id="tempalte_img" name="tempalte_img" value="tempalte_img">
+                                        <input type="text" id="tempalte_name" name="tempalte_name" value="tempalte_name">
+
+                                        <button type="submit" name="submit" title="Print Recipe">Print Recipe</button>
+                                      </form>
+                                      <!-- / recipe-form -->
+
                                 </div>
 
                                 <!-- /.direction -->
@@ -505,6 +516,7 @@
         <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="javascript/slider.js"></script>
+        <script type="text/javascript" src="javascript/pdf-tempalte.js"></script>
 
 </body>
 
