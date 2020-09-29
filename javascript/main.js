@@ -911,8 +911,9 @@ function setShareLinks() {
     elements = document.querySelectorAll(".social-share.whatsapp");
     Array.prototype.forEach.call(elements, function(el) {
         el.addEventListener("click", function() {
-            url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
-            socialWindow(url);
+           // url = "https://www.linkedin.com/shareArticle?mini=true&amp;" + pageUrl;
+           url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+           socialWindow(url);
         });
     });
 
