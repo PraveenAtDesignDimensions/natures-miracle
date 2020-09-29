@@ -2342,10 +2342,11 @@ span.onlyin {
         display:none;
 	}
 	.footer {
-		margin-top: 20px;
+		margin-top: 20px !important;
 	}
 	.main-content{
 		margin-top: 0px !important;
+		margin-bottom: 45px !important;
 	}
 	#mainnav-mobi {
 	 top:120px;
@@ -2699,6 +2700,9 @@ text-align: center !important;
 
 .demo-gallery{
 	margin: 2em 0;
+}
+.pswp {
+    z-index: 99999 !important;
 }
 .recipe-form{
 	display: inline;
