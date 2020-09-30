@@ -2584,8 +2584,38 @@ body{
 		display: none !important;
 	}
 
-	.demo-gallery a:nth-child(1) {
+	.demo-gallery a:nth-child(1),
+	.demo-gallery a:nth-child(2),
+	.demo-gallery a:nth-child(3),
+	.demo-gallery a:nth-child(4),
+	.demo-gallery a:nth-child(5),
+	.demo-gallery a:nth-child(6),
+	.demo-gallery a:nth-child(7) {
 display: block;
+margin-bottom: 1em;
+position: relative;
+	}
+	.demo-gallery a:nth-child(2),
+	.demo-gallery a:nth-child(3),
+	.demo-gallery a:nth-child(4),
+	.demo-gallery a:nth-child(5),
+	.demo-gallery a:nth-child(6),
+	.demo-gallery a:nth-child(7){
+		width: 16.5%;
+		padding-right: 1em;
+	}
+	.demo-gallery a:nth-child(7){
+		padding-right: 0px;
+	}
+	.demo-gallery a:nth-child(2) img,
+	.demo-gallery a:nth-child(3) img,
+	.demo-gallery a:nth-child(4) img,
+	.demo-gallery a:nth-child(5) img,
+	.demo-gallery a:nth-child(6) img,
+	.demo-gallery a:nth-child(7) img{
+max-height: 76px;
+width: 100%;
+object-fit: cover;
 	}
 	.pswp__caption__center{
 		text-align: center !important;
@@ -2651,6 +2681,14 @@ display: block;
 		width: 20%;
 		left: 38.5%;
 	}
+	.demo-gallery a:nth-child(2) img,
+	.demo-gallery a:nth-child(3) img,
+	.demo-gallery a:nth-child(4) img,
+	.demo-gallery a:nth-child(5) img,
+	.demo-gallery a:nth-child(6) img,
+	.demo-gallery a:nth-child(7) img{
+max-height: 65px;
+	}
 }
 
 @media (max-width: 765px) {
@@ -2665,6 +2703,25 @@ display: block;
 	}
 	#mainnav-mobi {
 		top: 50px;
+	}
+	.demo-gallery a:nth-child(2) img,
+	.demo-gallery a:nth-child(3) img,
+	.demo-gallery a:nth-child(4) img,
+	.demo-gallery a:nth-child(5) img,
+	.demo-gallery a:nth-child(6) img,
+	.demo-gallery a:nth-child(7) img{
+max-height: 55px;
+	}
+}
+
+@media (max-width: 500px) {
+	.demo-gallery a:nth-child(2) img,
+	.demo-gallery a:nth-child(3) img,
+	.demo-gallery a:nth-child(4) img,
+	.demo-gallery a:nth-child(5) img,
+	.demo-gallery a:nth-child(6) img,
+	.demo-gallery a:nth-child(7) img{
+max-height: 40px;
 	}
 }
 
@@ -2685,7 +2742,7 @@ text-align: center !important;
 .event-box{
 	position: relative;
 }
-.event-box:before {
+.demo-gallery a:nth-child(1):before {
 	font-family: 'FontAwesome';
 	content: "\f00e";
 	position: absolute;
@@ -2700,6 +2757,8 @@ text-align: center !important;
 
 .demo-gallery{
 	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 .pswp {
     z-index: 99999 !important;
@@ -2719,6 +2778,17 @@ text-align: center !important;
     padding: 1em 1.5em;
     border-radius: 2px;
     font-size: 12px;
+}
+.lSAction > a {
+	opacity: 1 !important;
+}
+.lSSlideOuter .lSPager.lSGallery li img{
+	width: 120px !important;
+	height: 80px !important;
+	object-fit: cover;
+}
+#new-slider{
+	margin: 30px 0;
 }
 
 	

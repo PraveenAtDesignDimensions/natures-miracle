@@ -37,7 +37,7 @@ header img{
 	width:100px;
 }
 .main-image img{
-    width:500px;
+    width:100%;
     margin-top:40px;
 }
 ul{
@@ -135,7 +135,8 @@ $html = '
 
 $footer = '
 	<footer>
-		<p>Find more recipes on recipe section on Natures Miracle <a href="http://ddworks.co/natures-miracle-wip/recipes.html" target="_blank" style="color:#e44c2a;">website</p>
+		<p>Find more recipes on recipe section on<br>
+		Natures Miracle <a href="http://ddworks.co/natures-miracle-wip/recipes.html" target="_blank" style="color:#e44c2a;">website</p>
 	</footer>
 	</body>
 </html>
@@ -153,7 +154,7 @@ $dompdf->set_option('isRemoteEnabled', true);
 $dompdf->loadHtml(html_entity_decode($final));
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper('A4', 'portrait');
+$dompdf->setPaper('A5', 'portrait');
 
 // Render the HTML as PDF
 $dompdf->render();

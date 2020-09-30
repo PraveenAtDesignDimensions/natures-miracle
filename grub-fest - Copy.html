@@ -8,7 +8,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>FAQs | Nature's Miracle</title>
+    <title>Grub Fest | Nature's Miracle</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -30,6 +30,12 @@
     <!-- Animation Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
 
+    <!-- Core CSS file -->
+<!-- <link rel="stylesheet" href="stylesheets/photoswipe.css"> 
+<link rel="stylesheet" href="stylesheets/default-skin.css">  -->
+
+<link rel="stylesheet" href="lightslider/css/lightslider.css">
+
     <!-- Favicon and touch icons  -->
     <link href="icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon" sizes="48x48">
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
@@ -41,49 +47,20 @@
         <![endif]-->
 
     <style>
-        .faqs {
-            padding:50px 0;
+        .carousel-inner img {
+            width: 100%;
         }
         
-        .toggle-content p {
-            margin-bottom: 1rem;
-        }
-        
-        .toggle-box {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 5px;
-        }
-        
-        .toggle-box2 {
-            display: grid;
-            grid-template-columns: 1fr 3fr 3fr;
-            grid-gap: 5px;
-        }
-        
-        .toggle-box p {
-            margin-bottom: 0px;
-            padding: 10px;
-        }
-        
-        .toggle-box .thead {
-            background-color: #ccc;
-            color: #fff;
-            font-weight: 500;
-        }
-        
-        .toggle-box .odd {
-            background-color: #eaeaea;
-        }
-        
-        .toggle-box thead2 {
-            font-weight: 500;
+        .carousel-control span {
+            position: absolute;
+            top: 50%;
         }
     </style>
 
 </head>
 
 <body class="">
+
     <!-- Meta Info -->
     <div class="home-delivery">
         <a href="mailto:feedback@naturesmiracle.in">
@@ -97,7 +74,7 @@
         <a href="contact-us.html#find_store">
         <span class="fa fa-map-marker" aria-hidden="true"></span><span class="hide-text"> Find Store</span></a
            >
-
+  
            <a
            href="javascript:void(0)"
            class="svg-d"
@@ -203,24 +180,24 @@
         <!--/.header -->
 
         <div class="flag">
-            <ul>
-               <li class="bb">
-                  <img src="images/home/sprout.svg" />
-                  <h5>Cocopeat</h5>
-                 <p>Replacing Soil with Cocopeat</p>
-               </li>
-               <li class="bb">
-                  <img src="images/home/save-water.svg" />
-                  <h5>Environment Friendly</h5>
-                  <p>90% Less Water Consumption</p>
-               </li>
-               <li>
-                  <img src="images/home/harvest.svg" />
-                  <h5>Safe to Eat Raw</h5>
-                  <p>Perfect for Raw Snacking</p>
-               </li>
-            </ul>
-         </div>
+          <ul>
+             <li class="bb">
+                <img src="images/home/sprout.svg" />
+                <h5>Cocopeat</h5>
+               <p>Replacing Soil with Cocopeat</p>
+             </li>
+             <li class="bb">
+                <img src="images/home/save-water.svg" />
+                <h5>Environment Friendly</h5>
+                <p>90% Less Water Consumption</p>
+             </li>
+             <li>
+                <img src="images/home/harvest.svg" />
+                <h5>Safe to Eat Raw</h5>
+                <p>Perfect for Raw Snacking</p>
+             </li>
+          </ul>
+       </div>
 
         <!-- Page Title -->
         <div class="page-title parallax flat_strech parallax1">
@@ -228,11 +205,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-title-heading">
-                            <h1 class="title">Have A Question?</h1>
+                            <h1 class="title">Grub Fest</h1>
                             <div class="breadcrumbs">
                                 <ul>
-                                    <li> <a href="#">Home </a></li>
-                                    <li><a href="#">FAQ's</a></li>
+                                    <li> <a href="home.html">Home </a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="#">Grub Fest</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -245,173 +223,151 @@
             <!-- /.container -->
         </div>
 
-        <div class="faqs" id="hydroponics">
+        <!-- Flat Our Story -->
+        <section class="flat-row about-1 event-description">
             <div class="container">
-                <div class="title-section style2 ">
-                    <h1 class="title">We've got an answer!</h1>
-                </div>
-                <div class="faqs-box">
+                <div class="row">
 
-                    <div class="flat-accordion">
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title active">What is Hydroponics?</h4>
-                            <div class="toggle-content">
-                                <p>Hydroponics, simply defined, is the growing of plants without soil in a water and fertilizer solution containing the necessary nutrients for plant growth. It is not a new science. Work in this area was being done by researchers as early as the 1600's. In the early 1930's, W. F. Gericke of the University of California did laboratory experiments in plant nutrition for the commercial scale. "HYDROPONICS" the word was derived from two Greek words, "hydro", meaning water and "ponic" meaning labour or literally, water working.</p>
-                                <p>With the development of plastics, hydroponics took a large step forward and is now a widely accepted method of producing certain specialty crops such as tomatoes, lettuce, cucumbers and peppers. Other crops that can be grown by this method include herbs, foliage plants and flowers.</p>
-                                <p>Hydroponics has significant advantages. They include:</p>
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i> Superior taste, quality, appearance, uniformity and extended shelf life of hydroponic vegetables.</li>
-                                    <li><i class="fa fa-circle-o"></i> No sterilization of growing media is required and plant nutrition is easily and completely controlled within the nutrient tanks.</li>
-                                    <li><i class="fa fa-circle-o"></i>No weeds, no cultivation, no soil borne diseases or insects. It allows for uniform water availability in plants.</li>
-                                    <li><i class="fa fa-circle-o"></i>Closer plant spacing is possible because no large machinery is used inside the greenhouse.</li>
-                                    <li><i class="fa fa-circle-o"></i> Use of biological controls including beneficial insects and safe methods of insect control are possible in a controlled environment system.</li>
-                                    <li><i class="fa fa-circle-o"></i> It is believed, by many, that Controlled Environmental Agriculture is the answer to many of the difficulties that are often associated with outdoor production.</li>
-
-                                    <li><i class="fa fa-circle-o"></i> Terrestrial plants may be grown with their roots in the mineral solution only or in an inert medium such as perlite, rock-wool, cocopeat.</li>
-                                    <li><i class="fa fa-circle-o"></i> As farming is done in a controlled environment, all year-round cultivation is possible.</li>
-
-                                </ul>
-
-                            </div>
+                  <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="title-section" style="text-align:left;">
+                            <h1 class="title">Grub Fest</h1>
                         </div>
-                        <!-- /toggle -->
 
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">Are there any plans for increasing the variety of products available from Nature’s Miracle?</h4>
-                            <div class="toggle-content">
-                                <p>Yes. Our team is constantly studying the demand and expectations of the market. In fact, we keep working on newer products which are launched as soon as they meet the parameters of quality and market expectations.</p>
+                        <div class="flat-divider d10px"></div>
 
-                                <p>For instance, Herbs (in pots) are being planned for introduction in the market.
-                                </p>
-                            </div>
+                        <p>Grub Fest is one of North India’s most anticipated food festivals, </p>
+                        <p>This is a truly innovative concept, with life sized pop-up restaurants, food trucks, bazaars and handmade carts with every kind of Indian cuisine imaginable. Festival goers get a chance to sample a huge variety of cuisines while experiencing some of the hottest musical acts, as Grub Fest themselves say ‘food tastes better while accompanied by music’. Chomp to the sounds of ‘Nucleus’ ‘Raghu Dixit’ ‘Veer Das’ and ‘Zaeden’ through out the festival.</p>
+                        <p>The ‘Grub Theatre’ also gives you a chance to master your own cooking skills with live cookery demos from a long list of master chefs including; Ramon Salto, RanveerBrar, and Aditya Bal. So you can take some lasting inspiration home with you, as well as a few foodie souvenirs.</p>
+
+
+                        <!-- Event Gallery -->
+
+                        <div class="demo" id="new-slider">
+                          <ul id="lightSlider">
+                             <li data-thumb="images/event/01/01.jpg">
+                                <img src="images/event/01/01.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/02.jpg">
+                                <img src="images/event/01/02.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/03.jpg">
+                                <img src="images/event/01/03.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/04.jpg">
+                                <img src="images/event/01/04.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/05.jpg">
+                                <img src="images/event/01/05.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/06.jpg">
+                                <img src="images/event/01/06.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/07.jpg">
+                                <img src="images/event/01/07.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/08.jpg">
+                                <img src="images/event/01/08.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/09.jpg">
+                                <img src="images/event/01/09.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/10.jpg">
+                                <img src="images/event/01/10.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/11.jpg">
+                                <img src="images/event/01/11.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/12.jpg">
+                                <img src="images/event/01/12.jpg" />
+                             </li>
+                             <li data-thumb="images/event/01/13.jpg">
+                              <img src="images/event/01/13.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/14.jpg">
+                              <img src="images/event/01/14.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/15.jpg">
+                              <img src="images/event/01/15.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/16.jpg">
+                              <img src="images/event/01/16.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/17.jpg">
+                              <img src="images/event/01/17.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/18.jpg">
+                              <img src="images/event/01/18.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/19.jpg">
+                              <img src="images/event/01/19.jpg" />
+                           </li>
+                           <li data-thumb="images/event/01/20.jpg">
+                              <img src="images/event/01/20.jpg" />
+                            </li>
+                          <li data-thumb="images/event/01/21.jpg">
+                            <img src="images/event/01/21.jpg" />
+                         </li>
+                         <li data-thumb="images/event/01/22.jpg">
+                            <img src="images/event/01/22.jpg" />
+                         </li>
+                         <li data-thumb="images/event/01/23.jpg">
+                          <img src="images/event/01/23.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/24.jpg">
+                          <img src="images/event/01/24.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/25.jpg">
+                          <img src="images/event/01/25.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/26.jpg">
+                          <img src="images/event/01/26.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/27.jpg">
+                          <img src="images/event/01/27.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/28.jpg">
+                          <img src="images/event/01/28.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/29.jpg">
+                          <img src="images/event/01/29.jpg" />
+                       </li>
+                       <li data-thumb="images/event/01/30.jpg">
+                          <img src="images/event/01/30.jpg" />
+                        </li>
+                          <li data-thumb="images/event/01/21.jpg">
+                            <img src="images/event/01/21.jpg" />
+                         </li>
+                         <li data-thumb="images/event/01/22.jpg">
+                            <img src="images/event/01/22.jpg" />
+                         </li>
+                         <li data-thumb="images/event/01/23.jpg">
+                          <img src="images/event/01/23.jpg" />
+                        </li>
+                      </ul>
+                       </div>
+
+                      <!-- Event Gallery -->
+
+                        <p>As well as big restaurant names, some smaller more off-beat companies will feature at Grub Fest, so you won’t have to scour the town to find those hidden gems, they’ll all be right in one place with over 60 vendors offering their unique products. As well as food there’s a chance to try a range of beers, cocktails, soft drinks and lush milkshakes at Grub Fest. So whether you’re looking for a culinary adventure, to satisfy your sweet tooth or to sip cocktails in the springtime sun, you simply can’t miss this food fest.</p>
+                        <p>Grub Fest takes place on the 17th, 18th and 19th of March at JLN Stadium, New Delhi.</p>
+                        <h5>About Nature’s Miracle:</h5>
+                        <ul class="iconlist">
+                            <li><i class="fa fa-circle-o"></i><strong>Audience</strong> : Teenagers and Youth looking for Organic food and healthy snacking options</li>
+                            <li><i class="fa fa-circle-o"></i><strong>Objective</strong> : Consumer Awareness and Sampling</li>
+                        </ul>
+ 
+
+                        <div class="back-btn">
+                            <button class="basic-btn" onclick="goBack()"><i class="fa fa-arrow-left"></i> Back</button>
                         </div>
-                        <!-- /toggle -->
 
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">Can we use our products for cooking?</h4>
-                            <div class="toggle-content">
-                                <p>Yes, you can use it for various finger-licking recipes.</p>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">Describe the composition of medium and how it supports the growth of plant?</h4>
-                            <div class="toggle-content">
-                                <p>Coco peat is used as the substrate. Provides 40% aeration and 60% moisture to the roots of the plant which provides an ideal condition for the growth of the plant.</p>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">How Does Hydroponic Produce Compare To Organic And Conventional Produce?</h4>
-                            <div class="toggle-content">
-                                <p>Hydroponic produce is:</p>
-
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i> More hygienic</li>
-                                    <li><i class="fa fa-circle-o"></i> Free from soil-borne diseases or contaminants</li>
-                                    <li><i class="fa fa-circle-o"></i>High nutritional value</li>
-                                    <li><i class="fa fa-circle-o"></i>In organic we feed the soil, in hydroponics we feed the plant.</li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">What are the certificates and accreditation that Nature’s Miracle have in India?</h4>
-                            <div class="toggle-content">
-                                <p>We at Nature’s Miracle follow national and international standards and compliances that ensures the safety of food products for our consumers.</p>
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i>	<strong>FSSAI</strong> which stands for Food Safety and Standards Authority of India is an organization which is responsible for monitoring and governing the food business in India. It ensures that the food products undergo proper quality checks thereby curtailing the food adulteration and sale of sub-standard products.<br>
-                                        License No: 12717055000095
-                                        </li>
-                                    <li><i class="fa fa-circle-o"></i>	<strong>GLOBAL GAP</strong> (Good agricultural practices) is a trademark and a set of standards for good agricultural practices. The major objectives are safe, sustainable agriculture worldwide. It sets standards for the certification of agricultural products all around the globe.<br>
-                                        License No: GGN-4059883970869
-                                        </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">What are the health benefits of Nature’s Miracle Vegetables?</h4>
-                            <div class="toggle-content">
-
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i> Skin care</li>
-                                    <li><i class="fa fa-circle-o"></i> Improves vision</li>
-                                    <li><i class="fa fa-circle-o"></i> High Vitamin content</li>
-                                    <li><i class="fa fa-circle-o"></i> Very less calorie content</li>
-                                    <li><i class="fa fa-circle-o"></i> Rich in antioxidants</li>
-                                    <li><i class="fa fa-circle-o"></i> Low hypertension</li>
-                                    <li><i class="fa fa-circle-o"></i> Helps in digestion</li>
-                                    <li><i class="fa fa-circle-o"></i> Counters the effect of cigarette smoking (not excluding the fact that no smoking would probably be a better state of being). Healthy diet can reverse the ill effects to large extent.</li>
-                                    <li><i class="fa fa-circle-o"></i> Good for heart (of course in conjunction with other appropriate measures like appropriate levels of fat intake and optimum physical activities, etc.)</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">What is Non-GMO?</h4>
-                            <div class="toggle-content">
-
-                                <p><strong>GMO</strong> (Genetically modified organisms) can be defined as organisms (plants, animals, etc) in which the genetic material (DNA) has been altered in a way that does not occur naturally.</p>
-                                <p>At Nature’s Miracle, we only use Non-GMO seeds.</p>
-
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">What makes Super Sweet Snack Peppers Sweet?</h4>
-                            <div class="toggle-content">
-                                <p>Super Sweet Snack Peppers contain higher levels of fruit sugar and lesser levels of capsaicin (hotness alkaloid) which makes it super sweet.  The Snack peppers go through the full process of ripening allowing the natural sugars to fully develop inside the fruit to give their unique sweet flavour.</p>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">Why Hydroponics?</h4>
-                            <div class="toggle-content">
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i> 90% less water used for irrigation (re-circulation of water)</li>
-                                    <li><i class="fa fa-circle-o"></i> No pollution (soil, water, air)</li>
-                                    <li><i class="fa fa-circle-o"></i> Integrated Pest Management</li>
-                                    <li><i class="fa fa-circle-o"></i> Consistent results (crop/fruit size, shape, taste, colour)</li>
-                                    <li><i class="fa fa-circle-o"></i> Sustainable use of resources (rainwater harvesting, water re-circulation, minimal human resource, renewable substrates)</li>
-                                    <li><i class="fa fa-circle-o"></i> Automated climate control (Sensors for pH levels, temperature, humidity, CO2 levels, wind speed and direction, rainfall, radiation)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
-
-                        <div class="flat-toggle">
-                            <h4 class="toggle-title">Why is produce grown using Hydroponic Technology better?</h4>
-                            <div class="toggle-content">
-                                <ul class="iconlist">
-                                    <li><i class="fa fa-circle-o"></i> No harmful pesticides, fertilizers and chemicals.</li>
-                                    <li><i class="fa fa-circle-o"></i> It provides a sterile environment for plant production. This technique does not require pesticides, fertilizers and other chemicals, as there’s no chance of damage due to soil-borne diseases or pests.</li>
-                                    <li><i class="fa fa-circle-o"></i> Plants grown through this technique are healthy and have better nutritional value.</li>
-                                    <li><i class="fa fa-circle-o"></i>It has been proven that hydroponically grown vegetables and fruits have up to 50% more vitamin content (particularly vitamin A, all B complexes, C and E) as compared to conventional ones.</li>
-                                    <li><i class="fa fa-circle-o"></i>Hydroponic veggies are more delicate and tender... and they taste great!</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /toggle -->
+                        <div class="flat-divider d63px"></div>
 
                     </div>
-                    <!-- /.flat-accordion -->
+                    <!--container -->
 
-                </div>
-
-            </div>
-        </div>
+        </section>
 
         <footer class="footer">
             <div class="footer-widgets">
@@ -606,6 +562,18 @@
         <script type="text/javascript" src="javascript/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="javascript/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="javascript/slider.js"></script>
+
+<script src="lightslider/js/lightslider.js"></script>
+
+<script>
+$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 6
+});
+</script>
 
 </body>
 

@@ -3516,7 +3516,7 @@ img.tp-slider-alternative-image {
     padding: 0px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: -2px;
+    letter-spacing: 2px;
 }
 
 .tp-caption.description-slider {
