@@ -494,7 +494,7 @@
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone">Phone number</label>
-                                    <input type="tel" minlength ="10" maxlength="10" class="form-control" name="phone" id="form-phone" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone" data-error="Phone number field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-email1">Your email</label>
@@ -538,7 +538,7 @@
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone2">Phone number</label>
-                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone2" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone2" data-error="Phone number field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="landline2">Landline</label>
@@ -602,7 +602,7 @@
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone3">Phone number</label>
-                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone3" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone3" data-error="Phone number field is required" required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="landline3">Landline</label>
@@ -823,15 +823,6 @@
          <script src='javascript/custom.js'></script>
 
          <script>
-
-function isNumber(evt) {
-    evt = (evt) ? evt : window.event;
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-        return false;
-    }
-    return true;
-}
 
 function startEmailTest(myValue){
       
