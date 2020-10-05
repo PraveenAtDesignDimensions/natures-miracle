@@ -662,6 +662,18 @@ input[type="color"],
     outline: none;
     letter-spacing: 0.78px;
 }
+@media (max-width: 1200px) {
+	#mainnav > ul > li > a {
+		font-size: 13px;
+		padding: 30px 10px 0 ;
+	}
+}
+@media (max-width: 1100px) {
+	#mainnav > ul > li > a {
+		font-size: 12px;
+	}
+}
+
 
 #mainnav > ul > li.logo > a {
     padding: 10px 26px 0 29px;
