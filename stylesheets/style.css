@@ -283,7 +283,7 @@ input[type="color"] {
     padding-left: 15px;
     font-size: 12px;
     outline: none;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     width: 100%;
 	border-radius: 0;
 	-webkit-transition: all 0.3s ease-in-out;

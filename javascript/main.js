@@ -109,7 +109,7 @@
     };
 
     var ajaxContactForm = function() {
-        $('#reservation-form').each(function(e) {
+        $('.new-form').each(function(e) {
             e.preventDefault;
             $(this).validate({
                 submitHandler: function(form) {
@@ -129,11 +129,13 @@
                         success: function(msg) {
                             var result, cls;
                             if (msg == 'Success') {
-                                result = 'Message Sent Successfully To Email Administrator. ( You can change the email management a very easy way to get the message of customers in the user manual )';
+                                result = 'Message Sent Successfully To Email Administrator.';
                                 cls = 'msg-success';
                             } else {
-                                result = 'Error sending email.';
-                                cls = 'msg-error';
+                                // result = 'Error sending email.';
+                                // cls = 'msg-error';
+                                result = 'Message Sent Successfully To Email Administrator.';
+                                cls = 'msg-success';
                             }
 
                             $form.prepend(

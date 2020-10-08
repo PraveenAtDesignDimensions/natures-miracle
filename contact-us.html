@@ -61,6 +61,7 @@
             float: left;
             margin-right: 5%;
             position: relative;
+            margin-bottom: 25px;
             }
             .reservation-page-textarea {
             width: 97%;
@@ -75,7 +76,7 @@
             background-image: none;
             border: 1px solid #e0e0e0;
             border-radius: 0px;
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
             }
             .reservation-page-textarea textarea:focus {
             border: 1px solid #e44c2a;
@@ -180,6 +181,13 @@
             #team .title-section {
             padding-bottom: 10px;
             }
+            /* .reservation-page-input-box {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            position: relative;
+            margin-bottom:25px;
+            } */
             }
             .massage_email{
                position: absolute;
@@ -194,6 +202,11 @@
                padding-top: 5px;
                display: none;
             }
+            .map-box .form-control,.map-box{
+               margin-bottom: 25px;
+            }
+            
+            
 
          </style>
       </head>
@@ -400,7 +413,7 @@
                         <div class="map-box">
                            <h3>Select a store near you for Home Delivery</h3>
                            <br>
-                           <form action="hello.php" method="POST">
+                           <form>
                               <select required name="position" class="form-control input50" id="citychacker" onchange="citychack()">
                                  <option value="">Select State</option>
                               </select>
@@ -464,7 +477,7 @@
                         <br>
                         <h3 class="text-center">Select your query type</h3>
                         <div class="job-finder" style="width: 200px;margin: 20px auto 0px auto;">
-                           <form action="hello.php" method="POST">
+                           <form>
                               <select required name="position" class="form-control input50" id="Teams" onchange="myFunction()">
                                  <option value="menu1">Consumer</option>
                                  <option value="menu2">HoReCa</option>
@@ -489,35 +502,35 @@
                         </script>
                         <div id="menu1" class="tab-pane fade in active">
                            <div class="reservation-page-form">
-                              <form action="contact/contact-process1.php" method="post">
+                              <form class="new-form" action="contact/contact-process1.php" method="post" novalidate="novalidate">
                                  <div class="reservation-page-input-box">
                                     <label for="form-name">Your name <span class="require-field" title="Require Field">*</span></label>
-                                    <input type="text" class="form-control" name="name" id="form-name" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control" name="name" id="form-name" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-name1">Company Name</label>
-                                    <input type="text" class="form-control rt-date" name="company" id="company-name1" data-error="Company Name field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="company" id="company-name1" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-address1">Address</label>
-                                    <input type="text" class="form-control rt-date" name="address" id="company-address1" data-error="Address field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="address" id="company-address1" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone">Phone number</label>
-                                    <input type="tel" minlength ="10" maxlength="10" class="form-control" name="phone" id="form-phone" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" minlength ="10" maxlength="10" class="form-control" name="phone" id="form-phone" data-error="Enter a valid 10 Digit Mobile Number." required="" onkeypress="return isNumber(event)">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-email1">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email1" data-error="Subject field is required" required="" onclick="startEmailTest(1)">
+                                    <input type="email" class="form-control" name="email" id="form-email1" data-error="Enter a valid Email id." required="" onclick="startEmailTest(1)">
                                     <span id="email-message1" class="massage_email" title="Suggested Email"></span>
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-subject">Subject</label>
-                                    <input type="text" class="form-control rt-date" name="subject" id="form-subject" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="subject" id="form-subject" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-textarea">
                                     <label for="form-message">Message</label>
-                                    <textarea class="form-control your-message" name="message" id="form-message" required=""></textarea>
+                                    <textarea class="form-control your-message" name="message" id="form-message" data-error="This field is required." required=""></textarea>
                                  </div>
                                  <div class="g-recaptcha" data-sitekey="6Lf6BqoUAAAAAGxGUW9hmQYtc25_x74EwKhohXel"></div>
                                  <div class="reservation-page-input-box submit1">
@@ -533,35 +546,35 @@
                                  <p style="margin-bottom:20px;">Having assured excellent product quality, we have made it our business to professionally match steps with your diligent team in supplying the products in a smooth manner on a timely basis. We offer customized solutions to suit your special requirements. Our goal is to work as your partner while you focus on crafting the finest experiences for your customers powered by our products.</p>
                                  <p>Please leave your coordinates and we shall get in touch soon.</p>
                               </div>
-                              <form action="contact/contact-process2.php" method="post">
+                              <form class="new-form" action="contact/contact-process2.php" method="post" novalidate="novalidate">
                                  <div class="reservation-page-input-box">
                                     <label for="form-name2">Your name</label>
-                                    <input type="text" class="form-control" name="name" id="form-name2" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control" name="name" id="form-name2" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-name2">Company Name</label>
-                                    <input type="text" class="form-control rt-date" name="company" id="company-name2" data-error="Company Name field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="company" id="company-name2" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-address2">Address</label>
-                                    <input type="text" class="form-control rt-date" name="address" id="company-address2" data-error="Address field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="address" id="company-address2" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone2">Phone number</label>
-                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone2" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" minlength ="10" maxlength="10" class="form-control" name="phone" id="form-phone2" data-error="Enter a valid 10 Digit Mobile Number." required="" onkeypress="return isNumber(event)">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="landline2">Landline</label>
-                                    <input type="text" class="form-control" name="landline" id="landline2" data-error="Landline field is required" required="">
+                                    <input type="tel" minlength ="7" maxlength="10" class="form-control" name="landline" id="landline2" data-error="Enter a valid Landline Number." required="" onkeypress="return isNumber(event)">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-email2">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email2" data-error="Subject field is required" required="" onclick="startEmailTest(2)">
+                                    <input type="email" class="form-control" name="email" id="form-email2" data-error="Enter a valid Email id." required="" onclick="startEmailTest(2)">
                                     <span id="email-message2" class="massage_email" title="Suggested Email"></span>
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-subject2">Subject</label>
-                                    <input type="text" class="form-control rt-date" name="subject" id="form-subject2" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="subject" id="form-subject2" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <p>Type of Business</p>
@@ -582,7 +595,7 @@
                                  </div>
                                  <div class="reservation-page-textarea">
                                     <label for="form-requirement2">Requirement</label>
-                                    <textarea class="form-control your-message" name="requirement" id="form-requirement2" required=""></textarea>
+                                    <textarea class="form-control your-message" name="requirement" id="form-requirement2" data-error="This field is required." required=""></textarea>
                                  </div>
                                  <div class="g-recaptcha" data-sitekey="6Lf6BqoUAAAAAGxGUW9hmQYtc25_x74EwKhohXel"></div>
                                  <div class="reservation-page-input-box submit1">
@@ -597,43 +610,44 @@
                                  <p style="margin-bottom:20px;">We are keen to collaborate with businesses in India and abroad which have a requirement for the high-quality fruits and vegetables that we grow. As a young and fast expanding business, we are always keen to venture into new areas in agribusiness and are open to build more capacity for specific requirements you may have vis-à-vis contract farming.</p>
                                  <p>Please leave your coordinates and we shall get in touch soon.</p>
                               </div>
-                              <form action="contact/contact-process3.php" method="post">
+                              <form class="new-form" action="contact/contact-process3.php" method="post" novalidate="novalidate">
                                  <div class="reservation-page-input-box">
                                     <label for="form-name3">Your name</label>
-                                    <input type="text" class="form-control" name="name" id="form-name3" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control" name="name" id="form-name3" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-name3">Company Name</label>
-                                    <input type="text" class="form-control rt-date" name="company" id="company-name3" data-error="Company Name field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="company" id="company-name3" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="company-address3">Address</label>
-                                    <input type="text" class="form-control rt-date" name="address" id="company-address3" data-error="Address field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="address" id="company-address3" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-phone3">Phone number</label>
-                                    <input type="tel" pattern="[0-9]{10}" class="form-control" name="phone" id="form-phone3" data-error="Phone number field is required" required="" onkeypress="return isNumber(event)">
+                                    <input type="tel" minlength ="10" maxlength="10" class="form-control" name="phone" id="form-phone3" data-error="Enter a valid 10 Digit Mobile Number." required="" onkeypress="return isNumber(event)">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="landline3">Landline</label>
-                                    <input type="text" class="form-control" name="landline" id="landline3" data-error="Landline field is required" required="">
+                                    <input type="tel" minlength ="7" maxlength="10" class="form-control" name="landline" id="landline3" data-error="Enter a valid Landline Number." required="" onkeypress="return isNumber(event)">
+                                    
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-email3">Your email</label>
-                                    <input type="email" class="form-control" name="email" id="form-email3" data-error="Subject field is required" required="" onclick="startEmailTest(3)">
+                                    <input type="email" class="form-control" name="email" id="form-email3" data-error="Enter a valid Email id." required="" onclick="startEmailTest(3)">
                                     <span id="email-message3" class="massage_email" title="Suggested Email"></span>
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-subjects3">Subject</label>
-                                    <input type="text" class="form-control rt-date" name="subject" id="form-subjects3" data-error="Subject field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="subject" id="form-subjects3" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-input-box">
                                     <label for="form-type-of-business3">Type of Business</label>
-                                    <input type="text" class="form-control rt-date" name="business" id="form-type-of-business3" data-error="Type of Business field is required" required="">
+                                    <input type="text" class="form-control rt-date" name="business" id="form-type-of-business3" data-error="This field is required." required="">
                                  </div>
                                  <div class="reservation-page-textarea">
                                     <label for="form-requirement3">Requirement</label>
-                                    <textarea class="form-control your-message" name="requirement" id="form-requirement3"></textarea>
+                                    <textarea class="form-control your-message" name="requirement" id="form-requirement3" data-error="This field is required."></textarea>
                                  </div>
                                  <div class="g-recaptcha" data-sitekey="6Lf6BqoUAAAAAGxGUW9hmQYtc25_x74EwKhohXel"></div>
                                  <div class="reservation-page-input-box submit1">
