@@ -2768,7 +2768,7 @@ text-align: center !important;
 }
 
 .demo-gallery{
-	margin: 2em 0;
+	margin: 2em 0 1em 0;
 	display: flex;
 	flex-wrap: wrap;
 }
