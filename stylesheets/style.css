@@ -409,7 +409,7 @@ input[type="color"],
    	width: 100%;
    	background-color: #333333;
    	z-index: 100000;
-   	position: absolute;
+   	position: fixed;
 	top:95px;
 	right: 0px;
 }
@@ -1388,7 +1388,7 @@ input[type="color"],
 }
 
 .widget {
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 .widget .widget-title {
@@ -1404,7 +1404,7 @@ input[type="color"],
 
 /* Widget search */
 .widget.widget_search .widget-title {
-	margin-bottom: 23px;
+	margin-bottom:10px;
 }
 
 .widget.widget_search .search-form {
@@ -1437,9 +1437,6 @@ input[type="color"],
 }
 
 /* Widget categories */
-.widget.widget_categories {
-	margin-bottom: 40px;
-}
 
 .widget.widget_categories .widget-title {
 	margin-bottom: 22px;
@@ -2586,6 +2583,32 @@ body{
 		padding:0 8px;
 	}
 	}
+	.nemonics-box p{
+		text-align: center !important;
+	}
+
+	@media (max-width: 400px) {
+		.main-nemonics {
+			flex-wrap: wrap;
+			margin: 10px 0;
+		}
+		.nemonics-box{
+			margin-bottom: 0;
+			width: 100%;
+			display: flex;
+			padding:0 1em;
+		}
+		.nemonics-box img,
+		.nemonics-box p{
+			align-self: center;
+		}
+		.nemonics-box img{
+			margin-right: 1em;
+		}
+		.nemonics-box p{
+			text-align: left !important;
+		}
+	}
 
 	.demo-gallery a,
 	.demo-gallery figure,
@@ -2672,7 +2695,7 @@ object-fit: cover;
 	  }
 	  #header{
 		  padding-top: 0px;
-		  padding-bottom: 15px;
+		  padding-bottom: 24px;
 	  }
 	  .btn-menu {
 		margin: 16px 12px 0px 10px;
@@ -2707,11 +2730,14 @@ height: 65px;
 	.flat-row.about, .flat-row.blog, footer, .page-title, .main-content {
 		margin-top: 65px !important;
 	}
+	.blog-single{
+		margin: 0 !important;
+	}
 	.btn-menu {
-		margin: 15px 12px 0px 10px;
+		margin: 25px 12px 0px 10px;
 	}
 	.home-delivery{
-		padding-top: 0px;
+		padding-top: 10px;
 	}
 	#mainnav-mobi {
 		top: 50px;
@@ -2743,9 +2769,7 @@ height: 40px;
 	transition:none;
 	background-size: cover !important;
 }
-.nemonics-box p{
-text-align: center !important;
-}
+
 .event-description p{
 	margin-bottom: 10px;
 	text-align: justify;
@@ -2802,5 +2826,9 @@ text-align: center !important;
 #new-slider{
 	margin: 30px 0;
 }
+.products .row {
+	display: flex;
+	flex-wrap: wrap;
+  }
 
 	

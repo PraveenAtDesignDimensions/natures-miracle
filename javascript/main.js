@@ -952,7 +952,7 @@
 
 var my_year = document.getElementsByClassName("copyright-content");
 my_year[0].innerHTML =
-  " Copyright © " +
+  " Copyright Â© " +
   new Date().getFullYear() +
   ' <a href="http://naturesmiracle.in/" target="_blank">Nature\'s Miracle</a> All Rights reserved.';
 // console.log(my_year[0].innerHTML);
@@ -969,7 +969,7 @@ document
 function goToLeMarche() {
   if (
     confirm(
-      "You will be taken to our associate Le Marche’s website for placing the order."
+      "You will be taken to our associate Le Marcheâ€™s website for placing the order."
     )
   ) {
     window.location.href = "https://www.marcheretail.com/home-delivery";
@@ -984,73 +984,67 @@ function goToLeMarche() {
 window.onload = setShareLinks;
 
 function setShareLinks() {
-  var pageUrl = encodeURIComponent(document.URL);
-  var description = document.title;
-  var description = encodeURIComponent(description);
+    var pageUrl = encodeURIComponent(document.URL);
+    var description = document.title;
+    var description = encodeURIComponent(description);
 
-  elements = document.querySelectorAll(".social-share.facebook");
-  Array.prototype.forEach.call(elements, function (el) {
-    el.addEventListener("click", function () {
-      url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
-      socialWindow(url);
+    elements = document.querySelectorAll(".social-share.facebook");
+    Array.prototype.forEach.call(elements, function(el) {
+        el.addEventListener("click", function() {
+            url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+            socialWindow(url);
+        });
     });
-  });
 
-  elements = document.querySelectorAll(".social-share.twitter");
-  Array.prototype.forEach.call(elements, function (el) {
-    el.addEventListener("click", function () {
-      url =
-        "https://twitter.com/intent/tweet?url=" +
-        pageUrl +
-        "&text=" +
-        description;
-      socialWindow(url);
+    elements = document.querySelectorAll(".social-share.twitter");
+    Array.prototype.forEach.call(elements, function(el) {
+        el.addEventListener("click", function() {
+            url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + description;
+            socialWindow(url);
+        });
     });
-  });
 
-  elements = document.querySelectorAll(".social-share.linkedin");
-  Array.prototype.forEach.call(elements, function (el) {
-    el.addEventListener("click", function () {
-      url = "https://www.linkedin.com/shareArticle?mini=true&amp;" + pageUrl;
-      socialWindow(url);
+    elements = document.querySelectorAll(".social-share.linkedin");
+    Array.prototype.forEach.call(elements, function(el) {
+        el.addEventListener("click", function() {
+           // url = "https://www.linkedin.com/shareArticle?mini=true&amp;" + pageUrl;
+            url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+            socialWindow(url);
+        });
     });
-  });
 
-  elements = document.querySelectorAll(".social-share.whatsapp");
-  Array.prototype.forEach.call(elements, function (el) {
-    el.addEventListener("click", function () {
-      // url = "https://www.linkedin.com/shareArticle?mini=true&amp;" + pageUrl;
-      url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
-      socialWindow(url);
+    elements = document.querySelectorAll(".social-share.whatsapp");
+    Array.prototype.forEach.call(elements, function(el) {
+        el.addEventListener("click", function() {
+            url = "https://api.whatsapp.com/send?text=" + description + " : " + pageUrl;
+            socialWindow(url);
+        });
     });
-  });
 
-  elements = document.querySelectorAll(".social-share.email");
-  Array.prototype.forEach.call(elements, function (el) {
-    el.addEventListener("click", function () {
-      url = "mailto:?subject=" + description + "&body=" + pageUrl;
-      socialWindow(url);
+    elements = document.querySelectorAll(".social-share.email");
+    Array.prototype.forEach.call(elements, function(el) {
+        el.addEventListener("click", function() {
+            url = "mailto:?subject=" + description + "&body=" + pageUrl;
+            socialWindow(url);
+        });
     });
-  });
-}
+
+
+};
 
 function socialWindow(url) {
-  var left = (screen.width - 570) / 2;
-  var top = (screen.height - 570) / 2;
-  var params =
-    "menubar=no,toolbar=no,status=no,width=570,height=570,top=" +
-    top +
-    ",left=" +
-    left;
-  window.open(url, "NewWindow", params);
-}
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url, "NewWindow", params);
+};
 
 //toggleShare
 
 document.getElementById("trigger_share").addEventListener("click", toggleShare);
 
 function toggleShare() {
-  document.getElementById("share_list").classList.toggle("show_share");
+    document.getElementById("share_list").classList.toggle("show_share");
 }
 
 // Social Media Sharing
