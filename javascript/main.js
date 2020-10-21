@@ -155,11 +155,17 @@
               if (msg == "Success") {
                 result = "Message Sent Successfully To Email Administrator.";
                 cls = "msg-success";
+
+                // Simulate a mouse click:
+                window.location.href = "http://ddworks.co/natures-miracle-wip/thanks.html";
+                
               } else {
                 // result = 'Error sending email.';
                 // cls = 'msg-error';
-                result = "Message Sent Successfully To Email Administrator.";
-                cls = "msg-success";
+
+                // Simulate a mouse click:
+                window.location.href = "http://ddworks.co/natures-miracle-wip/thanks.html"; 
+
               }
 
               $form.prepend(
@@ -952,7 +958,7 @@
 
 var my_year = document.getElementsByClassName("copyright-content");
 my_year[0].innerHTML =
-  " Copyright Â© " +
+  " Copyright © " +
   new Date().getFullYear() +
   ' <a href="http://naturesmiracle.in/" target="_blank">Nature\'s Miracle</a> All Rights reserved.';
 // console.log(my_year[0].innerHTML);
@@ -969,7 +975,7 @@ document
 function goToLeMarche() {
   if (
     confirm(
-      "You will be taken to our associate Le Marcheâ€™s website for placing the order."
+      "You will be taken to our associate Le Marche’s website for placing the order."
     )
   ) {
     window.location.href = "https://www.marcheretail.com/home-delivery";
