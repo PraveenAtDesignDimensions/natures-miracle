@@ -7,8 +7,7 @@ $subjects = $_POST["subject"];
 $phone = $_POST["phone"];
 $message = $_POST["message"];
 
-
-$EmailTo = "praveenpal4232@gmail.com";
+$EmailTo = "feedback@naturesmiracle.in, praveen@designdimensions.in";
 $Subject = "A Consumer Query From natures-miracle.in ";
 
 // prepare email body text

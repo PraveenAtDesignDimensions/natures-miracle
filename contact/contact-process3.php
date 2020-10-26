@@ -10,7 +10,7 @@ $business = $_POST["business"];
 $requirement = $_POST["requirement"];
 
 
-$EmailTo = "praveenpal4232@gmail.com";
+$EmailTo = "feedback@naturesmiracle.in, praveen@designdimensions.in";
 $Subject = "A B2B/Export Query From natures-miracle.in ";
 
 // prepare email body text

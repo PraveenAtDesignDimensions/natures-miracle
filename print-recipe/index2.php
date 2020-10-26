@@ -67,7 +67,7 @@ h5{
 <body>
 
 <header class="text-center">
-<a href="http://ddworks.co/natures-miracle" rel="home"><img src="logo.jpg" alt="Natures Miracle"></a>
+<a href="https://naturesmiracle.in/" rel="home"><img src="logo.jpg" alt="Natures Miracle"></a>
 </header>
 <div class="main-image"><img src="'. $tempalte_img .'" alt="'. $tempalte_name .'">
 </div>
@@ -86,7 +86,7 @@ $html = '
 
     <div class="feature-post">
         <a>
-        <img src="http://ddworks.co/natures-miracle/images/recipes/s1.jpg" alt="image"></a>
+        <img src="https://naturesmiracle.in/images/recipes/s1.jpg" alt="image"></a>
      </div>
     <!-- /.feature-post -->
 
@@ -136,7 +136,7 @@ $html = '
 $footer = '
 	<footer>
 		<p>Find more recipes on recipe section on<br>
-		Natures Miracle <a href="http://ddworks.co/natures-miracle-wip/recipes.html" target="_blank" style="color:#e44c2a;">website</p>
+		Natures Miracle <a href="https://naturesmiracle.in/recipes.html" target="_blank" style="color:#e44c2a;">website</p>
 	</footer>
 	</body>
 </html>
