@@ -33,15 +33,15 @@ img{
     <title>Instagram feed</title>
   </head>
   <body>
-
+    <p class="insta-link"><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank">@Mynaturesmiracle</a></p>
     <div id="instafeed" class="row gallery">
-      <p class="insta-link"><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank">@Mynaturesmiracle</a></p>
+      
       <div class="widget widget_instagram">
         <h3 class="widget-title">Instagram</h3>
 
         <!-- Dummy Images for Now -->
 
-                <a href="https://www.instagram.com/p/Byey-N2lb81/" target="_blank">
+                <!-- <a href="https://www.instagram.com/p/Byey-N2lb81/" target="_blank">
                     <div class="col-lg-3 instaimg">
                         <img src="images/home/instagram/i1.jpg" alt="image"  class="img-fluid">
                     </div>
@@ -74,14 +74,14 @@ img{
                     <div class="col-lg-3 instaimg">
                         <span><img src="images/home/instagram/i6.jpg" alt="image"  class="img-fluid"></span>
                     </div>
-                </a>
+                </a> -->
 
  <!-- Dummy Images for Now -->
     </div>
     </div>
 
   <script type="text/javascript" src="javascript/jquery.min.js"></script>
-  <script type="text/javascript" src="javascript/instafeed.min.js"></script>
+  <script type="text/javascript" src="javascript/instafeed.js"></script>
 
 
   <script>
@@ -92,10 +92,10 @@ img{
 
 var userFeed = new Instafeed({
     get: 'user',
-    userId: '1599614548',
+    userId: '5328280414',
     limit: 12,
     resolution: 'standard_resolution',
-    accessToken: '1599614548.1677ed0.37dac5c87974482085829253dcecbbce',
+    accessToken: 'IGQVJVOUxwREs2dm4xX1VabE53TEI0Yi1CQ1VBZAGtYdmlKTTdBRGNpRlFlTjFWQ1FPcXQyc1E3clo1VlYxZAGtqaGtSM3haOEw3MUFUYV8xUll1SmZANejdla1RIZAVZAoUllGbnlhV01BWms0SlM1TzRhMAZDZD',
     sortBy: 'most-recent',
     template: '<div class="col-lg-3 instaimg"><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
 });
@@ -103,6 +103,7 @@ var userFeed = new Instafeed({
 userFeed.run();
 
 });
+
   </script>
 
   </body>

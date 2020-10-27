@@ -10,7 +10,7 @@ $radio = $_POST["radio"];
 $requirement = $_POST["requirement"];
 
 
-$EmailTo = "feedback@naturesmiracle.in, praveen@designdimensions.in";
+$EmailTo = "feedback@naturesmiracle.in";
 $Subject = "A HoReCa Query From natures-miracle.in ";
 
 // prepare email body text
