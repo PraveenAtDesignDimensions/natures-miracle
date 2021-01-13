@@ -497,6 +497,7 @@ input[type="color"],
 .box {
   padding: 0 3.5%;
   padding-top: 130px;
+  position: relative;
 }
 
 .container {
@@ -2990,4 +2991,10 @@ input[type="color"],
 .products .row {
   display: flex;
   flex-wrap: wrap;
+}
+.dd-logo{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  z-index: 9;
 }
