@@ -952,6 +952,21 @@
       //small screen
     }
   });
+
+// Footer Instagram Feed
+var userInstaFeed = new Instafeed({
+  get: 'user',
+  userId: '5328280414',
+  limit: 6,
+  resolution: 'standard_resolution',
+  accessToken: 'IGQVJVOUNhZAUNRVHB4QjFoTmNyU0VKLXI4N1ZAqV2kwdkVqUzkwbWVnS09pamx5bWxzcl9DNFpXdlA0UjN6M0JnRHVXY2pLRm92S0NXOUNpVFhKOWh1ZAHJZAc0FLcElCREpzNDZAlclIxNUtQUmlPNGJhbgZDZD',
+  sortBy: 'most-recent',
+  template: '<li><a href="https://www.instagram.com/Mynaturesmiracle/" target="_blank" ><div class="thumb images-hover flat-hover-images"><span><img src="{{image}}" alt="{{caption}}" alt="Natures Miracle" /></span></div></a></li>',
+  
+});
+
+userInstaFeed.run();
+
 })(jQuery);
 
 // Happy New Year
