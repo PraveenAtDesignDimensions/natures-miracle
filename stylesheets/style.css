@@ -1948,6 +1948,14 @@ input[type="color"],
   background-image: url(../images/parallax/avocado.jpg);
 }
 
+.parallax-eggplants {
+  background-image: url(../images/parallax/eggplants.jpg);
+}
+
+.parallax-processed-food {
+  background-image: url(../images/parallax/processed-food.jpg);
+}
+
 .bg-contact {
   background-image: url(../images/parallax/bg-parallax5.jpg);
   background-repeat: no-repeat;
@@ -2992,9 +3000,9 @@ input[type="color"],
   display: flex;
   flex-wrap: wrap;
 }
-.dd-logo{
+.dd-logo {
   position: absolute;
-  left:0;
+  left: 0;
   bottom: 0;
   z-index: 9;
 }
