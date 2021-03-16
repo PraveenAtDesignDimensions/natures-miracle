@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-Vitamin_B">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="Vitamin_B" data-name="Vitamin B" clip-path="url(#clip-Vitamin_B)">
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(75 93)" fill="none">
+      <path d="M260.25,0,347,158,260.25,316H86.75L0,158,86.75,0Z" stroke="none"/>
+      <path d="M 95.62646484375 15 L 17.11221313476563 157.9999389648438 L 95.62640380859375 301 L 251.373291015625 301 L 329.8877868652344 158 L 251.373291015625 15 L 95.62646484375 15 M 86.75 0 L 260.2496948242188 0 L 347 158 L 260.2496948242188 316 L 86.74993896484375 316 L 0 157.9999389648438 L 86.75 0 Z" stroke="none" fill="#f38230"/>
+    </g>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="27.5" cy="27" rx="27.5" ry="27" transform="translate(307 68)" fill="#f38230"/>
+    <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="27.5" cy="27" rx="27.5" ry="27" transform="translate(134 68)" fill="#f38230"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="27" cy="27" r="27" transform="translate(391 226)" fill="#f38230"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="26" cy="27" rx="26" ry="27" transform="translate(305 379)" fill="#f38230"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="26.5" cy="27" rx="26.5" ry="27" transform="translate(55 226)" fill="#f38230"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="27.5" cy="27" rx="27.5" ry="27" transform="translate(134 379)" fill="#f38230"/>
+    <text id="B" transform="translate(185 344)" fill="#f38230" font-size="224" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">B</tspan></text>
+  </g>
+</svg>

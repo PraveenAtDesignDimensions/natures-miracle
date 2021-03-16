@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-Potassium">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="Potassium" clip-path="url(#clip-Potassium)">
+    <g id="Rectangle_42" data-name="Rectangle 42" transform="translate(75 75)" fill="none" stroke="#f38230" stroke-width="15">
+      <rect width="350" height="350" rx="38" stroke="none"/>
+      <rect x="7.5" y="7.5" width="335" height="335" rx="30.5" fill="none"/>
+    </g>
+    <text id="K" transform="translate(185 343)" fill="#f38230" font-size="224" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">K</tspan></text>
+  </g>
+</svg>
