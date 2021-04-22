@@ -39,7 +39,7 @@ var Store_Data = [
     {
       "Id": "3",
       "Customer_Code":"203709",
-      "Store":"Big Bazaar - Ambience Mall, Vasant Kunj",
+      "Store":"Bb - Ambience Mall - Vasant Kunj",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110070",
@@ -51,7 +51,7 @@ var Store_Data = [
     {
       "Id": "4",
       "Customer_Code":"2B0246",
-      "Store":"In & Out - Bpcl, Lodhi Road",
+      "Store":"Car Care - Lodhi Road",
       "State":"Delhi",
       "City":"Central Delhi",
       "Postal_Code":"110033",
@@ -87,7 +87,7 @@ var Store_Data = [
     {
       "Id": "7",
       "Customer_Code":"2B0008",
-      "Store":"Foodhall - Dlf Promenade, Vasant Kunj",
+      "Store":"Foodhall - Vasant Kunj",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110070",
@@ -99,7 +99,7 @@ var Store_Data = [
     {
       "Id": "8",
       "Customer_Code":"2B0254",
-      "Store":"24*7 - M Block, Gk2",
+      "Store":"Godfrey Phillips - Gk2",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110048",
@@ -111,7 +111,7 @@ var Store_Data = [
     {
       "Id": "9",
       "Customer_Code":"2B0009",
-      "Store":"Honey Money Top - Nfc",
+      "Store":"Hmt - Nfc",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110065",
@@ -123,7 +123,7 @@ var Store_Data = [
     {
       "Id": "10",
       "Customer_Code":"2B0215",
-      "Store":"Honey Money Top - Sultanpur",
+      "Store":"Hmt - Sultanpur",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110030",
@@ -135,7 +135,7 @@ var Store_Data = [
     {
       "Id": "11",
       "Customer_Code":"2B0026",
-      "Store":"In & Out - Bpcl, Yashwant Palace",
+      "Store":"In & Out - Yashwant Place",
       "State":"Delhi",
       "City":"Central Delhi",
       "Postal_Code":"110021",
@@ -207,7 +207,7 @@ var Store_Data = [
     {
       "Id": "17",
       "Customer_Code":"2B0068",
-      "Store":"Foodland By Orchid - Vasant Vihar",
+      "Store":"Meenu Agencies - Vasant Vihar",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110057",
@@ -219,7 +219,7 @@ var Store_Data = [
     {
       "Id": "18",
       "Customer_Code":"2B0252",
-      "Store":"Native Picks - City Center, Dwarka Sec12",
+      "Store":"Mng Overseas - Dwarka",
       "State":"Delhi",
       "City":"West Delhi",
       "Postal_Code":"110075",
@@ -243,7 +243,7 @@ var Store_Data = [
     {
       "Id": "20",
       "Customer_Code":"2B0035",
-      "Store":"Modern Bazaar - Dwarka Sec12A",
+      "Store":"Modern Bazaar - Dwarka",
       "State":"Delhi",
       "City":"West Delhi",
       "Postal_Code":"110075",
@@ -291,7 +291,7 @@ var Store_Data = [
     {
       "Id": "24",
       "Customer_Code":"2B0028",
-      "Store":"Modern Bazaar - Select City Walk, Saket",
+      "Store":"Modern Bazaar - Saket",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110017",
@@ -303,7 +303,7 @@ var Store_Data = [
     {
       "Id": "25",
       "Customer_Code":"2B0257",
-      "Store":"Yess Store - Lajpat Nagar",
+      "Store":"Airans Retail - Lajpat Nagar",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110024",
@@ -315,7 +315,7 @@ var Store_Data = [
     {
       "Id": "26",
       "Customer_Code":"2B0268",
-      "Store":"Yess Store - Preet Vihar",
+      "Store":"Airans Retail - Preet Vihar",
       "State":"Delhi",
       "City":"East Delhi",
       "Postal_Code":"110092",
@@ -327,7 +327,7 @@ var Store_Data = [
     {
       "Id": "27",
       "Customer_Code":"2B0274",
-      "Store":"Staplez - Dwarka Sec10",
+      "Store":"Luxebay - Dwarka",
       "State":"Delhi",
       "City":"West Delhi",
       "Postal_Code":"110075",
@@ -339,7 +339,7 @@ var Store_Data = [
     {
       "Id": "28",
       "Customer_Code":"2B0291",
-      "Store":"Gourmet Mandi - Anand Niketan",
+      "Store":"Gourmet Mandi - Delhi",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110021",
@@ -363,7 +363,7 @@ var Store_Data = [
     {
       "Id": "30",
       "Customer_Code":"2B0301",
-      "Store":"The Exchange Stores - Civil Lines",
+      "Store":"The Exchange Stores - Delhi",
       "State":"Delhi",
       "City":"North Delhi",
       "Postal_Code":"110054",
@@ -375,7 +375,7 @@ var Store_Data = [
     {
       "Id": "31",
       "Customer_Code":"2B0303",
-      "Store":"In & Out - Bpcl Ndse1",
+      "Store":"Ring Road Service - Ndse 1",
       "State":"Delhi",
       "City":"South Delhi",
       "Postal_Code":"110049",
@@ -411,7 +411,7 @@ var Store_Data = [
     {
       "Id": "34",
       "Customer_Code":"2B0038",
-      "Store":"Big Bazaar - Ambience Mall",
+      "Store":"Bb - Ambience Mall - Gurgaon",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122001",
@@ -471,7 +471,7 @@ var Store_Data = [
     {
       "Id": "39",
       "Customer_Code":"2B0039",
-      "Store":"Le Marche - South Point Mall",
+      "Store":"Le Marche - South Point",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122011",
@@ -495,7 +495,7 @@ var Store_Data = [
     {
       "Id": "41",
       "Customer_Code":"2B0202",
-      "Store":"Modern Mart - Sec31",
+      "Store":"Modern Mart - Gurgaon",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122001",
@@ -507,7 +507,7 @@ var Store_Data = [
     {
       "Id": "42",
       "Customer_Code":"2B0161",
-      "Store":"Modern Bazaar - S.S Plaza, Sec47",
+      "Store":"Modern Bazaar - S.S Plaza, Gurgaon",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122018",
@@ -531,7 +531,7 @@ var Store_Data = [
     {
       "Id": "44",
       "Customer_Code":"2B0051",
-      "Store":"Seela Mart - South Point Mall",
+      "Store":"Seela Mart - South Point",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122003",
@@ -549,7 +549,7 @@ var Store_Data = [
       "Postal_Code":"122001",
       "Categories": "Spencer'S",
       "Address":"Mgf, Mega City Mall, Mg Road,Gurgaon,Haryana-122001",
-	    "Map":"https://www.google.com/maps/d/embed?mid=15Z6xkVKIwi_zwSC_YH3reW1MV4L5sd3U",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.989492094697!2d77.08721861542698!3d28.4798630977244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1925dc5b1a25%3A0x95b2195e0e98cda9!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616394152910!5m2!1sen!2sin",
       "Status": true,
     },
     {
@@ -561,13 +561,13 @@ var Store_Data = [
       "Postal_Code":"122001",
       "Categories": "Spencer'S",
       "Address":"Pioneer Boulevard, First Floor, Sector-62, Gurgaon Manesar Urban Complex, Near Golf Course Extension Road, Gurgaon,Haryana-122001",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1LhF2w2WDSi1XTDltRZV4W34IqMV1f1VH",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.134552468769!2d77.0874616150777!3d28.415196582504034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d238da718e879%3A0xc61ddd55eb1b96f5!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616138218634!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "47",
       "Customer_Code":"2B0270",
-      "Store":"Modern Bazaar - Sec 65",
+      "Store":"Modern Bazaar - Ggn - Sec 65",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122018",
@@ -579,7 +579,7 @@ var Store_Data = [
     {
       "Id": "48",
       "Customer_Code":"2B0276",
-      "Store":"Gourmet Bazaar - Ireo Grand Arch, Sec 58",
+      "Store":"Gourmet Bazaar - Sec 58",
       "State":"Haryana",
       "City":"Gurgaon",
       "Postal_Code":"122101",
@@ -591,7 +591,7 @@ var Store_Data = [
     {
       "Id": "49",
       "Customer_Code":"2B0306",
-      "Store":"Organic Life Style - Sec 11",
+      "Store":"Organic Life Style - Panchkula",
       "State":"Haryana",
       "City":"Panchkula",
       "Postal_Code":"134109",
@@ -603,7 +603,7 @@ var Store_Data = [
     {
       "Id": "50",
       "Customer_Code":"2B0204",
-      "Store":"Big Bazaar - Db City Mall",
+      "Store":"Bb-Bhopal-D B Mall",
       "State":"Madhya Pradesh",
       "City":"Bhopal",
       "Postal_Code":"462011",
@@ -615,7 +615,7 @@ var Store_Data = [
     {
       "Id": "51",
       "Customer_Code":"2B0205",
-      "Store":"Big Bazaar - Malhar Mall",
+      "Store":"Bb-Indore-Malhar Mega Mall",
       "State":"Madhya Pradesh",
       "City":"Indore",
       "Postal_Code":"452010",
@@ -627,7 +627,7 @@ var Store_Data = [
     {
       "Id": "52",
       "Customer_Code":"2B0203",
-      "Store":"Big Bazaar - Treasure Island",
+      "Store":"Bb-Indore-Treasure Island",
       "State":"Madhya Pradesh",
       "City":"Indore",
       "Postal_Code":"452001",
@@ -639,7 +639,7 @@ var Store_Data = [
     {
       "Id": "53",
       "Customer_Code":"2B0256",
-      "Store":"Haiko Supermarket - Hiranandani, Powai",
+      "Store":"Haiko Supermarket - Powai",
       "State":"Maharashtra",
       "City":"Mumbai",
       "Postal_Code":"400076",
@@ -651,7 +651,7 @@ var Store_Data = [
     {
       "Id": "54",
       "Customer_Code":"2B0305",
-      "Store":"Zidaa Mart - Andheri West",
+      "Store":"Zidaa Mart - Mumbai",
       "State":"Maharashtra",
       "City":"Mumbai",
       "Postal_Code":"400102",
@@ -663,7 +663,7 @@ var Store_Data = [
     {
       "Id": "55",
       "Customer_Code":"2B0309",
-      "Store":"Saukhyam - Nova Cidade, Porvorim",
+      "Store":"Saukhyam - Goa",
       "State":"Maharashtra",
       "City":"Goa",
       "Postal_Code":"404521",
@@ -675,7 +675,7 @@ var Store_Data = [
     {
       "Id": "56",
       "Customer_Code":"2B0168",
-      "Store":"Big Bazaar - Elante Mall",
+      "Store":"Bb-Chandigarh-Elante Mall",
       "State":"Punjab",
       "City":"Chandigarh",
       "Postal_Code":"160002",
@@ -687,7 +687,7 @@ var Store_Data = [
     {
       "Id": "57",
       "Customer_Code":"2B0227",
-      "Store":"My Fresh - Sec 9",
+      "Store":"My Fresh - Chandigarh",
       "State":"Punjab",
       "City":"Chandigarh",
       "Postal_Code":"160009",
@@ -699,7 +699,7 @@ var Store_Data = [
     {
       "Id": "58",
       "Customer_Code":"2B0171",
-      "Store":"Big Bazaar - Paras Down Town Mall",
+      "Store":"Bb-Zirakpur-Delhi-Ambala Highway",
       "State":"Punjab",
       "City":"Zirakpur",
       "Postal_Code":"140603",
@@ -711,19 +711,19 @@ var Store_Data = [
     {
       "Id": "59",
       "Customer_Code":"2B0255",
-      "Store":"Spencer'S - Vcc Mall, Civil Lines",
+      "Store":"Spencer'S - Allahabad - Vcc Mall",
       "State":"Uttar Pradesh",
       "City":"Allahabad",
       "Postal_Code":"211001",
       "Categories": "Spencer'S",
       "Address":"Vcc Mall, 48/24, S.P Marg, Zone No.3,Allahabad,Uttar Pradesh-211001",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1t0pcspR2cTHGlexSHxNVzO0elP5Nz8Bz",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3602.511580016099!2d81.8323824!3d25.4545877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acac340b3b2a7%3A0x8b5a418a3ce4d908!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616141343980!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "60",
       "Customer_Code":"2B0285",
-      "Store":"English Deli Food - Raj Nagar",
+      "Store":"English Deli Food - Gzb",
       "State":"Uttar Pradesh",
       "City":"Ghaziabad",
       "Postal_Code":"201001",
@@ -735,7 +735,7 @@ var Store_Data = [
     {
       "Id": "61",
       "Customer_Code":"2B0208",
-      "Store":"9 To 9 Mercato - Ats Greens Paradiso",
+      "Store":"9 To 9 Mercato - Greater Noida",
       "State":"Uttar Pradesh",
       "City":"Greater Noida",
       "Postal_Code":"201308",
@@ -747,7 +747,7 @@ var Store_Data = [
     {
       "Id": "62",
       "Customer_Code":"2B0207",
-      "Store":"Big Bazaar - Zquare Mall",
+      "Store":"Bb-Kanpur-Z Square Mall-M G Road",
       "State":"Uttar Pradesh",
       "City":"Kanpur",
       "Postal_Code":"208001",
@@ -759,7 +759,7 @@ var Store_Data = [
     {
       "Id": "63",
       "Customer_Code":"2B0282",
-      "Store":"Alpine Express 24*7 - Swaroop Nagar",
+      "Store":"Novel Infra - Kanpur",
       "State":"Uttar Pradesh",
       "City":"Kanpur",
       "Postal_Code":"208002",
@@ -771,7 +771,7 @@ var Store_Data = [
     {
       "Id": "64",
       "Customer_Code":"2B0169",
-      "Store":"Big Bazaar - Phoenix Mall",
+      "Store":"Bb-Lucknow-Phoenix Mall",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226012",
@@ -783,7 +783,7 @@ var Store_Data = [
     {
       "Id": "65",
       "Customer_Code":"2B0167",
-      "Store":"Big Bazaar - Sahara Mall",
+      "Store":"Bb-Lucknow-Sahara Mall",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226001",
@@ -795,7 +795,7 @@ var Store_Data = [
     {
       "Id": "66",
       "Customer_Code":"2B0219",
-      "Store":"Spencer'S - Fun Republic Mall",
+      "Store":"Spencer'S - Lucknow - Fun Republic Mall",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226010",
@@ -807,19 +807,19 @@ var Store_Data = [
     {
       "Id": "67",
       "Customer_Code":"2B0212",
-      "Store":"Spencer'S - Lekhraj Dollar",
+      "Store":"Spencer'S - Lucknow - Lekhraj Dollar",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226016",
       "Categories": "Spencer'S",
       "Address":"Lekhraj Dollar, Plot No-5/C.P./101, Sect-5, Indira Nagar,Lucknow Nagar Nigam, Zone-4,Lucknow,Uttar Pradesh-226016",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1TWMbSpMMM0EcJVyRUxjoH6T6Smab8RYr",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.953683767104!2d80.98236631504409!3d26.873212583144532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd4dfa6019d7%3A0xbb6ed45ddc404595!2sSpencer&#39;s%20Retail%20Store%20Ltd.!5e0!3m2!1sen!2sin!4v1616143208681!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "68",
       "Customer_Code":"2B0211",
-      "Store":"Spencer'S - Lko Central Mall",
+      "Store":"Spencer'S - Lucknow - Lko Central Mall",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226010",
@@ -831,7 +831,7 @@ var Store_Data = [
     {
       "Id": "69",
       "Customer_Code":"2B0290",
-      "Store":"Spencer'S - Crown Mall",
+      "Store":"Spencer'S - Lucknow - Crown Mall",
       "State":"Uttar Pradesh",
       "City":"Lucknow",
       "Postal_Code":"226028",
@@ -843,7 +843,7 @@ var Store_Data = [
     {
       "Id": "70",
       "Customer_Code":"2B0040",
-      "Store":"Big Bazaar - Mall Of India",
+      "Store":"Bb - Moi",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201301",
@@ -855,7 +855,7 @@ var Store_Data = [
     {
       "Id": "71",
       "Customer_Code":"2B0086",
-      "Store":"The Mart - Purvanchal Royal Park, Sec137",
+      "Store":"R R Management - Noida",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201305",
@@ -867,19 +867,19 @@ var Store_Data = [
     {
       "Id": "72",
       "Customer_Code":"2B0224",
-      "Store":"Spencer'S - Sec 51",
+      "Store":"Spencer'S - Noida - Sec 51",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201201",
       "Categories": "Spencer'S",
       "Address":"C-3, Sector-51, Noida, Tehsil & District Gautam Buddha Nagar Tahsil-I, Noida,Uttar Pradesh-201201",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1ZYINp8vSMXV97b2NZv2Fz9pVKcdFITY4",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d223903.46571684376!2d77.3917492!3d28.7347344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5900eef8b53%3A0x8677b0c7262c113b!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616144068750!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "73",
       "Customer_Code":"2B0106",
-      "Store":"Every Little Thing - Sec 93",
+      "Store":"V M Traders - Sec 93 Noida",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201307",
@@ -891,7 +891,7 @@ var Store_Data = [
     {
       "Id": "74",
       "Customer_Code":"2B0269",
-      "Store":"Modern Bazaar - Berger Tower, Sec 16",
+      "Store":"Modern Bazaar - Noida - Sec 16",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201301",
@@ -903,7 +903,7 @@ var Store_Data = [
     {
       "Id": "75",
       "Customer_Code":"2B0280",
-      "Store":"Yess Store - Sec 104",
+      "Store":"Airans Retail - Noida - Sec 104",
       "State":"Uttar Pradesh",
       "City":"Noida",
       "Postal_Code":"201310",
@@ -915,7 +915,7 @@ var Store_Data = [
     {
       "Id": "76",
       "Customer_Code":"2B0173",
-      "Store":"Big Bazaar - Kapoor Tower",
+      "Store":"Bb-Dehradun-Kapoor Tower",
       "State":"Uttrakhand",
       "City":"Dehradun",
       "Postal_Code":"248001",
@@ -927,7 +927,7 @@ var Store_Data = [
     {
       "Id": "77",
       "Customer_Code":"2B0172",
-      "Store":"Big Bazaar - Durga City Center",
+      "Store":"Bb-Haldwani-Durga City Center",
       "State":"Uttrakhand",
       "City":"Haldwani",
       "Postal_Code":"263141",
@@ -939,7 +939,7 @@ var Store_Data = [
     {
       "Id": "78",
       "Customer_Code":"2B0232",
-      "Store":"Spencer'S - South City Mall",
+      "Store":"Spencer'S - Kolkata - South City Mall",
       "State":"West Bangal",
       "City":"Kolkata",
       "Postal_Code":"700001",
@@ -951,37 +951,37 @@ var Store_Data = [
     {
       "Id": "79",
       "Customer_Code":"2B0233",
-      "Store":"Spencer'S - Quest Mall",
+      "Store":"Spencer'S - Kolkata - Quest Mall",
       "State":"West Bangal",
       "City":"Kolkata",
       "Postal_Code":"700017",
       "Categories": "Spencer'S",
       "Address":"Quest Mall, 33, Syed Amir Ali Avenue,,Kolkata,West Bangal-700017",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1xYgeW7FOL-YE3XvRh7keOJT37BhCKqC4",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.0707293299984!2d88.363337814959!3d22.539023085200075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276de309bf2e9%3A0x6a246d8b28a8d74!2sSpencer&#39;s%2C%20Quest%20Mall!5e0!3m2!1sen!2sin!4v1616144924041!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "80",
       "Customer_Code":"2B0288",
-      "Store":"Spencer'S - Axis Mall",
+      "Store":"Spencer'S - Kolkata - Axis Mall",
       "State":"West Bangal",
       "City":"Kolkata",
       "Postal_Code":"700156",
       "Categories": "Spencer'S",
       "Address":"Axis Mall , Within Action Area 1C, Plot No.Cf-9, New Town,North Twenty Four Parganas,Kolkata,West Bangal-700156",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1Y6IcK8hm9kIHRAebl92rLCc0viwb3COH",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.9916590216108!2d88.45746001495971!3d22.57941528517931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753d7e503fef%3A0xee31942ee42ecfb5!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616145108553!5m2!1sen!2sin",
       "Status": true,
     },
     {
       "Id": "81",
       "Customer_Code":"2B0287",
-      "Store":"Spencer'S - New Town Square",
+      "Store":"Spencer'S - Kolkata - New Town Sqaure",
       "State":"West Bangal",
       "City":"Kolkata",
       "Postal_Code":"700136",
       "Categories": "Spencer'S",
       "Address":"New Town Sqaure, Mouza Attghara, P. S. Baguhati,Kolkata,West Bangal-700136",
-	    "Map":"https://www.google.com/maps/d/embed?mid=1uwis0DOL1O4d7QbykHTi_yoN8dEx_LEc",
+	    "Map":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d460.35080908943615!2d88.4424037!3d22.6237009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f832acec5d9%3A0x2e880473dfa98238!2sSpencer&#39;s!5e0!3m2!1sen!2sin!4v1616145242667!5m2!1sen!2sin",
       "Status": true,
     },
 
